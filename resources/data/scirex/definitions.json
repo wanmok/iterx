@@ -1,0 +1,35 @@
+{
+  "@version": "0.6.0",
+  "definitions": {
+    "material-method-metric-task": {
+      "output_str": "material-method-metric-task",
+      "slots": {
+        "material": {
+          "output_str": "Material",
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "method": {
+          "output_str": "Method",
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "metric": {
+          "output_str": "Metric",
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "task": {
+          "output_str": "Task",
+          "filler_types": [
+            "spanset"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {}
+}
