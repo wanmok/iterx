@@ -26,6 +26,6 @@ This repo contains code for the following paper:
 ## Codebase Release
 
 We are gradually releasing materials related to our paper. The release includes the following:
-- [x] [Model outputs for the IterX model](./model_outputs)
+- [x] [Model outputs for the IterX model](resources/model_outputs)
 - [ ] Metric implementations
 - [ ] Code for the IterX model
