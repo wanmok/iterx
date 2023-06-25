@@ -1,7 +1,10 @@
 # Iterative Document-level Information Extraction via Imitation Learning
 This repo contains code for the following paper:
 
-- Yunmo Chen, William Gantt, Weiwei Gu, Tongfei Chen, Aaron White, and Benjamin Van Durme. 2023. Iterative Document-level Information Extraction via Imitation Learning. In Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics, pages 1858–1874, Dubrovnik, Croatia. Association for Computational Linguistics.
+- Yunmo Chen, William Gantt, Weiwei Gu, Tongfei Chen, Aaron White, and Benjamin Van Durme.
+  2023. [Iterative Document-level Information Extraction via Imitation Learning](https://arxiv.org/abs/2210.06600). In
+  Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics, pages
+  1858–1874, Dubrovnik, Croatia. Association for Computational Linguistics.
 
 ```
 @inproceedings{chen-etal-2023-iterative,
