@@ -1,932 +1,924 @@
-doc_id=02567fd428a675ca91a0c6786f47f3e35881bcbd	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=02567fd428a675ca91a0c6786f47f3e35881bcbd	#pred=10	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['DLDL + VGG - Face'], ['DLDL'], ['VGG - Face'], ['IF - DLDL'], ['ChaLearn'], ['BFGS - LDL'], ['DLDL - 8s - CRF'], ['DLDL - 8s'], ['PF - DLDL']], 'material': [['AFLW'], ['VOC2007'], ['VOC2011'], ['Morph'], ['PASCAL VOC dataset'], ['VOC2012'], ['PASCAL VOC2007']], 'metric': [['Mean Absolute Error'], ['mean IU'], ['CS'], ['mAP'], ['average precision'], ['accuracy'], ['average AP'], ['AP'], ['MAE']], 'task': [['Age and head pose estimation'], ['Head pose estimation'], ['semantic segmentation']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL + VGG - Face', 'ChaLearn', 'DLDL', 'PF - DLDL', 'DLDL - 8s - CRF', 'DLDL - 8s', 'IF - DLDL', 'VGG - Face', 'BFGS - LDL', 'Deep Label Distribution Learning']], 'metric': [['MAE', 'average precision', 'average AP', 'AP', 'mean average precision', 'accuracy', 'mean IU', 'CS', 'Acc', 'Mean Absolute Error', 'mAP']], 'task': [['head pose estimation', 'multi - label classification', 'Age and head pose estimation', 'Multi - label classification', 'semantic segmentation', 'Head pose estimation', 'multi - label image retrieval']], 'material': [['VOC2007', 'PASCAL VOC2007', 'VOC2011', 'VOC2012', 'AFLW', 'PASCAL VOC dataset', 'AFLW dataset']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'material': [['PASCAL VOC dataset', 'PASCAL VOC2007']], 'task': [['Head pose estimation', 'semantic segmentation']], 'method': [['DLDL', 'PF - DLDL', 'DLDL - 8s - CRF', 'DLDL - 8s', 'VGG - Face', 'BFGS - LDL']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s', 'DLDL']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['DLDL - 8s']]}
 
 doc_id=02b3d1d162080d9aefd3fc30a0bcc9a843073b5d	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'metric': [['test perplexity'], ['perplexity'], ['average per - word log - probability']], 'task': [['language understanding'], ['LM'], ['large scale Language Modeling']], 'material': [['1B Word Benchmark data set'], ['One Billion Word Benchmark']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['large scale Language Modeling', 'language understanding', 'large scale LM', 'LM']], 'metric': [['average per - word log - probability', 'perplexity', 'test perplexity']], 'material': [['One Billion Word Benchmark', '1B Word Benchmark data set', 'One Billion Word Benchmark data set']]}
 
 doc_id=0398552184f80db111e9c28bf533b395f233ac00	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['weakly supervised object detection'], ['WOD tasks'], ['Weakly - supervised object detection'], ['saliency detection'], ['object detection'], ['WOD']], 'method': [['SPCL'], ['Bridging Saliency Detection'], ['Sal + SPCL']], 'metric': [['AP'], ['AP score'], ['average precision']], 'material': [['Pascal VOC 2007 dataset'], ['VOC07 - Test']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['Weakly - supervised object detection', 'WOD tasks', 'saliency detection', 'weakly supervised object detection', 'WOD', 'object detection']], 'method': [['SPCL *', 'Bridging Saliency Detection', 'Sal + SPCL', 'SPCL']], 'material': [['Pascal VOC 2007 dataset', 'VOC07 - Test']], 'metric': [['average precision', 'AP score', 'AP']]}
 
-doc_id=05d2700846c0323f79c1344aca5333994c7c03a5	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=05d2700846c0323f79c1344aca5333994c7c03a5	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['LVCSR'], ['LM rescoring'], ['conversational speech recognition'], ['ASR']], 'material': [['Switchboard subset'], ['Switchboard dataset'], ['Switchboard'], ['SWB'], ['Hub5’00'], ['Switchboard data']], 'metric': [['WER'], ['error rates']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['ASR', 'conversational speech recognition', 'LM rescoring', 'LVCSR']], 'material': [['SWB', 'Switchboard', 'Switchboard / Fisher / CallHome acoustic transcripts', 'CallHome subsets of Hub5’00', 'Switchboard subset', 'Switchboard data', 'Switchboard dataset', 'Hub5’00']], 'metric': [['error rates', 'WER']]}
 
-doc_id=0626908dd710b91aece1a81f4ca0635f23fc47f3	#pred=1	#gold=2	prec=0.2222	rec=0.2500	f1=0.2353
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ASR']]}
+
+doc_id=0626908dd710b91aece1a81f4ca0635f23fc47f3	#pred=1	#gold=2	prec=0.5455	rec=0.1111	f1=0.1846
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['Inception - v3']	['Inception Architecture', 'ensemble of four Inception - v3 models', 'RMSProp Inception', 'Inception networks', 'Inception - v3', 'Inception architecture', 'Inception - type networks', 'Inception modules', 'Inception', 'inception modules', 'Smoothing Inception', 'factorized inception modules', 'Inception - style model', 'Inception style building blocks']
-		['Inception - v2']	None
-		['BN - Inception']	None
-		['Inception']	None
-		['GoogLeNet']	None
+		['Inception - v3', 'Inception - v2', 'BN - Inception', 'Inception']	['Inception Architecture', 'Inception modules', 'Inception style building blocks', 'RMSProp Inception', 'Smoothing Inception', 'Inception - v3', 'factorized inception modules', 'Inception networks', 'Inception - style model', 'Inception', 'Inception architecture', 'ensemble of four Inception - v3 models', 'inception modules', 'Inception - type networks']
 	task=
-		['ILSVRC 2012 classification']	['ILSVRC classification challenge', 'post - classification of detection']
-		['Computer Vision']	None
+		['ILSVRC 2012 classification', 'Computer Vision']	['post - classification of detection', 'ILSVRC classification challenge']
+	material=
+		['ILSVRC 2012']	['2012 ImageNet', 'ImageNet ILSVRC 2012 classification benchmark', 'ILSVR 2012 classification', 'ImageNet', 'ILSVRC 2012', 'ILSVRC 2012 classification challenge validation set', 'ILSVRC - 2012 validation set']
 	metric=
-		['accuracy']	['top - error', 'top -', 'top - 1 error', 'accuracy']
-		['error']	None
+		['accuracy', 'top - 1 error', 'error', 'top - error']	['top - error', 'top - 1 error', 'top -', 'accuracy']
 
 	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['ILSVRC 2012', '2012 ImageNet', 'ILSVR 2012 classification', 'ImageNet ILSVRC 2012 classification benchmark', 'ILSVRC - 2012 validation set', 'ILSVRC 2012 classification challenge validation set', 'ImageNet']], 'method': [['Inception Architecture', 'ensemble of four Inception - v3 models', 'RMSProp Inception', 'Inception networks', 'Inception - v3', 'Inception architecture', 'Inception - type networks', 'Inception modules', 'Inception', 'inception modules', 'Smoothing Inception', 'factorized inception modules', 'Inception - style model', 'Inception style building blocks']], 'metric': [['top - error', 'top - 5 error', 'top -', 'accuracy']], 'task': [['ILSVRC classification challenge', 'post - classification of detection']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['2012 ImageNet', 'ImageNet ILSVRC 2012 classification benchmark', 'ILSVR 2012 classification', 'ImageNet', 'ILSVRC 2012', 'ILSVRC 2012 classification challenge validation set', 'ILSVRC - 2012 validation set']], 'method': [['Inception Architecture', 'Inception modules', 'Inception style building blocks', 'RMSProp Inception', 'Smoothing Inception', 'Inception - v3', 'factorized inception modules', 'Inception networks', 'Inception - style model', 'Inception', 'Inception architecture', 'ensemble of four Inception - v3 models', 'inception modules', 'Inception - type networks']], 'metric': [['top - error', 'top - 5 error', 'top -', 'accuracy']], 'task': [['post - classification of detection', 'ILSVRC classification challenge']]}
 
-doc_id=0678a8abea82793993cd89383319da75f6dc4be3	#pred=1	#gold=1	prec=0.2727	rec=0.7500	f1=0.4000
+doc_id=0678a8abea82793993cd89383319da75f6dc4be3	#pred=2	#gold=1	prec=0.3571	rec=0.2941	f1=0.3226
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['object classification']	['object detection', 'detection', 'supervision', 'weakly - supervised problem']
-		['locate objects']	None
-	material=
-		['PASCAL VOC 2012 validation set']	['COCO data', 'COCO', 'MS COCO datasets', 'COCO images', 'COCO training set', 'MS COCO dataset', 'COCO dataset']
-		['PASCAL VOC 2012 dataset']	None
-		['VOC 2012 dataset']	None
-		['MS COCO dataset']	None
-		['PASCAL VOC 2012']	None
-		['VOC 2012']	None
-		['COCO']	None
 	method=
-		['ProNet']	['ProNet framework', 'classification architecture ProNet', 'Learning to Propose Object - specific Boxes for Cascaded Neural Networks', 'ProNet Framework', 'ProNet']
+		['ProNet']	['ProNet', 'classification architecture ProNet', 'ProNet framework', 'Learning to Propose Object - specific Boxes for Cascaded Neural Networks', 'ProNet Framework']
+	task=
+		['object classification']	['supervision', 'detection', 'object detection', 'weakly - supervised problem']
+	material=
+		['VOC 2012', 'MS COCO dataset', 'PASCAL VOC 2012 dataset', 'ImageNet', 'COCO dataset', 'PASCAL VOC data', 'PASCAL VOC 2012', 'COCO', 'VOC 2012 dataset', 'PASCAL VOC 2012 validation set']	['COCO images', 'MS COCO datasets', 'MS COCO dataset', 'COCO dataset', 'COCO data', 'COCO', 'COCO training set']
 	metric=
 		['mAP']	['mAP']
 
-doc_id=081531984770a74e87dbd68907061b4b0f3631bf	#pred=2	#gold=6	prec=0.2941	rec=0.2083	f1=0.2439
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['ProNet']]}
+
+doc_id=081531984770a74e87dbd68907061b4b0f3631bf	#pred=10	#gold=6	prec=0.4167	rec=0.2113	f1=0.2804
 	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['VESPCN']	['VESPCN method', 'video ESPCN', 'VESPCN']
 	task=
-		['video SR']	['Spatio - temporal video SR', 'Real - Time Video Super - Resolution', 'video super - resolution', 'HD video SR', 'video', 'SR', 'real - time video SR']
-		['SR']	None
+		['SR', 'Real - Time Video Super - Resolution', 'video SR']	['HD video SR', 'Spatio - temporal video SR', 'real - time video SR', 'SR', 'video', 'video super - resolution', 'Real - Time Video Super - Resolution']
 
 	incident_type=	material-method-metric-task	material-method-metric-task
 	task=
-		['Real - Time Video Super - Resolution']	['Spatio - temporal video SR', 'Real - Time Video Super - Resolution', 'video super - resolution', 'HD video SR', 'video', 'SR', 'real - time video SR']
-		['image super - resolution']	None
-		['video super - resolution']	None
-		['video classification']	None
-		['real - time video SR']	None
-		['single image SR']	None
-		['HD video SR']	None
-		['SR problem']	None
-		['image SR']	None
-		['video SR']	None
-		['SR']	None
+		['SR', 'video SR']	['HD video SR', 'Spatio - temporal video SR', 'real - time video SR', 'SR', 'video', 'video super - resolution', 'Real - Time Video Super - Resolution']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['VESPCN']	['VESPCN method', 'video ESPCN', 'VESPCN']
+	task=
+		['video classification', 'HD video SR', 'image super - resolution', 'real - time image SR', 'real - time video SR', 'SR', 'SR problem', 'video super - resolution', 'video SR', 'image SR', 'Real - Time Video Super - Resolution', 'single image SR']	['HD video SR', 'Spatio - temporal video SR', 'real - time video SR', 'SR', 'video', 'video super - resolution', 'Real - Time Video Super - Resolution']
 	material=
 		['Vid4']	['Vid4']
-	method=
-		['VESPCN']	['VESPCN method', 'VESPCN', 'video ESPCN']
 	metric=
-		['accuracy']	['PSNR']
-		['PSNR']	None
+		['accuracy', 'PSNR']	['PSNR']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Vid4']], 'method': [['bicubic interpolation', 'bicubic upsampling']], 'metric': [['MOVIE', 'MOVIE index']], 'task': [['Spatio - temporal video SR', 'Real - Time Video Super - Resolution', 'video super - resolution', 'HD video SR', 'video', 'SR', 'real - time video SR']]}
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR', 'video SR']	['HD video SR', 'Spatio - temporal video SR', 'real - time video SR', 'SR', 'video', 'video super - resolution', 'Real - Time Video Super - Resolution']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Vid4']], 'method': [['bicubic interpolation', 'bicubic upsampling']], 'metric': [['PSNR']], 'task': [['Spatio - temporal video SR', 'Real - Time Video Super - Resolution', 'video super - resolution', 'HD video SR', 'video', 'SR', 'real - time video SR']]}
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR', 'video SR']	['HD video SR', 'Spatio - temporal video SR', 'real - time video SR', 'SR', 'video', 'video super - resolution', 'Real - Time Video Super - Resolution']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Vid4']], 'method': [['VESPCN method', 'VESPCN', 'video ESPCN']], 'metric': [['SSIM']], 'task': [['Spatio - temporal video SR', 'Real - Time Video Super - Resolution', 'video super - resolution', 'HD video SR', 'video', 'SR', 'real - time video SR']]}
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR', 'video SR']	['HD video SR', 'Spatio - temporal video SR', 'real - time video SR', 'SR', 'video', 'video super - resolution', 'Real - Time Video Super - Resolution']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Vid4']], 'method': [['bicubic interpolation', 'bicubic upsampling']], 'metric': [['SSIM']], 'task': [['Spatio - temporal video SR', 'Real - Time Video Super - Resolution', 'video super - resolution', 'HD video SR', 'video', 'SR', 'real - time video SR']]}
-
-doc_id=0834e74304b547c9354b6d7da6fa78ef47a48fa8	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['LINE'], ['LINE model']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['SR', 'video SR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SR', 'video SR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SR', 'video SR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SR', 'video SR']]}
+
+doc_id=0834e74304b547c9354b6d7da6fa78ef47a48fa8	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['LINE', 'LINE model']], 'task': [['classification']], 'material': [['Wikipedia pages']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['LINE']]}
 
 doc_id=0a3381f0432c5cfe491c718349d7a44e5814592c	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['Bi - LSTM']], 'task': [['Learner Writing'], ['automated essay scoring'], ['grammatical error detection'], ['detecting errors'], ['error detection'], ['learner writing']], 'material': [['CoNLL - 14']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['Learner Writing', 'automated essay scoring', 'error detection', 'detecting errors', 'grammatical error detection']], 'method': [['Bi - LSTM', 'Compositional Sequence Labeling Models']], 'material': [['CoNLL', 'CoNLL - 14']]}
 
-doc_id=0a6c36de8726b6feaab586046ddc1d1a008f44f9	#pred=1	#gold=1	prec=0.3000	rec=0.7500	f1=0.4286
+doc_id=0a6c36de8726b6feaab586046ddc1d1a008f44f9	#pred=2	#gold=1	prec=0.4545	rec=0.2000	f1=0.2778
 	incident_type=	material-method-metric-task	material-method-metric-task
-	method=
-		['Filtered Channel Features']	['Checkerboards4x3', 'Checkerboards +', 'Checkerboards', 'Checkerboards4x3 model', 'Checkerboards4x4']
-		['Checkerboards']	None
-		['InformedHaar']	None
-	task=
-		['Pedestrian detection']	['Pedestrian detection', 'Pedestrian Detection', 'pedestrian detection', '2Ped detection', 'detection']
-		['pedestrian detection']	None
-		['image classification']	None
-		['Pedestrian Detection']	None
 	material=
-		['Caltech']	['Caltech images', 'Caltech10x', 'Caltech set', 'Caltech dataset', 'Caltech data', 'Caltech training data', 'Caltech', 'Caltech validation set', 'Caltech10x setup', 'Caltech training set', 'Caltech test set']
-		['KITTI']	None
-		['INRIA']	None
+		['KITTI', 'INRIA', 'Caltech']	['Caltech set', 'Caltech10x setup', 'Caltech', 'Caltech training data', 'Caltech data', 'Caltech training set', 'Caltech10x', 'Caltech images', 'Caltech test set', 'Caltech dataset', 'Caltech validation set']
+	method=
+		['Filtered Channel Features', 'Checkerboards', 'RandomFilters']	['Checkerboards4x3', 'Checkerboards4x4', 'Checkerboards4x3 model', 'Checkerboards +', 'Checkerboards']
+	task=
+		['Pedestrian Detection', 'Pedestrian detection', 'image classification', 'pedestrian detection']	['Pedestrian detection', 'Pedestrian Detection', 'pedestrian detection', '2Ped detection', 'detection']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'material': [['KITTI']]}
 
 doc_id=0c47cad9729c38d9db1f75491b1ee4bd883a5d4e	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['CVT'], ['VAT'], ['Cross - View Training']], 'metric': [['accuracy']], 'task': [['Image Recognition'], ['image recognition']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['Cross - View Training', 'CVT', 'VAT']], 'metric': [['accuracy']], 'task': [['NLP', 'image recognition', 'Image Recognition']]}
 
-doc_id=0dc9eb7d17f2def56ad930945f2521653f04c3fa	#pred=1	#gold=2	prec=0.3333	rec=0.2500	f1=0.2857
+doc_id=0dc9eb7d17f2def56ad930945f2521653f04c3fa	#pred=2	#gold=2	prec=0.8571	rec=0.1429	f1=0.2449
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['SNM n - gram LMs']	["pure ' skip - gram SNM", 'SNM5 - skip', 'SNM updates', 'Sparse Non - negative Matrix Probability Estimation', 'SNM model', 'SNM5', 'SNM', 'SNM n - gram LMs', 'non - negative matrix M', 'SNM10 - skip', 'SNM estimation', 'SNM models', 'Sparse Non - negative Matrix', 'Sparse Non - negative Modeling']
-		['SNM5 - skip']	None
-		['SNM10']	None
-		['SNM5']	None
-		['SNM']	None
-	metric=
-		['perplexity']	['perplexity', 'Perplexity', 'PPL']
+		['SNM']	['SNM', 'SNM5 - skip', 'SNM5', 'SNM estimation', 'Sparse Non - negative Matrix', 'SNM models', "pure ' skip - gram SNM", 'SNM updates', 'SNM model', 'non - negative matrix M', 'Sparse Non - negative Modeling', 'Sparse Non - negative Matrix Probability Estimation', 'SNM10 - skip', 'SNM n - gram LMs']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['One Billion Benchmark', 'One Billion Word Benchmark']], 'method': [["pure ' skip - gram SNM", 'SNM5 - skip', 'SNM updates', 'Sparse Non - negative Matrix Probability Estimation', 'SNM model', 'SNM5', 'SNM', 'SNM n - gram LMs', 'non - negative matrix M', 'SNM10 - skip', 'SNM estimation', 'SNM models', 'Sparse Non - negative Matrix', 'Sparse Non - negative Modeling']], 'metric': [['Params']], 'task': [['Skip - gram Language Modeling', 'language modeling', 'statistical language modeling']]}
+	incident_type=	material-method-metric-task	material-method-metric-task
+	material=
+		['One Billion Word Benchmark corpus']	['One Billion Word Benchmark', 'One Billion Benchmark']
+	metric=
+		['perplexity']	['perplexity', 'PPL', 'Perplexity']
+	method=
+		['SNM', 'SNM5 - skip', 'SNM n - gram LMs', 'SNM5']	['SNM', 'SNM5 - skip', 'SNM5', 'SNM estimation', 'Sparse Non - negative Matrix', 'SNM models', "pure ' skip - gram SNM", 'SNM updates', 'SNM model', 'non - negative matrix M', 'Sparse Non - negative Modeling', 'Sparse Non - negative Matrix Probability Estimation', 'SNM10 - skip', 'SNM n - gram LMs']
 
 doc_id=107010b7f2abe3c0c9df62bcef35eb77f6fc76df	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['DANN']], 'material': [['Amazon reviews data set'], ['Amazon Reviews data set']], 'task': [['Image Classification']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Amazon reviews data set', 'Amazon Reviews data set']], 'metric': [['PAD values', 'PAD']], 'method': [['DANN']], 'task': [['Image Classification']]}
 
-doc_id=1130d8fdd931225c2d7563c3808367726cfa1c3a	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=1130d8fdd931225c2d7563c3808367726cfa1c3a	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['PixelGAN autoencoders'], ['PixelGAN Autoencoders'], ['PixelCNN'], ['PixelGAN autoencoder'], ['PixelGAN']], 'material': [['MNIST']], 'metric': [['error rate']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['PixelGAN Autoencoders', 'PixelGAN', 'PixelGAN autoencoder', 'PixelCNN', 'PixelGAN autoencoders']], 'material': [['MNIST']], 'metric': [['error rate']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['PixelGAN', 'PixelCNN']]}
 
 doc_id=11356cd6bb0f2776a88cd584ff108470414c6594	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'metric': [['error']], 'method': [['Submanifold Sparse Convolutional Networks'], ['VGG - B'], ['submanifold sparse convolutional networks'], ['VSC convolutions']], 'material': [['CASIA dataset'], ['CASIA'], ['ModelNet - 40']], 'task': [['image classification']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['VSC convolutions', 'VSC', 'submanifold sparse convolutional networks', 'Submanifold Sparse Convolutional Networks', 'VGG - B']], 'material': [['CASIA dataset', 'ModelNet - 40', 'CASIA']], 'metric': [['error']], 'task': [['image classification']]}
 
-doc_id=11da0c54ba904a1cb31a09d10da55f73e8825c61	#pred=1	#gold=1	prec=0.4444	rec=1.0000	f1=0.6154
+doc_id=11da0c54ba904a1cb31a09d10da55f73e8825c61	#pred=1	#gold=1	prec=0.8182	rec=0.6429	f1=0.7200
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['Natural Language Inference']	['NLI', 'NLI task', 'Natural Language Inference']
-		['natural language inference']	None
-		['NLI task']	None
-		['NLI']	None
-	material=
-		['SNLI']	['Stanford Natural Language Inference', 'SNLI']
 	method=
-		['TBCNN - pair neural model']	['TBCNN sentence pair model', 'tree - based convolutoinal neural network', 'TBCNN', 'TBCNN model', 'tree - based convolutional neural network', 'TBCNN - pair model', 'TBCNN )', 'TBCNN - pair neural model']
-		['TBCNN - pair model']	None
-		['TBCNN']	None
+		['TBCNN - pair model', 'TBCNN - pair neural model', 'TBCNN']	['tree - based convolutional neural network', 'tree - based convolutoinal neural network', 'TBCNN )', 'TBCNN', 'TBCNN model', 'TBCNN sentence pair model', 'TBCNN - pair model', 'TBCNN - pair neural model']
+	task=
+		['NLI', 'sentence pair modeling tasks', 'NLI task', 'natural language inference', 'Natural Language Inference', 'sentence matching']	['NLI task', 'Natural Language Inference', 'NLI']
+	material=
+		['SNLI']	['SNLI', 'Stanford Natural Language Inference']
 	metric=
 		['accuracy']	['accuracy']
 
-doc_id=1235dd37312cb20aced0e97d953f6379d8a0c7d4	#pred=2	#gold=2	prec=0.2500	rec=0.3750	f1=0.3000
+doc_id=1235dd37312cb20aced0e97d953f6379d8a0c7d4	#pred=2	#gold=2	prec=0.2941	rec=0.2083	f1=0.2439
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['entailment']	['natural language inference', 'inference']
-		['GTE task']	None
-		['TE']	None
-	material=
-		['V - SNLI']	['V - SNLI test', 'V - SNLI dataset', 'V - SNLI', 'V -) SNLI', 'V - LSTM baseline', 'V - LSTM']
-		['SNLI']	None
 	method=
-		['Grounded Textual Entailment']	['BiMPM', 'Bilateral Multi - Perspective Matching']
-		['V - biMPM']	None
-		['V - BiMPM']	None
-		['V - SNLI']	None
-		['BiMPM']	None
+		['V - BiMPM', 'V - biMPM', 'V - SNLI', 'BiMPM', 'Grounded Textual Entailment']	['Bilateral Multi - Perspective Matching', 'BiMPM']
+	task=
+		['TE', 'TE task', 'GTE task', 'entailment', 'GTE']	['inference', 'natural language inference']
+	material=
+		['SNLI', 'V - SNLI']	['V - SNLI dataset', 'V - LSTM', 'V - SNLI', 'V - LSTM baseline', 'V -) SNLI', 'V - SNLI test']
 	metric=
 		['accuracy']	['accuracy', 'accuracies']
 
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['TE']	['natural language inference', 'inference']
-
-doc_id=14318685b5959b51d0f1e3db34643eb2855dc6d9	#pred=1	#gold=2	prec=0.1538	rec=0.2500	f1=0.1905
-	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['ILSVRC 2014 classification']	['classification', 'ILSVRC12 classification data', 'Classification Challenge']
-		['object detection']	None
-		['detection']	None
 	material=
-		['ILSVRCâ\x80\x9914']	['Imagenet', 'ImageNet']
-		['Imagenet']	None
+		['SNLI', 'V - SNLI']	['V - SNLI dataset', 'V - LSTM', 'V - SNLI', 'V - LSTM baseline', 'V -) SNLI', 'V - SNLI test']
 	method=
-		['Inception architecture']	['Inception', 'Inception model', 'Inception module', 'inception architecture']
-		['GoogLeNet network']	None
-		['Inception network']	None
-		['GoogLeNet']	None
+		['V - BiMPM']	['V - biMPM Model', 'V - BiMPM']
+	task=
+		['TE']	['inference', 'natural language inference']
+
+doc_id=14318685b5959b51d0f1e3db34643eb2855dc6d9	#pred=1	#gold=2	prec=0.1667	rec=0.0909	f1=0.1176
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['Inception network', 'Inception architecture', 'GoogLeNet', 'GoogLeNet network']	['Inception model', 'Inception module', 'inception architecture', 'Inception']
+	task=
+		['detection', 'ILSVRC 2014 classification']	['Classification Challenge', 'ILSVRC12 classification data', 'classification']
+	material=
+		['ILSVRCâ\x80\x9914', 'Imagenet']	['ImageNet', 'Imagenet']
 	metric=
-		['mean average precision']	['top - 1 error rate', 'top - 1 accuracy']
-		['accuracy']	None
-		['error']	None
-		['mAP']	None
+		['accuracy', 'mean average precision', 'error', 'mAP']	['top - 1 error rate', 'top - 1 accuracy']
 
 	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Imagenet', 'ImageNet']], 'method': [['Inception', 'Inception model', 'Inception module', 'inception architecture']], 'metric': [['top - 5 error', 'top - 5 error rate']], 'task': [['classification', 'ILSVRC12 classification data', 'Classification Challenge']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['ImageNet', 'Imagenet']], 'method': [['Inception model', 'Inception module', 'inception architecture', 'Inception']], 'metric': [['top - 5 error', 'top - 5 error rate']], 'task': [['Classification Challenge', 'ILSVRC12 classification data', 'classification']]}
 
-doc_id=16051bbe3a7f7c77a952ebf76722ea655e8906ca	#pred=2	#gold=3	prec=0.3333	rec=0.3333	f1=0.3333
+doc_id=16051bbe3a7f7c77a952ebf76722ea655e8906ca	#pred=10	#gold=3	prec=0.5769	rec=0.2500	f1=0.3488
 	incident_type=	material-method-metric-task	material-method-metric-task
 	task=
-		['SISR']	['IMAGE SUPER - RESOLUTION', 'RF - based image super - resolution', 'SRGAN )', 'RF - based SISR', 'single image super - resolution', 'Super - resolution', 'Image Super - resolution', 'Image Super - Resolution', 'super - resolved images', 'SISR', 'image super - resolution model', 'image super - resolution', 'SR', 'single image superresolution']
+		['SISR', 'SR', 'image super - resolution', 'Image Super - resolution']	['SRGAN )', 'Super - resolution', 'image super - resolution', 'RF - based image super - resolution', 'SISR', 'Image Super - Resolution', 'SR', 'super - resolved images', 'RF - based SISR', 'single image super - resolution', 'image super - resolution model', 'single image superresolution', 'Image Super - resolution', 'IMAGE SUPER - RESOLUTION']
 
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['FAFR']	['FARF algorithm', 'FARF*.', 'featureaugmented random forest', 'feature - augmented random forest', 'Feature - augmented Random Forest', 'FARF', 'FEATURE - AUGMENTED RANDOM FOREST']
-		['GWRR']	None
-		['FARF']	None
+		['FAFR', 'FARF', 'GWRR']	['FAFR scheme']
 	task=
-		['single image superresolution']	['IMAGE SUPER - RESOLUTION', 'RF - based image super - resolution', 'SRGAN )', 'RF - based SISR', 'single image super - resolution', 'Super - resolution', 'Image Super - resolution', 'Image Super - Resolution', 'super - resolved images', 'SISR', 'image super - resolution model', 'image super - resolution', 'SR', 'single image superresolution']
-		['Image Super - Resolution']	None
-		['image super - resolution']	None
-		['Image Super - resolution']	None
-		['single - image SR']	None
-		['SISR']	None
-		['SR']	None
+		['single - image SR', 'image super - resolution', 'SISR', 'Image Super - Resolution', 'SR', 'RF - based SISR', 'single image superresolution', 'single image super - resolution', 'Image Super - resolution']	['SRGAN )', 'Super - resolution', 'image super - resolution', 'RF - based image super - resolution', 'SISR', 'Image Super - Resolution', 'SR', 'super - resolved images', 'RF - based SISR', 'single image super - resolution', 'image super - resolution model', 'single image superresolution', 'Image Super - resolution', 'IMAGE SUPER - RESOLUTION']
+	material=
+		['Set14']	['Set14']
 	metric=
 		['PSNR']	['PSNR', 'average peak signal to noise ratio']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Set14']], 'method': [['FAFR scheme']], 'metric': [['PSNR', 'average peak signal to noise ratio']], 'task': [['IMAGE SUPER - RESOLUTION', 'RF - based image super - resolution', 'SRGAN )', 'RF - based SISR', 'single image super - resolution', 'Super - resolution', 'Image Super - resolution', 'Image Super - Resolution', 'super - resolved images', 'SISR', 'image super - resolution model', 'image super - resolution', 'SR', 'single image superresolution']]}
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SISR']	['SRGAN )', 'Super - resolution', 'image super - resolution', 'RF - based image super - resolution', 'SISR', 'Image Super - Resolution', 'SR', 'super - resolved images', 'RF - based SISR', 'single image super - resolution', 'image super - resolution model', 'single image superresolution', 'Image Super - resolution', 'IMAGE SUPER - RESOLUTION']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SISR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SISR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SISR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SISR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SISR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SISR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SISR']]}
 
 doc_id=160563abbd75265b19afc8b4169bab9e1eb33d97	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['Cross - lingual document classification'], ['NLI'], ['cross - lingual classification']], 'material': [['XNLI']], 'metric': [['accuracy'], ['error rates'], ['error rate']]}
+		{'incident_type': 'material-method-metric-task', 'metric': [['accuracy', 'error rate', 'error rates']], 'material': [['XNLI']], 'task': [['NLI', 'zero - shot cross - lingual natural language inference', 'cross - lingual classification', 'Cross - lingual document classification']]}
 
-doc_id=175f74a09241b6cb5101a2a09978095720db7d5f	#pred=1	#gold=8	prec=0.3333	rec=0.1250	f1=0.1818
+doc_id=175f74a09241b6cb5101a2a09978095720db7d5f	#pred=10	#gold=8	prec=0.6923	rec=0.1552	f1=0.2535
 	incident_type=	material-method-metric-task	material-method-metric-task
 	task=
-		['single - image super - resolution']	['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']
-		['Image Super - Resolution']	None
-		['image super - resolution']	None
-		['single image SR']	None
-		['Single image SR']	None
-		['image SR']	None
-		['SR']	None
-	material=
-		['Set14']	['Set14']
-	method=
-		['Dual - State Recurrent Network']	['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']
-		['DSRN']	None
-		['DRCN']	None
-	metric=
-		['PSNR']	['Peak Signal - to - Noise Ratio', 'PSNR', 'PSNR relationship']
+		['SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['B100']], 'method': [['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']], 'metric': [['Peak Signal - to - Noise Ratio', 'PSNR', 'PSNR relationship']], 'task': [['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['B100']], 'method': [['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Set14']], 'method': [['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Set5']], 'method': [['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']], 'metric': [['Peak Signal - to - Noise Ratio', 'PSNR', 'PSNR relationship']], 'task': [['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Set5']], 'method': [['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Urban100']], 'method': [['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']], 'metric': [['Peak Signal - to - Noise Ratio', 'PSNR', 'PSNR relationship']], 'task': [['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Urban100']], 'method': [['dual - state recurrent structure', 'Dual - State Recurrent Network', 'unrolled single - state RNN', 'DSRN', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Networks']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['Single image SR', 'Image Super - Resolution', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-doc_id=1778e32c18bd611169e64c1805a51abff341ca53	#pred=1	#gold=1	prec=0.1875	rec=0.7500	f1=0.3000
 	incident_type=	material-method-metric-task	material-method-metric-task
 	task=
-		['natural language inference task']	['paraphrase identification task', 'PARAPHRASE', 'paraphrase identification']
-		['natural language understanding']	None
-		['Natural Language Inference']	None
-		['natural language inference']	None
-		['paraphrase identification']	None
-		['NLI']	None
-		['NLU']	None
-	material=
-		['Quora Question Pair Dataset']	['Quora question pair dataset', 'Quora Question Pair Dataset', 'Quora Question Pair dataset', 'Quora question pair']
-		['Quora Question Pair dataset']	None
-		['MultiNLI']	None
-		['SNLI']	None
-	method=
-		['Densely Interactive Inference Network']	['Densely Interactive Inference Network', 'DIIN']
-		['Interactive Inference Network']	None
-		['DIIN']	None
-		['IIN']	None
-	metric=
-		['matched score']	['development accuracy', 'in - domain development accuracy', 'accuracy']
+		['Image Super - Resolution', 'SR', 'image SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
 
-doc_id=178275dbdcfa267e41a9d5efe386ee5874c6d23f	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['DSRN', 'DRCN', 'Dual - State Recurrent Network']	['unrolled single - state RNN', 'dual - state recurrent structure', 'Dual - State Recurrent Networks', 'dual - state RNN without delayed feedback connections', 'Dual - State Recurrent Network', 'DSRN']
+	task=
+		['image super - resolution', 'single - image super - resolution', 'Image Super - Resolution', 'SR', 'Single image SR', 'image SR', 'single image SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
+	material=
+		['Set14', 'Set5', 'DIV2 K']	['Set14']
+	metric=
+		['SSIM', 'PSNR']	['PSNR', 'Peak Signal - to - Noise Ratio', 'PSNR relationship']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['SR']	['image super - resolution', 'Image Super - Resolution', 'SR', 'single - image super - resolution', 'Single image SR']
+
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['Fraternal Dropout'], ['fraternal dropout']], 'material': [['Wikitext - 2']], 'task': [['sequence modeling tasks']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['SR']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['SR']]}
+
+doc_id=1778e32c18bd611169e64c1805a51abff341ca53	#pred=2	#gold=1	prec=0.2857	rec=0.5000	f1=0.3636
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['Densely Interactive Inference Network', 'IIN', 'Interactive Inference Network', 'DIIN']	['Densely Interactive Inference Network', 'DIIN']
+	task=
+		['NLU', 'NLI', 'natural language inference', 'paraphrase identification', 'Natural Language Inference', 'natural language understanding', 'natural language inference task', 'NLU tasks']	['PARAPHRASE', 'paraphrase identification task', 'paraphrase identification']
+	material=
+		['MultiNLI', 'Quora Question Pair Dataset', 'SNLI', 'Quora Question Pair dataset']	['Quora question pair', 'Quora Question Pair Dataset', 'Quora Question Pair dataset', 'Quora question pair dataset']
+	metric=
+		['accuracy']	['accuracy', 'development accuracy', 'in - domain development accuracy']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['IIN', 'DIIN']], 'task': [['Natural Language Inference']], 'material': [['SNLI']]}
+
+doc_id=178275dbdcfa267e41a9d5efe386ee5874c6d23f	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Fraternal Dropout', 'fraternal dropout']], 'material': [['Penn Treebank', 'WT2', 'Wikitext - 2', 'CIFAR - 10 dataset']], 'task': [['sequence modeling tasks']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['fraternal dropout']]}
 
 doc_id=178631e0f0e624b1607c7a7a2507ed30d4e83a42	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'metric': [['error rate']], 'task': [['Speech Recognition'], ['speech recognition'], ['cursive handwriting recognition'], ['Phoneme recognition'], ['phoneme recognition']], 'method': [['deep Long Short - term Memory RNNs'], ['Long Short - Term Memory']], 'material': [['TIMIT']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['Speech Recognition', 'Phoneme recognition', 'phoneme recognition', 'speech recognition']], 'material': [['TIMIT']], 'method': [['deep Long Short - term Memory RNNs', 'Long Short - term Memory', 'Long Short - Term Memory']], 'metric': [['error rate']]}
 
-doc_id=18168aea48a22f6fe2fe407c0ff70083cba225a7	#pred=1	#gold=4	prec=0.1538	rec=0.1250	f1=0.1379
+doc_id=18168aea48a22f6fe2fe407c0ff70083cba225a7	#pred=1	#gold=4	prec=0.1429	rec=0.0714	f1=0.0952
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['semantic segmentation']	['super - resolution', 'Image super - resolution']
-		['image restoration']	None
-		['Image Restoration']	None
-		['image denoising']	None
-	material=
-		['BSD200 dataset']	['Set5']
-		['BSD200']	None
-		['Set14']	None
-		['Set5']	None
 	method=
-		['RED - Net’’—very']	['RED30']
-		['RED - Net']	None
-	metric=
-		['average PSNR']	['Peak Signal - to - Noise Ratio', 'PSNR']
-		['PSNR']	None
-		['SSIM']	None
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Berkeley Segmentation Dataset', 'BSD', 'BSD100']], 'method': [['RED30']], 'metric': [['Peak Signal - to - Noise Ratio', 'PSNR']], 'task': [['super - resolution', 'Image super - resolution']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Berkeley Segmentation Dataset', 'BSD', 'BSD100']], 'method': [['RED30']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['super - resolution', 'Image super - resolution']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Set5']], 'method': [['RED30']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['super - resolution', 'Image super - resolution']]}
-
-doc_id=193089d56758ab88391d846edd08d359b1f9a863	#pred=2	#gold=2	prec=0.2000	rec=0.5000	f1=0.2857
-	incident_type=	material-method-metric-task	material-method-metric-task
+		['RED - Net’’—very', 'RED - Net']	['RED30']
 	task=
-		['Large - scale Person Re - identification']	['Person Re - identification', 'identification loss', 're - identification', 'Person re - identification', 'Identification', 're - ID', 'identification', 'Person Re - i d Evaluation', 'person re - identification']
-		['Person re - identification']	None
-		['person re - identification']	None
-		['Person Re - identification']	None
-		['public person re - ID']	None
-		['re - identification']	None
-		['Person Re - i d']	None
-		['person re - ID']	None
-		['identification']	None
-		['re - i d']	None
-		['re - ID']	None
+		['image denoising', 'restoration', 'semantic segmentation', 'image restoration', 'Image Restoration', 'denoising']	['Image super - resolution', 'super - resolution']
 	material=
-		['Market1501 dataset']	['Market1501']
-		['Market - 1501']	None
-		['Market1501']	None
-		['CUHK03']	None
+		['Set5', 'Set14', 'BSD200 dataset']	['Set5']
 	metric=
-		['rank - 1 accuracy']	['mAP', 'mean average precision']
-		['mAP']	None
+		['SSIM', 'PSNR', 'average PSNR']	['PSNR', 'Peak Signal - to - Noise Ratio']
 
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['BSD100', 'BSD', 'Berkeley Segmentation Dataset']], 'method': [['RED30']], 'metric': [['PSNR', 'Peak Signal - to - Noise Ratio']], 'task': [['Image super - resolution', 'super - resolution']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['BSD100', 'BSD', 'Berkeley Segmentation Dataset']], 'method': [['RED30']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['Image super - resolution', 'super - resolution']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Set5']], 'method': [['RED30']], 'metric': [['SSIM', 'Structural SIMilarity']], 'task': [['Image super - resolution', 'super - resolution']]}
+
+doc_id=193089d56758ab88391d846edd08d359b1f9a863	#pred=10	#gold=2	prec=0.3636	rec=0.4444	f1=0.4000
 	incident_type=	material-method-metric-task	material-method-metric-task
 	task=
-		['re - identification']	['Person Re - identification', 'identification loss', 're - identification', 'Person re - identification', 'Identification', 're - ID', 'identification', 'Person Re - i d Evaluation', 'person re - identification']
-		['person re - ID']	None
-		['re - ID']	None
+		['person re - identification', 'person re - ID', 're - ID', 're - identification']	['Person re - identification', 're - identification', 'Identification', 'person re - identification', 'identification', 'identification loss', 're - ID', 'Person Re - identification', 'Person Re - i d Evaluation']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	metric=
+		['average rank - 1 accuracy', 'rank - 1 accuracy', 'accuracy', 'rank - 1', 'mAP']	['rank - 1', 'rank1 accuracy', 'rank - 1 accuracy']
+	material=
+		['Market1501', 'Market1501 dataset', 'Market - 1501', 'CUHK03']	['Market1501']
+	task=
+		['Person Re - i d', 're - i d', 'Person re - identification', 'large - scale person re - identification', 're - identification', 'public person re - ID', 'person re - identification', 'person re - ID', 'identification', 'Large - scale Person Re - identification', 're - ID', 'Person Re - identification']	['Person re - identification', 're - identification', 'Identification', 'person re - identification', 'identification', 'identification loss', 're - ID', 'Person Re - identification', 'Person Re - i d Evaluation']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['re - ID']]}
 
 doc_id=193b518bc3025804c6d587c74cbc154d91478417	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'material': [['Cityscapes dataset'], ['Cityscapes']], 'task': [['segmentation'], ['semantic segmentation'], ['semantic segmentations']], 'metric': [['mean IoU gap']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['segmentation', 'pixel - level semantic segmentation', 'semantic segmentation', 'adapted segmentation', 'semantic segmentations']], 'material': [['Cityscapes dataset', 'Cityscapes']], 'metric': [['mean IoU gap']]}
 
-doc_id=1d0dcb458aa4d30b51f7c74b159be687f39120a0	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=1d0dcb458aa4d30b51f7c74b159be687f39120a0	#pred=10	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'metric': [['mean Average Precision'], ['rank1 accuracy'], ['mAP'], ['rank20 accuracy']], 'method': [['Pose - driven Deep Convolutional Model'], ['PTN'], ['PDC']], 'task': [['Person ReID'], ['multi - class person identification'], ['person ReID'], ['person Re - Identification'], ['person re - identification'], ['Person Re - Identification'], ['ReID'], ['Person Re - identification']], 'material': [['Market 1501'], ['CUHK'], ['CUHK 03'], ['Market1501']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID', 'person Re - Identification', 'person re - identification', 'multi - class person identification', 'Person Re - Identification', 'Person Re - identification']], 'method': [['Pose - driven Deep Convolutional Model', 'PTN', 'PDC']], 'metric': [['rank20 accuracy', 'mAP', 'rank1 accuracy', 'mean Average Precision']], 'material': [['Market1501', 'CUHK 03', 'Market 1501']]}
 
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['ReID'], ['person ReID']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID', 'person Re - Identification', 'person re - identification', 'Person Re - Identification']], 'method': [['PDC']]}
 
-doc_id=1f08598381af9146d0fd9a61b30d0e51a7331689	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'metric': [['median human normalized score']], 'method': [['Prioritized experience replay prioritized - replay'], ['Ape - X'], ['Ape - X DQN'], ['Distributed Prioritized Experience Replay'], ['Ape - X DPG'], ['Ape - X framework']], 'material': [['Arcade Learning Environment']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
 
-doc_id=2138a7127429d67746ec78de46d6820fee0e548e	#pred=1	#gold=1	prec=0.2857	rec=0.5000	f1=0.3636
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['ReID', 'Person ReID', 'person ReID']]}
+
+doc_id=1f08598381af9146d0fd9a61b30d0e51a7331689	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Ape - X', 'Ape - X DPG', 'Prioritized experience replay prioritized - replay', 'Distributed Prioritized Experience Replay', 'Ape - X framework', 'Ape - X DQN']], 'material': [['Arcade Learning Environment']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Ape - X']]}
+
+doc_id=2138a7127429d67746ec78de46d6820fee0e548e	#pred=2	#gold=1	prec=0.2222	rec=0.4000	f1=0.2857
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['Graph2Seq - MA - F']	['Graph2Seq - PGE']
-		['Graph2Seq - MA']	None
-		['Graph2Seq']	None
-		['GraphSAGE']	None
-	material=
-		['WikiSQL']	['WikiSQL dataset', 'WikiSQL']
-	metric=
-		['BLEU - 4 score']	['BLEU - 4 score']
-		['accuracy']	None
-
-doc_id=21a1654b856cf0c64e60e58258669b374cb05539	#pred=1	#gold=3	prec=0.2667	rec=0.3333	f1=0.2963
-	incident_type=	material-method-metric-task	material-method-metric-task
+		['Graph2Seq', 'Graph2Seq - MA - F', 'GraphSAGE', 'Graph2Seq - MA']	['Graph2Seq - PGE']
 	task=
-		['real - time object detection']	['detection pipeline', 'frame detection', 'Detection', 'detection task', 'Object detection', 'person detection', 'object detection', 'grasp detection', 'detection', 'Person Detection']
-		['object detection']	None
-		['person detection']	None
-		['Object detection']	None
+		['graph - to - sequence tasks']	['SQL - to - Text task']
 	material=
-		['VOC 2007 test set']	['Pascal VOC', 'VOC 2007 data', 'VOC 2007', 'Pascal', 'VOC 2007 test set', 'VOC 2007 test data']
-		['VOC 2012 test set']	None
-		['Pascal VOC']	None
-		['VOC 2007']	None
-	method=
-		['Fast R - CNN']	['YOLO']
-		['YOLO model']	None
-		['Fast YOLO']	None
-		['YOLO']	None
+		['WikiSQL']	['WikiSQL', 'WikiSQL dataset']
 	metric=
-		['IOU']	['mAP', 'mean average precision', 'maximizing average precision']
-		['mAP']	None
-		['AP']	None
+		['accuracy', 'BLEU - 4 score']	['BLEU - 4 score']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Pascal VOC', 'VOC 2007 data', 'VOC 2007', 'Pascal', 'VOC 2007 test set', 'VOC 2007 test data']], 'method': [['YOLO']], 'metric': [['fps']], 'task': [['real - time detection', 'Real - Time Detection In The Wild', 'Real - Time Object Detection']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Pascal VOC', 'VOC 2007 data', 'VOC 2007', 'Pascal', 'VOC 2007 test set', 'VOC 2007 test data']], 'method': [['YOLO']], 'metric': [['mAP', 'mean average precision', 'maximizing average precision']], 'task': [['real - time detection', 'Real - Time Detection In The Wild', 'Real - Time Object Detection']]}
-
-doc_id=232b43584b2236669c0a53702ad89ab10c3886ea	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['IQN'], ['implicit quantile networks'], ['Implicit quantile networks'], ['QR - DQN'], ['IQN algorithm']], 'material': [['Atari - 57']], 'metric': [['average scores']], 'task': [['RL']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['Graph2Seq']]}
+
+doc_id=21a1654b856cf0c64e60e58258669b374cb05539	#pred=2	#gold=3	prec=0.4706	rec=0.1818	f1=0.2623
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['YOLO']	['YOLO']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['Fast YOLO', 'YOLO', 'Fast R - CNN', 'YOLO model']	['YOLO']
+	task=
+		['person detection', 'object detection', 'real - time object detection']	['frame detection', 'detection pipeline', 'grasp detection', 'Person Detection', 'object detection', 'detection task', 'detection', 'person detection', 'Detection', 'Object detection']
+	material=
+		['Pascal VOC', 'Picasso Dataset', 'ImageNet 2012 validation set', 'VOC 2007', 'VOC 2007 test set', 'VOC 2012 test set']	['Pascal VOC', 'VOC 2007 test data', 'VOC 2007 data', 'Pascal', 'VOC 2007', 'VOC 2007 test set']
+	metric=
+		['AP', 'IOU', 'mAP']	['mean average precision', 'maximizing average precision', 'mAP']
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Pascal VOC', 'VOC 2007 test data', 'VOC 2007 data', 'Pascal', 'VOC 2007', 'VOC 2007 test set']], 'method': [['YOLO']], 'metric': [['mean average precision', 'maximizing average precision', 'mAP']], 'task': [['Real - Time Object Detection', 'real - time detection', 'Real - Time Detection In The Wild']]}
+
+doc_id=232b43584b2236669c0a53702ad89ab10c3886ea	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['QR - DQN', 'Implicit quantile networks', 'implicit quantile networks', 'IQN', 'IQN algorithm']], 'task': [['RL']], 'metric': [['average scores']], 'material': [['Atari - 57']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['IQN']], 'task': [['RL']]}
 
 doc_id=23d2d3a6ffebfecaa8930307fdcf451c147757c8	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['SeqGAN']], 'task': [['classification']], 'metric': [['average score']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['classification']], 'method': [['SeqGAN']], 'metric': [['average score']]}
 
-doc_id=24730424236724d3f798dec02901e7a1f1c4710e	#pred=1	#gold=3	prec=0.2667	rec=0.3333	f1=0.2963
+doc_id=24730424236724d3f798dec02901e7a1f1c4710e	#pred=3	#gold=3	prec=0.6667	rec=0.3556	f1=0.4638
 	incident_type=	material-method-metric-task	material-method-metric-task
 	task=
-		['single image super - resolution']	['IMAGE SUPER - RESOLUTION', 'single image super - resolution', 'Image super - resolution', 'Image Super - Resolution', 'Image Super - resolution', 'image super - resolution training', 'image super - resolution', 'single - image super - resolution', 'SR']
-		['Image super - resolution']	None
-		['Image Super - Resolution']	None
-		['image super - resolution']	None
-		['single - image SR']	None
-		['image SR']	None
-		['SR']	None
+		['SR']	['image super - resolution training', 'image super - resolution', 'Image Super - Resolution', 'single - image super - resolution', 'SR', 'Image super - resolution', 'single image super - resolution', 'Image Super - resolution', 'IMAGE SUPER - RESOLUTION']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['JMPF', 'Joint Maximum Purity Forest']	['JOINT MAXIMUM PURITY FOREST', 'JOINT MAXIMUM PURITY FOREST SCHEME', 'JMPF +']
+	task=
+		['single - image SR', 'image super - resolution', 'SR', 'single image super - resolution', 'image SR']	['image super - resolution training', 'image super - resolution', 'Image Super - Resolution', 'single - image super - resolution', 'SR', 'Image super - resolution', 'single image super - resolution', 'Image Super - resolution', 'IMAGE SUPER - RESOLUTION']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['JMPF', 'Joint Maximum Purity Forest', 'ANR']	['JOINT MAXIMUM PURITY FOREST', 'JOINT MAXIMUM PURITY FOREST SCHEME', 'JMPF +']
+	task=
+		['single - image SR', 'image super - resolution', 'single - image super - resolution', 'Image Super - Resolution', 'SR', 'Image super - resolution', 'single image super - resolution', 'image SR']	['image super - resolution training', 'image super - resolution', 'Image Super - Resolution', 'single - image super - resolution', 'SR', 'Image super - resolution', 'single image super - resolution', 'Image Super - resolution', 'IMAGE SUPER - RESOLUTION']
 	material=
 		['Set5']	['Set5']
-	method=
-		['Joint Maximum Purity Forest']	['JMPF +', 'JOINT MAXIMUM PURITY FOREST', 'JOINT MAXIMUM PURITY FOREST SCHEME']
-		['JMPF']	None
-		['ANR']	None
 	metric=
-		['root mean squared error']	['peak signal to noise ratio', 'PSNR']
-		['average error']	None
-		['PSNR']	None
-		['RMSE']	None
+		['root mean squared error', 'PSNR', 'RMSE', 'average error']	['PSNR', 'peak signal to noise ratio']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['B100']], 'method': [['JMPF +', 'JOINT MAXIMUM PURITY FOREST', 'JOINT MAXIMUM PURITY FOREST SCHEME']], 'metric': [['peak signal to noise ratio', 'PSNR']], 'task': [['IMAGE SUPER - RESOLUTION', 'single image super - resolution', 'Image super - resolution', 'Image Super - Resolution', 'Image Super - resolution', 'image super - resolution training', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Set14 datasets']], 'method': [['JMPF +', 'JOINT MAXIMUM PURITY FOREST', 'JOINT MAXIMUM PURITY FOREST SCHEME']], 'metric': [['peak signal to noise ratio', 'PSNR']], 'task': [['IMAGE SUPER - RESOLUTION', 'single image super - resolution', 'Image super - resolution', 'Image Super - Resolution', 'Image Super - resolution', 'image super - resolution training', 'image super - resolution', 'single - image super - resolution', 'SR']]}
-
-doc_id=249b3b7421d3cdb932eecfe4b67203e0e46806b2	#pred=1	#gold=1	prec=0.1364	rec=0.7500	f1=0.2308
+doc_id=249b3b7421d3cdb932eecfe4b67203e0e46806b2	#pred=2	#gold=1	prec=0.1739	rec=0.4444	f1=0.2500
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['natural language inference']	['PI task', 'paraphrase identification', 'PI', 'Paraphrase Identification', 'PI tasks']
-		['paraphrase identification']	None
-		['Paraphrase Identification']	None
-		['sentiment classification']	None
-		['text classification']	None
-		['Modeling Sentences']	None
-		['modeling sentences']	None
-		['encoding sentences']	None
-		['sentence encoding']	None
-		['NLP']	None
-		['NLI']	None
-	material=
-		['Quora Question Pairs datasets']	['Quora Question Pairs datasets', 'Quora Question Pairs']
-		['SST - 5']	None
-		['SST - 2']	None
-		['SNLI']	None
-		['SST']	None
 	method=
-		['Cell - aware Stacked LSTMs']	['bidirectional CAS - LSTM network']
-		['Cell - aware Stacked LSTM']	None
-		['stacked LSTM']	None
-		['CAS - LSTMs']	None
-		['CAS - LSTM']	None
+		['CAS - LSTM', 'Cell - aware Stacked LSTM', 'Cell - aware Stacked LSTMs', 'stacked LSTM', 'CAS - LSTMs']	['bidirectional CAS - LSTM network']
+	task=
+		['NLP', 'modeling sentences', 'sentiment classification', 'sentence encoding', 'encoding sentences', 'natural language inference', 'paraphrase identification', 'Paraphrase Identification', 'Modeling Sentences']	['PI', 'PI task', 'PI tasks', 'paraphrase identification', 'Paraphrase Identification']
+	material=
+		['SNLI', 'Quora Question Pairs datasets', 'SST - 5', 'SST - 2', 'Quora Question Pairs dataset']	['Quora Question Pairs', 'Quora Question Pairs datasets']
 	metric=
 		['accuracy']	['accuracy']
 
-doc_id=25a784f7f8c94c42821ee078587fc38dffcd00a4	#pred=1	#gold=4	prec=0.2500	rec=0.1875	f1=0.2143
-	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['Robust Face Detection']	['face detectors', 'face detector', 'face detection domain', 'Robust Face Detection', 'human - level detection', 'face detection', 'Face detection', 'small face detection', 'effective face detection']
-		['small face detection']	None
-		['Face detection']	None
-		['face detection']	None
-	material=
-		['WIDER FACE val dataset']	['WIDER FACE', 'WIDER FACE val dataset', 'WIDER FACE author team', 'WIDER FACE dataset', 'Hard Images', 'hard images', 'hard subset', 'WIDER FACE test dataset', 'WIDER FACE train set', 'benchmark dataset WIDER FACE', 'hard set']
-		['WIDER FACE dataset']	None
-		['WIDER FACE']	None
-		['WIDER']	None
-	method=
-		['PyramidBox']	['anchor design', 'Anchor design', 'anchors', 'anchor - based deep face detectors', 'anchor - based deep face detector']
-	metric=
-		['average precision']	['average precision', 'accuracy / speed trade - off', 'multi - scale inference speed', 'AP', 'AP=99.0', 'APs', 'false positives']
-		['APs']	None
-		['AP']	None
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['AFW']], 'method': [['anchor design', 'Anchor design', 'anchors', 'anchor - based deep face detectors', 'anchor - based deep face detector']], 'metric': [['average precision', 'accuracy / speed trade - off', 'multi - scale inference speed', 'AP', 'AP=99.0', 'APs', 'false positives']], 'task': [['face detectors', 'face detector', 'face detection domain', 'Robust Face Detection', 'human - level detection', 'face detection', 'Face detection', 'small face detection', 'effective face detection']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['FDDB']], 'method': [['anchor design', 'Anchor design', 'anchors', 'anchor - based deep face detectors', 'anchor - based deep face detector']], 'metric': [['average precision', 'accuracy / speed trade - off', 'multi - scale inference speed', 'AP', 'AP=99.0', 'APs', 'false positives']], 'task': [['face detectors', 'face detector', 'face detection domain', 'Robust Face Detection', 'human - level detection', 'face detection', 'Face detection', 'small face detection', 'effective face detection']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Pascal Faces', 'Pascal VOC dataset', 'FACE val dataset']], 'method': [['anchor design', 'Anchor design', 'anchors', 'anchor - based deep face detectors', 'anchor - based deep face detector']], 'metric': [['average precision', 'accuracy / speed trade - off', 'multi - scale inference speed', 'AP', 'AP=99.0', 'APs', 'false positives']], 'task': [['face detectors', 'face detector', 'face detection domain', 'Robust Face Detection', 'human - level detection', 'face detection', 'Face detection', 'small face detection', 'effective face detection']]}
-
-doc_id=25f5df29342a04936ba0d308b4d1b8245a7e8f5c	#pred=1	#gold=4	prec=0.4000	rec=0.2500	f1=0.3077
-	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['articulated pose estimation']	['pose estimation']
-		['pose estimation']	None
-	material=
-		['FLIC dataset']	['MPII datasets', 'MPII', 'MPI dataset']
-		['MPII']	None
-		['LSP']	None
-	method=
-		['Convolutional Pose Machines']	['CPMs )', 'CPM', 'Convolutional pose machines', 'Pose Machines', 'CPMs', 'pose machine', 'Convolutional Pose Machines', 'convolutional pose machine']
-		['CPMs']	None
-		['CPM']	None
-	metric=
-		['PCKh - 0.5 score']	['PCKh - 0.5 score']
-		['accuracy']	None
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['FLIC', 'FLIC datasets']], 'method': [['CPMs )', 'CPM', 'Convolutional pose machines', 'Pose Machines', 'CPMs', 'pose machine', 'Convolutional Pose Machines', 'convolutional pose machine']], 'metric': [['PCK@0.2']], 'task': [['pose estimation']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['FLIC', 'FLIC datasets']], 'method': [['CPMs )', 'CPM', 'Convolutional pose machines', 'Pose Machines', 'CPMs', 'pose machine', 'Convolutional Pose Machines', 'convolutional pose machine']], 'metric': [['PCK@0.2']], 'task': [['pose estimation']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['LSP', 'LSP training data', 'Leeds Sports Pose', 'LSP dataset', 'Extended Leeds Sports Dataset']], 'method': [['CPMs )', 'CPM', 'Convolutional pose machines', 'Pose Machines', 'CPMs', 'pose machine', 'Convolutional Pose Machines', 'convolutional pose machine']], 'metric': [['PCK', 'Percentage Correct Keypoints', 'low precision regime', 'PCK@0.05', 'PCK@0.1', 'high precision regime']], 'task': [['pose estimation']]}
-
-doc_id=269730dbbabed8b8b5ba720e44a4c31b1f51e8f1	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['question answering'], ['QA'], ['Question answering'], ['story - based QA'], ['QUESTION ANSWERING']], 'method': [['Query - Reduction Network'], ['QRN']], 'metric': [['average accuracy']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['CAS - LSTM', 'CAS - LSTMs']], 'material': [['SNLI']]}
+
+doc_id=25a784f7f8c94c42821ee078587fc38dffcd00a4	#pred=1	#gold=4	prec=0.9167	rec=0.1100	f1=0.1964
+	incident_type=	material-method-metric-task	material-method-metric-task
+	material=
+		['WIDER FACE train set', 'WIDER FACE', 'WIDER FACE val dataset', 'WIDER', 'WIDER FACE dataset']	['benchmark dataset WIDER FACE', 'hard set', 'WIDER FACE train set', 'WIDER FACE test dataset', 'Hard Images', 'WIDER FACE author team', 'hard subset', 'WIDER FACE', 'WIDER FACE val dataset', 'hard images', 'WIDER FACE dataset']
+	metric=
+		['average precision', 'AP', 'APs']	['average precision', 'AP', 'false positives', 'multi - scale inference speed', 'APs', 'AP=99.0', 'accuracy / speed trade - off']
+	task=
+		['face detection', 'small face detection', 'Robust Face Detection', 'Face detection']	['face detection', 'Robust Face Detection', 'effective face detection', 'face detection domain', 'Face detection', 'face detector', 'small face detection', 'face detectors', 'human - level detection']
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['AFW']], 'method': [['anchor - based deep face detector', 'anchor design', 'anchor - based deep face detectors', 'Anchor design', 'anchors']], 'metric': [['average precision', 'AP', 'false positives', 'multi - scale inference speed', 'APs', 'AP=99.0', 'accuracy / speed trade - off']], 'task': [['face detection', 'Robust Face Detection', 'effective face detection', 'face detection domain', 'Face detection', 'face detector', 'small face detection', 'face detectors', 'human - level detection']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['FDDB']], 'method': [['anchor - based deep face detector', 'anchor design', 'anchor - based deep face detectors', 'Anchor design', 'anchors']], 'metric': [['average precision', 'AP', 'false positives', 'multi - scale inference speed', 'APs', 'AP=99.0', 'accuracy / speed trade - off']], 'task': [['face detection', 'Robust Face Detection', 'effective face detection', 'face detection domain', 'Face detection', 'face detector', 'small face detection', 'face detectors', 'human - level detection']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['FACE val dataset', 'Pascal VOC dataset', 'Pascal Faces']], 'method': [['anchor - based deep face detector', 'anchor design', 'anchor - based deep face detectors', 'Anchor design', 'anchors']], 'metric': [['average precision', 'AP', 'false positives', 'multi - scale inference speed', 'APs', 'AP=99.0', 'accuracy / speed trade - off']], 'task': [['face detection', 'Robust Face Detection', 'effective face detection', 'face detection domain', 'Face detection', 'face detector', 'small face detection', 'face detectors', 'human - level detection']]}
+
+doc_id=25f5df29342a04936ba0d308b4d1b8245a7e8f5c	#pred=2	#gold=4	prec=0.4706	rec=0.1404	f1=0.2162
+	incident_type=	material-method-metric-task	material-method-metric-task
+	task=
+		['pose estimation', 'articulated pose estimation']	['pose estimation']
+
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['CPMs', 'CPM', 'Convolutional Pose Machines']	['Pose Machines', 'Convolutional pose machines', 'CPMs', 'pose machine', 'Convolutional Pose Machines', 'CPMs )', 'CPM', 'convolutional pose machine']
+	task=
+		['pose estimation', 'articulated pose estimation', 'Keypoint Localization']	['pose estimation']
+	material=
+		['MPII', 'MPII datasets', 'FLIC dataset', 'MPII Human Pose dataset', 'LSP dataset', 'MPII Human Pose Dataset', 'LSP']	['MPII datasets', 'MPI dataset', 'MPII']
+	metric=
+		['accuracy', 'PCKh - 0.5 score']	['PCKh - 0.5 score']
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['FLIC', 'FLIC datasets']], 'method': [['Pose Machines', 'Convolutional pose machines', 'CPMs', 'pose machine', 'Convolutional Pose Machines', 'CPMs )', 'CPM', 'convolutional pose machine']], 'metric': [['PCK@0.2']], 'task': [['pose estimation']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Leeds Sports Pose', 'Extended Leeds Sports Dataset', 'LSP dataset', 'LSP', 'LSP training data']], 'method': [['Pose Machines', 'Convolutional pose machines', 'CPMs', 'pose machine', 'Convolutional Pose Machines', 'CPMs )', 'CPM', 'convolutional pose machine']], 'metric': [['low precision regime', 'Percentage Correct Keypoints', 'PCK', 'PCK@0.1', 'high precision regime', 'PCK@0.05']], 'task': [['pose estimation']]}
+
+doc_id=269730dbbabed8b8b5ba720e44a4c31b1f51e8f1	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['QRN', 'Query - Reduction Network']], 'task': [['story - based QA', 'Question answering', 'QUESTION ANSWERING', 'QA', 'end - to - end QA task', 'question answering']], 'metric': [['average accuracy']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['QRN']], 'task': [['question answering']]}
 
 doc_id=270e65acc071b9e4e2a632720130c0e10cb6fa08	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['Text Understanding'], ['NLP tasks'], ['Natural Language Inference'], ['NLP'], ['question answering'], ['sentence classification'], ['natural language inference tasks'], ['natural language inference']], 'method': [['Neural Tree Indexers'], ['NTI'], ['NTI - SLSTM - LSTM'], ['NTI - SLSTM'], ['NTI - ANF - LSTM'], ['ANF']], 'material': [['SNLI'], ['Wikipedia'], ['WikiQA dataset']], 'metric': [['accuracy'], ['MAP']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['NTI - SLSTM', 'NTI', 'NTI - ANF - LSTM', 'NTI - SLSTM - LSTM', 'ANF', 'Neural Tree Indexers']], 'material': [['WikiQA dataset', 'SNLI', 'Wikipedia']], 'metric': [['accuracy', 'MAP']], 'task': [['NLP', 'sentence classification', 'Text Understanding', 'natural language inference', 'Natural Language Inference', 'question answering', 'NLP tasks', 'natural language inference tasks']]}
 
-doc_id=2777cd26b2c257843273fe41ad4c5b8cdf1b1b75	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=2777cd26b2c257843273fe41ad4c5b8cdf1b1b75	#pred=3	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['NAN'], ['MHP v2.0 dataset'], ['MHP v2.0'], ['MHP']], 'material': [['MHP v2.0 dataset'], ['MHP v1.0 dataset'], ['MHP v2.0'], ['MHP']]}
+		{'incident_type': 'material-method-metric-task', 'method': [['MHP v2.0', 'NAN']], 'material': [['MHP v2.0 dataset', 'MHP v1.0 Benchmark', 'MHP v1.0 dataset', 'MHP v2.0', 'MHP']], 'task': [['Understanding Humans in Crowded Scenes', 'multi - human parsing']], 'metric': [['PCP']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['NAN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['NAN']]}
 
 doc_id=27a99c21a1324f087b2f144adc119f04137dfd87	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'metric': [['accuracy'], ['error rate'], ['top - 1 error']], 'material': [['ImageNet ILSVRC - 2012 dataset'], ['MNIST'], ['ImageNet'], ['MNIST dataset'], ['ILSVRC - 2012 validation set']], 'method': [['Adaptive Fastfood'], ['deep fried networks'], ['deep fried convnets'], ['Fastfood'], ['Deep Fried Convnets'], ['Deep fried networks']]}
+		{'incident_type': 'material-method-metric-task', 'metric': [['accuracy', 'top - 1 error']], 'method': [['deep fried networks', 'Fastfood', 'deep fried convnets', 'Deep fried networks', 'Adaptive Fastfood', 'Deep Fried Convnets']], 'material': [['MNIST dataset', 'ImageNet', 'ImageNet ILSVRC - 2012 dataset', 'MNIST']]}
 
-doc_id=27aa0f3ec934925265f93fac7ff1cd1d70ceb618	#pred=1	#gold=1	prec=0.0588	rec=0.2500	f1=0.0952
+doc_id=27aa0f3ec934925265f93fac7ff1cd1d70ceb618	#pred=10	#gold=1	prec=0.0357	rec=0.1111	f1=0.0541
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['sentiment analysis']	['sentiment analysis', 'Sentiment analysis']
-		['POS tagging']	None
-		['NLP tasks']	None
-		['tagging']	None
-		['POS']	None
-		['NLP']	None
-	material=
-		['SANCL']	['SANCL dataset']
-		['WSJ']	None
 	method=
-		['Strong Baselines']	['multi - task model', 'multi - task learning', 'multi - task tri - training method', 'Multi - task learning']
-		['tri - training']	None
-		['MT - Tri']	None
-	metric=
-		['average accuracy']	['global macro average', 'overall average accuracy']
-		['Accuracy scores']	None
-		['accuracy scores']	None
-		['mean accuracy']	None
-		['Accuracy']	None
-		['accuracy']	None
-
-doc_id=2a86bcdfb1d817ddb76ba202319f8267a36c0f62	#pred=1	#gold=3	prec=0.7500	rec=0.2500	f1=0.3750
-	incident_type=	material-method-metric-task	material-method-metric-task
+		['tri - training', 'MT - Tri', 'Strong Baselines']	['multi - task learning', 'multi - task model', 'Multi - task learning', 'multi - task tri - training method']
 	task=
-		['WSOD']	['WSOD', 'Object detection', 'WSOD )', 'WSOD problem', 'weakly supervised scenario', 'Weakly Supervised Object Detection', 'detection', 'robust WSOD']
+		['part - of - speech tagging', 'NLP', 'POS', 'sentiment analysis', 'POS tagging', 'tagging', 'NLP tasks']	['Sentiment analysis', 'sentiment analysis']
 	material=
-		['PASCAL VOC']	['PASCAL VOC 2007', 'VOC 2007', 'PASCAL VOC']
+		['SANCL 2012 shared task dataset', 'SANCL', 'WSJ']	['SANCL dataset']
+	metric=
+		['Accuracy scores', 'mean accuracy', 'Accuracy', 'average accuracy', 'accuracy', 'accuracy scores']	['overall average accuracy', 'global macro average']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['MT - Tri']]}
+
+doc_id=2a86bcdfb1d817ddb76ba202319f8267a36c0f62	#pred=2	#gold=3	prec=0.5714	rec=0.0784	f1=0.1379
+	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
 		['PCL']	['PCL - OB - G - Ens.']
+	task=
+		['WSOD', 'object detection']	['robust WSOD', 'Weakly Supervised Object Detection', 'weakly supervised scenario', 'detection', 'WSOD problem', 'WSOD', 'WSOD )', 'Object detection']
+	material=
+		['VOC 2007 dataset', 'PASCAL VOC dataset']	['image', 'ImageNet']
 	metric=
-		['mAP']	['mAP', 'mean of AP', 'mAP@0.5', 'mAP@ [ .5', 'multi - class cross entropy loss Eq']
+		['mAP']	['mAP@ [ .5', 'mAP@0.5', 'multi - class cross entropy loss Eq', 'mean of AP', 'mAP']
 
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['image', 'ImageNet']], 'method': [['PCL - OB - G - Ens.']], 'metric': [['mAP', 'mean of AP', 'mAP@0.5', 'mAP@ [ .5', 'multi - class cross entropy loss Eq']], 'task': [['WSOD', 'Object detection', 'WSOD )', 'WSOD problem', 'weakly supervised scenario', 'Weakly Supervised Object Detection', 'detection', 'robust WSOD']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['2012', 'PASCAL VOC 2012', 'PASCAL VOC', '2012 datasets']], 'method': [['PCL - OB - G - Ens.']], 'metric': [['mAP', 'mean of AP', 'mAP@0.5', 'mAP@ [ .5', 'multi - class cross entropy loss Eq']], 'task': [['WSOD', 'Object detection', 'WSOD )', 'WSOD problem', 'weakly supervised scenario', 'Weakly Supervised Object Detection', 'detection', 'robust WSOD']]}
-
-doc_id=2f04ba0f74df046b0080ca78e56898bd4847898b	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
-	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['Multi - view Face Detection'], ['Human face detection'], ['real - time face detection'], ['multi - view detection'], ['multi - view face detection'], ['Face detection'], ['face detection']], 'method': [['aggregate channel features']], 'material': [['FDDB'], ['AFW']], 'metric': [['true positive rate']]}
-
-doc_id=2f56b1ac5b9faac9527b6814778925e9242cf5fd	#pred=1	#gold=1	prec=0.2222	rec=1.0000	f1=0.3636
 	incident_type=	material-method-metric-task	material-method-metric-task
 	task=
-		['ConvNet - based object detection']	['region - based object detectors', 'object detection research', 'Object detection', 'ConvNet - based object detection', 'object detection', 'detection', 'ImageNet detection']
-		['object detection']	None
-		['Object detection']	None
-		['FRCN']	None
-	material=
-		['PASCAL VOC07 dataset']	['PASCAL VOC07 dataset', 'VOC07', 'VOC', 'VOC07 data', 'VOC 2007', 'PASCAL VOC', 'VOC07 trainval', 'PASCAL VOC 2007']
-		['PASCAL VOC 2007']	None
-		['MS COCO dataset']	None
-		['VOC07 data']	None
-		['VOC 2012']	None
-		['MS COCO']	None
-		['VOC12']	None
-		['VOC07']	None
+		['WSOD']	['robust WSOD', 'Weakly Supervised Object Detection', 'weakly supervised scenario', 'detection', 'WSOD problem', 'WSOD', 'WSOD )', 'Object detection']
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['2012', 'PASCAL VOC 2012', '2012 datasets', 'PASCAL VOC']], 'method': [['PCL - OB - G - Ens.']], 'metric': [['mAP@ [ .5', 'mAP@0.5', 'multi - class cross entropy loss Eq', 'mean of AP', 'mAP']], 'task': [['robust WSOD', 'Weakly Supervised Object Detection', 'weakly supervised scenario', 'detection', 'WSOD problem', 'WSOD', 'WSOD )', 'Object detection']]}
+
+doc_id=2f04ba0f74df046b0080ca78e56898bd4847898b	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['Multi - view Face Detection', 'face detection', 'multi - view face detection', 'real - time face detection', 'Human face detection', 'face detection domain', 'Face detection', 'multi - view detection']], 'material': [['FDDB', 'AFW']], 'metric': [['true positive rate', 'FPS', 'FPPI']], 'method': [['aggregate channel features']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['face detection', 'multi - view detection']]}
+
+doc_id=2f56b1ac5b9faac9527b6814778925e9242cf5fd	#pred=2	#gold=1	prec=0.4667	rec=0.2917	f1=0.3590
+	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['Fast R - CNN']	['OHEM', 'iterative localization and bounding - box ( bbox ) voting scheme', 'online hard example selection strategy', 'online hard example mining', 'Online Hard Example Mining']
-		['OHEM']	None
-		['FRCN']	None
+		['OHEM', 'FRCN', 'Fast R - CNN']	['iterative localization and bounding - box ( bbox ) voting scheme', 'online hard example mining', 'OHEM', 'online hard example selection strategy', 'Online Hard Example Mining']
+	task=
+		['FRCN', 'object detection', 'ConvNet - based object detection', 'Object detection']	['object detection research', 'object detection', 'region - based object detectors', 'detection', 'ConvNet - based object detection', 'Object detection', 'ImageNet detection']
+	material=
+		['PASCAL VOC07 dataset', 'MS COCO dataset', 'VOC07 data', 'MS COCO']	['VOC07 trainval', 'VOC07 data', 'VOC07', 'PASCAL VOC', 'PASCAL VOC07 dataset', 'VOC', 'VOC 2007', 'PASCAL VOC 2007']
 	metric=
-		['accuracy']	['points mAP', 'mAP', 'mean average precision', 'Baseline FRCN mAP']
-		['mAP']	None
-		['AP']	None
+		['accuracy', 'AP', 'mAP']	['mean average precision', 'Baseline FRCN mAP', 'points mAP', 'mAP']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Fast R - CNN']]}
 
 doc_id=2f97ee95cad6a1f13596b108072b846c6f747d4e	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['LACE'], ['Microsoft 2016 Conversational Speech Recognition System']], 'metric': [['word error rate'], ['error rate']], 'task': [['CTS'], ['Conversational speech recognition'], ['conversational telephone speech recognition'], ['speech recognition']], 'material': [['NIST 2002 CTS test set'], ['NIST 2000 CTS test set'], ['Switchboard']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Switchboard', 'NIST 2002 CTS test set', 'NIST 2000 CTS test set']], 'method': [['LACE', 'Microsoft 2016 Conversational Speech Recognition System']], 'metric': [['error rate', 'word error rate']], 'task': [['speech recognition', 'conversational telephone speech recognition', 'CTS', 'Conversational speech recognition']]}
 
-doc_id=322a7dad274f440a92548faa8f2b2be666b2d01f	#pred=1	#gold=1	prec=0.1818	rec=0.5000	f1=0.2667
+doc_id=322a7dad274f440a92548faa8f2b2be666b2d01f	#pred=2	#gold=1	prec=0.3333	rec=0.6000	f1=0.4286
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['scene parsing']	['data augmentation', 'segmentation', 'semantic segmentation']
-	material=
-		['ImageNet scene parsing challenge 2016']	['ADE20 K dataset', 'ADE20K.', 'ADE20 K']
-		['ADE20 K dataset']	None
-		['ADE20 K data']	None
-		['ImageNet']	None
-		['ADE20 K']	None
 	method=
-		['Pyramid Scene Parsing Network']	['pyramid scene parsing network', 'Pyramid Scene Parsing Network', 'PSPNet']
-		['pyramid scene parsing network']	None
-		['PSPNet']	None
-	metric=
-		['mIoU accuracy']	['score']
-		['accuracy']	None
-
-doc_id=325af39d281d5903a269c01fab8f53d7400a4c49	#pred=1	#gold=1	prec=0.1905	rec=1.0000	f1=0.3200
-	incident_type=	material-method-metric-task	material-method-metric-task
+		['PSPNet', 'Pyramid Scene Parsing Network', 'pyramid scene parsing network']	['pyramid scene parsing network', 'Pyramid Scene Parsing Network', 'PSPNet']
 	task=
-		['multi - person articulated body tracking']	['pose estimation task', 'single - frame pose estimation', 'pose estimation', 'MOTA', '3D pose estimation', 'per - frame pose estimation', 'single frame multi - person pose estimation']
-		['multi - person articulated pose tracking']	None
-		['articulated multi - person pose tracking']	None
-		['articulated tracking of multiple people']	None
-		['articulated human pose tracking']	None
-		['single - frame pose estimation']	None
-		['articulated pose tracking']	None
-		['Multi - person Tracking']	None
-		['pose estimation']	None
-		['person tracking']	None
+		['scene parsing', 'scene parsing / semantic segmentation task', 'semantic segmentation', 'scene parsing task']	['segmentation', 'data augmentation', 'semantic segmentation']
 	material=
-		['MPII Video Pose ” dataset']	['MPII Human Pose dataset', 'MPII', 'MPII Multi - Person Test', 'Multi - Person Video dataset']
-		['MPII Multi - Person Test']	None
-		['MPII Human Pose dataset']	None
-		['MPII Video Pose']	None
-		['MPII Human Pose']	None
-	method=
-		['BU - sparse']	['ArtTrack', 'articulated tracking approach', 'Articulated Multi - person Tracking', 'articulated tracking model']
-		['ArtTrack']	None
-		['TD / BU']	None
-		['BU']	None
+		['ADE20 K data', 'PASCAL VOC 2012 segmentation dataset', 'ImageNet', 'ImageNet scene parsing challenge 2016', 'Cityscapes', 'ADE20 K', 'ADE20 K dataset']	['ADE20K.', 'ADE20 K', 'ADE20 K dataset']
 	metric=
-		['MOTA']	['accuracy', 'tracking perfomance', 'AP', 'false positives']
-		['AP']	None
+		['accuracy', 'mIoU accuracy']	['score']
 
-doc_id=33261d252218007147a71e40f8367ed152fa2fe0	#pred=1	#gold=1	prec=0.4286	rec=0.7500	f1=0.5455
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['PSPNet']], 'material': [['ADE20 K']]}
+
+doc_id=325af39d281d5903a269c01fab8f53d7400a4c49	#pred=2	#gold=1	prec=0.2000	rec=0.3158	f1=0.2449
 	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['TD / BU', 'ArtTrack']	['Articulated Multi - person Tracking', 'articulated tracking approach', 'articulated tracking model', 'ArtTrack']
 	task=
-		['open - domain question answering']	['open QA', 'open - domain question answering', 'Question Answering']
-		['Question Answering']	None
-		['open QA']	None
-		['QA']	None
+		['multi - object tracking', 'pose estimation', 'articulated people tracking', 'multi - person articulated pose tracking', 'articulated pose tracking', 'single - frame pose estimation', 'Multi - person Tracking', 'articulated multi - person pose tracking', 'multi - person articulated body tracking', 'articulated human pose tracking', 'articulated tracking of multiple people', 'articulated body tracking']	['pose estimation', 'MOTA', 'single frame multi - person pose estimation', 'per - frame pose estimation', '3D pose estimation', 'single - frame pose estimation', 'pose estimation task']
+	material=
+		['MPII Video Pose', 'MPII Multi - Person Test', 'MPII Video Pose ” dataset', 'MPII Multi - Person dataset', 'MPII Multi - Person', 'MPII Human Pose dataset', 'MPII Multi - Person Dataset', 'MPII Human Pose']	['Multi - Person Video dataset', 'MPII', 'MPII Multi - Person Test', 'MPII Human Pose dataset']
+	metric=
+		['AP', 'MOTA']	['accuracy', 'AP', 'false positives', 'tracking perfomance']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['multi - person articulated body tracking', 'multi - person articulated pose tracking']], 'method': [['ArtTrack']], 'material': [['MPII Video Pose ” dataset', 'MPII Multi - Person Dataset']], 'metric': [['AP']]}
+
+doc_id=33261d252218007147a71e40f8367ed152fa2fe0	#pred=2	#gold=1	prec=0.6667	rec=0.5455	f1=0.6000
+	incident_type=	material-method-metric-task	material-method-metric-task
 	material=
 		['WebQuestions']	['WebQuestions']
 	metric=
-		['F1 score']	['F1 score', 'F1']
-		['F1']	None
+		['F1 score', 'F1']	['F1 score', 'F1']
+	task=
+		['QA', 'open - domain question answering', 'Question Answering', 'open QA']	['open QA', 'Question Answering', 'open - domain question answering']
 
-doc_id=3448e6a5039417dc1ae890efeca3bef5390ace7c	#pred=1	#gold=6	prec=0.3333	rec=0.0833	f1=0.1333
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['QA', 'Question Answering']]}
+
+doc_id=3448e6a5039417dc1ae890efeca3bef5390ace7c	#pred=1	#gold=6	prec=0.2857	rec=0.0312	f1=0.0563
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['CrossNet']	['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']
-		['xDeepFM']	None
-		['CIN']	None
-	task=
-		['RS']	['predicting ad click - through rate', 'CTR']
+		['CrossNet', 'xDeepFM', 'CIN']	['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']
 	material=
-		['Bing News dataset']	['Bing News dataset', 'Bing News Dataset', 'Bing News', 'Bing News datasets']
-		['Criteo dataset']	None
+		['Bing News dataset', 'Dianping dataset']	['Bing News', 'Bing News Dataset', 'Bing News datasets', 'Bing News dataset']
+	task=
+		['RS', 'Information systems Personalization']	['CTR', 'predicting ad click - through rate']
 
 	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Bing News dataset', 'Bing News Dataset', 'Bing News', 'Bing News datasets']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['Logloss', 'log loss', 'loss function']], 'task': [['predicting ad click - through rate', 'CTR']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Bing News', 'Bing News Dataset', 'Bing News datasets', 'Bing News dataset']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['log loss', 'Logloss', 'loss function']], 'task': [['CTR', 'predicting ad click - through rate']]}
 
 	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Criteo Dataset', 'Criteo dataset']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['AUC', 'accuracy', 'Area Under the ROC curve']], 'task': [['predicting ad click - through rate', 'CTR']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Criteo Dataset', 'Criteo dataset']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['Area Under the ROC curve', 'accuracy', 'AUC']], 'task': [['CTR', 'predicting ad click - through rate']]}
 
 	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Criteo Dataset', 'Criteo dataset']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['Logloss', 'log loss', 'loss function']], 'task': [['predicting ad click - through rate', 'CTR']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Criteo Dataset', 'Criteo dataset']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['log loss', 'Logloss', 'loss function']], 'task': [['CTR', 'predicting ad click - through rate']]}
 
 	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Dianping Dataset', 'Dianping']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['AUC', 'accuracy', 'Area Under the ROC curve']], 'task': [['predicting ad click - through rate', 'CTR']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Dianping Dataset', 'Dianping']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['Area Under the ROC curve', 'accuracy', 'AUC']], 'task': [['CTR', 'predicting ad click - through rate']]}
 
 	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Dianping Dataset', 'Dianping']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['Logloss', 'log loss', 'loss function']], 'task': [['predicting ad click - through rate', 'CTR']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Dianping Dataset', 'Dianping']], 'method': [['Deep Factorization Machine', 'xDeepFM model', 'xDeepFM']], 'metric': [['log loss', 'Logloss', 'loss function']], 'task': [['CTR', 'predicting ad click - through rate']]}
 
-doc_id=35734e8724559fb0d494e5cba6a28ad7a3d5dd4d	#pred=1	#gold=1	prec=0.2500	rec=0.2500	f1=0.2500
+doc_id=35734e8724559fb0d494e5cba6a28ad7a3d5dd4d	#pred=2	#gold=1	prec=0.4000	rec=0.1818	f1=0.2500
 	incident_type=	material-method-metric-task	material-method-metric-task
 	material=
-		['MNIST dataset']	['MNIST dataset', 'MNIST']
-		['CIFAR - 10']	None
-		['MNIST']	None
+		['MNIST dataset', 'CIFAR - 10', 'MNIST']	['MNIST dataset', 'MNIST']
 	metric=
-		['error rate']	['adversarial validation set error', 'test set error', 'error']
+		['error rate']	['adversarial validation set error', 'error', 'test set error']
 
-doc_id=364c1a3df58d87cb40ab33fdf3831cf2862f3570	#pred=2	#gold=2	prec=0.2174	rec=0.6250	f1=0.3226
-	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['semantic matching of questions and answers']	['QA', 'non - factoid question answering', 'question / answer matching', 'question answering', 'Factoid Question Answering', 'factoid questions answering', 'ranking systems Question answering', 'Question answering', 'Question answering¡', 'question / answer matching problem']
-		['answer passage / sentence retrieval']	None
-		['Factoid Question Answering']	None
-		['Ranking Short Answer Texts']	None
-		['question / answer matching']	None
-		['factoid question answering']	None
-		['question answering task']	None
-		['question answering']	None
-		['Question answering']	None
-		['ranking answers']	None
-		['answer ranking']	None
-		['QA']	None
-	material=
-		['TREC QA data']	['TREC QA', 'TREC QA dataset']
-		['TREC QA']	None
-		['TRAIN']	None
-	method=
-		['aNMM model']	['Attention - Based Neural Matching Model', 'aNMM', 'attention based neural matching model', 'attention - based neural matching model', 'Attention - based Neural Matching Model', 'attention - based Neural Matching Model']
-		['ARC - II']	None
-		['aNMM - 1']	None
-		['aNMM - 2']	None
-		['aNMM']	None
-	metric=
-		['MRR']	['MAP']
-		['MAP']	None
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'material': [['MNIST']]}
 
-	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['question answering']	['QA', 'non - factoid question answering', 'question / answer matching', 'question answering', 'Factoid Question Answering', 'factoid questions answering', 'ranking systems Question answering', 'Question answering', 'Question answering¡', 'question / answer matching problem']
-
-doc_id=3842ee1e0fdfeff936b5c49973ff21adfaaf3929	#pred=1	#gold=1	prec=0.5000	rec=0.5000	f1=0.5000
+doc_id=364c1a3df58d87cb40ab33fdf3831cf2862f3570	#pred=2	#gold=2	prec=0.4375	rec=0.3500	f1=0.3889
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['Adversarial Discriminative Domain Adaptation']	['ADDA', 'Adversarial Discriminative Domain Adaptation', 'adversarial discriminative domain adaptation', 'Adversarial adaptation methods', 'adversarial unsupervised adaptation methods']
-		['ADDA']	None
-	metric=
-		['average accuracy']	['classification accuracy', 'classification performance', 'accuracy', 'accuracies']
-		['accuracy']	None
-
-doc_id=38cc89399dd6f5aaab1654f27ab3c9eeade12a36	#pred=1	#gold=1	prec=0.2143	rec=0.7500	f1=0.3333
-	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['human pose reconstruction']	['2D pose estimation', '2D human pose estimation', 'estimating 3D human pose', '3D poses', '3D human pose estimation', '2D pose estimations']
-		['3D human pose estimation']	None
-		['2D human pose estimation']	None
-		['2D pose estimation']	None
-		['3D pose estimation']	None
+		['aNMM - 2', 'aNMM']	['Attention - Based Neural Matching Model', 'Attention - based Neural Matching Model', 'aNMM', 'attention - based Neural Matching Model', 'attention - based neural matching model', 'attention based neural matching model']
 	material=
-		['Human 3.6 M dataset']	['Human 3.6 M', 'Human3.6 M', 'Human3.6 M dataset', 'Human 3.6 M dataset']
-		['Human3.6 M dataset']	None
-		['Youtube videos']	None
-		['Human3.6 M']	None
-		['HumanEva']	None
-		['Youtube']	None
-	metric=
-		['average error']	['average error']
-		['accuracy']	None
-		['error']	None
+		['TRAIN', 'TREC QA']	['TREC QA', 'TREC QA dataset']
+	task=
+		['QA', 'question answering']	['ranking systems Question answering', 'Question answering', 'Factoid Question Answering', 'question / answer matching', 'QA', 'factoid questions answering', 'question / answer matching problem', 'Question answering¡', 'question answering', 'non - factoid question answering']
 
-doc_id=38e2f851b705faa0d0a698ed9885bd6834440073	#pred=1	#gold=1	prec=0.1429	rec=0.2500	f1=0.1818
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['Probabilistic Model - Agnostic Meta - Learning']	['PLATIPUS', 'Probabilistic LATent model for Incorporating Priors and Uncertainty in few - Shot learning']
-		['PLATIPUS']	None
-		['CelebA']	None
+		['aNMM', 'aNMM model', 'aNMM - 1', 'ARC - II', 'aNMM - 2']	['Attention - Based Neural Matching Model', 'Attention - based Neural Matching Model', 'aNMM', 'attention - based Neural Matching Model', 'attention - based neural matching model', 'attention based neural matching model']
 	task=
-		['Ambiguous image classification']	['ambiguous few - shot image classification problem', 'ambiguous few - shot attribute classification tasks', 'few - shot image classification datasets', 'few - shot medical image classification']
-		['- shot image classification']	None
-		['few - shot learning']	None
+		['Question answering', 'question answering task', 'Factoid Question Answering', 'Ranking Short Answer Texts', 'non - factoid answer finding', 'question / answer matching', 'ranking answers', 'QA', 'answer ranking', 'answer passage / sentence retrieval', 'semantic matching of questions and answers', 'QA answer ranking task', 'factoid question answering', 'question answering']	['ranking systems Question answering', 'Question answering', 'Factoid Question Answering', 'question / answer matching', 'QA', 'factoid questions answering', 'question / answer matching problem', 'Question answering¡', 'question answering', 'non - factoid question answering']
 	material=
-		['MiniImagenet']	['MiniImagenet benchmark', 'MiniImagenet 5 - way', 'MiniImagenet dataset', '5 - way , 1 - shot MiniImagenet benchmark']
+		['TREC QA', 'TRAIN', 'TRAIN - ALL', 'TREC QA data']	['TREC QA', 'TREC QA dataset']
+	metric=
+		['MRR', 'Mean Average Precision', 'MAP']	['MRR', 'Mean Average Precision', 'Mean Reciprocal Rank']
 
-doc_id=3aa21de1a7c97e0458e10ed5730ce160bb436caa	#pred=1	#gold=1	prec=0.2857	rec=0.5000	f1=0.3636
+doc_id=3842ee1e0fdfeff936b5c49973ff21adfaaf3929	#pred=2	#gold=1	prec=0.4286	rec=0.2500	f1=0.3158
 	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['ADDA', 'Adversarial Discriminative Domain Adaptation']	['adversarial discriminative domain adaptation', 'adversarial unsupervised adaptation methods', 'ADDA', 'Adversarial Discriminative Domain Adaptation', 'Adversarial adaptation methods']
+	task=
+		['classification']	['unsupervised adaptation']
+	material=
+		['SVHN digits datasets']	['SVHN MNIST', 'SVHN and MNIST']
+	metric=
+		['accuracy', 'average accuracy']	['classification accuracy', 'accuracy', 'accuracies', 'classification performance']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['ADDA']]}
+
+doc_id=38cc89399dd6f5aaab1654f27ab3c9eeade12a36	#pred=2	#gold=1	prec=0.4706	rec=0.6154	f1=0.5333
+	incident_type=	material-method-metric-task	material-method-metric-task
+	material=
+		['Human3.6 M dataset', 'Human 3.6 M dataset', 'Youtube', 'Youtube videos', 'HumanEva', 'Human3.6 M']	['Human 3.6 M', 'Human3.6 M dataset', 'Human3.6 M', 'Human 3.6 M dataset']
+	metric=
+		['accuracy', 'error', 'average error', 'competitive accuracy']	['average error']
+	task=
+		['2D human pose estimation', '3D pose estimation', '3D poses', '2D pose estimation', 'human pose reconstruction', '3D human pose estimation']	['2D pose estimations', '2D human pose estimation', '3D poses', '2D pose estimation', 'estimating 3D human pose', '3D human pose estimation']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['2D pose estimation']]}
+
+doc_id=38e2f851b705faa0d0a698ed9885bd6834440073	#pred=2	#gold=1	prec=0.1000	rec=0.0833	f1=0.0909
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['PLATIPUS', 'Probabilistic Model - Agnostic Meta - Learning', 'CelebA']	['PLATIPUS', 'Probabilistic LATent model for Incorporating Priors and Uncertainty in few - Shot learning']
+	task=
+		['- shot image classification', 'Ambiguous image classification', 'few shot learning', 'few - shot learning']	['few - shot medical image classification', 'ambiguous few - shot attribute classification tasks', 'ambiguous few - shot image classification problem', 'few - shot image classification datasets']
+	material=
+		['MiniImagenet']	['5 - way , 1 - shot MiniImagenet benchmark', 'MiniImagenet dataset', 'MiniImagenet benchmark', 'MiniImagenet 5 - way']
+	metric=
+		['accuracy score']	['accuracy', 'Accuracy']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['PLATIPUS']]}
+
+doc_id=3aa21de1a7c97e0458e10ed5730ce160bb436caa	#pred=1	#gold=1	prec=0.5000	rec=0.5714	f1=0.5333
+	incident_type=	material-method-metric-task	material-method-metric-task
+	method=
+		['Pixel2Mesh']	['Pixel2Mesh']
 	task=
 		['3D shape generation']	['3D reconstruction']
 	material=
 		['ShapeNet']	['ShapeNet dataset']
-	method=
-		['Pixel2Mesh']	['Pixel2Mesh']
-		['G - ResNet']	None
 	metric=
-		['mean F - score']	['F - score', 'mean F - score', 'F - score improvement', 'F - Score']
-		['mean score']	None
-		['F - score']	None
+		['CD', 'F - Score', 'mean F - score', 'mean score', 'F - score']	['mean F - score', 'F - Score', 'F - score', 'F - score improvement']
 
-doc_id=3acc07f7f8951617276cf99483ed02aeb0a6eeac	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=3acc07f7f8951617276cf99483ed02aeb0a6eeac	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['segmentation'], ['semantic segmentation']], 'metric': [['mean IoU']], 'material': [['Cityscapes']], 'method': [['Curriculum Domain Adaptation']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Cityscapes dataset', 'Cityscapes']], 'method': [['Curriculum Domain Adaptation']], 'task': [['segmentation', 'semantic segmentation', 'Semantic segmentation', 'semantic segmentation of urban scene images']], 'metric': [['mean IoU']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'task': [['semantic segmentation']]}
 
 doc_id=3ca3993b1f3536b15112f759067f62e999c5d38f	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'task': [['3D pose estimation'], ['pose estimation']], 'method': [['BB8']], 'material': [['LINEMOD dataset'], ['T - LESS dataset']]}
+		{'incident_type': 'material-method-metric-task', 'task': [['pose estimation', '3D pose estimation']], 'method': [['BB8']], 'material': [['LINEMOD dataset', 'LINEMOD', 'T - LESS dataset', 'T - LESS']]}
 
-doc_id=3cf31ecb2724b5088783d7c96a5fc0d5604cbf41	#pred=1	#gold=6	prec=0.2857	rec=0.0833	f1=0.1290
+doc_id=3cf31ecb2724b5088783d7c96a5fc0d5604cbf41	#pred=1	#gold=6	prec=0.5000	rec=0.0310	f1=0.0584
+	incident_type=	material-method-metric-task	material-method-metric-task
+	metric=
+		['accuracy', 'UAS accuracy', 'UAS']	['parsing accuracies', 'UAS']
+	method=
+		['BiLSTM', 'BiRNN']	['globally optimized graph - based parser', 'graph - based', 'beam - based parser', 'Graph - based parsers', 'Graph - based parsing', 'Graph - based Parser']
+	task=
+		['parsing', 'Dependency Parsing', 'dependency parsing']	['parsing', 'Dependency Parsing', 'dependency parsing']
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank dataset', 'Treebank data', 'CTB5', 'Penn Treebank']], 'method': [['globally optimized graph - based parser', 'graph - based', 'beam - based parser', 'Graph - based parsers', 'Graph - based parsing', 'Graph - based Parser']], 'metric': [['local score', 'loss']], 'task': [['parsing', 'Dependency Parsing', 'dependency parsing']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank dataset', 'Treebank data', 'CTB5', 'Penn Treebank']], 'method': [['parer', 'transition - based architecture', 'Transition - based parsers', 'Shift transition', 'transition - based', 'transition - based parser', 'Greedy transition - based parsing', 'parser', 'greedy transition - based parsing framework', 'transition - based parsers', 'Transition systems', 'greedy transition based parser', 'Transition - based Parser', 'transition - based parsing framework', 'greedy transition - based parser', 'transition systems', 'beam - based transition parser', 'transition system', 'transition - based family']], 'metric': [['local score', 'loss']], 'task': [['parsing', 'Dependency Parsing', 'dependency parsing']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank dataset', 'Treebank data', 'CTB5', 'Penn Treebank']], 'method': [['globally optimized graph - based parser', 'graph - based', 'beam - based parser', 'Graph - based parsers', 'Graph - based parsing', 'Graph - based Parser']], 'metric': [['POS', 'POS - tags']], 'task': [['parsing', 'Dependency Parsing', 'dependency parsing']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank dataset', 'Treebank data', 'CTB5', 'Penn Treebank']], 'method': [['parer', 'transition - based architecture', 'Transition - based parsers', 'Shift transition', 'transition - based', 'transition - based parser', 'Greedy transition - based parsing', 'parser', 'greedy transition - based parsing framework', 'transition - based parsers', 'Transition systems', 'greedy transition based parser', 'Transition - based Parser', 'transition - based parsing framework', 'greedy transition - based parser', 'transition systems', 'beam - based transition parser', 'transition system', 'transition - based family']], 'metric': [['POS', 'POS - tags']], 'task': [['parsing', 'Dependency Parsing', 'dependency parsing']]}
+
+	Not predicted:
+		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank dataset', 'Treebank data', 'CTB5', 'Penn Treebank']], 'method': [['parer', 'transition - based architecture', 'Transition - based parsers', 'Shift transition', 'transition - based', 'transition - based parser', 'Greedy transition - based parsing', 'parser', 'greedy transition - based parsing framework', 'transition - based parsers', 'Transition systems', 'greedy transition based parser', 'Transition - based Parser', 'transition - based parsing framework', 'greedy transition - based parser', 'transition systems', 'beam - based transition parser', 'transition system', 'transition - based family']], 'metric': [['parsing accuracies', 'UAS']], 'task': [['parsing', 'Dependency Parsing', 'dependency parsing']]}
+
+doc_id=3daa086acd367dc971a2dc1382caba2031294233	#pred=2	#gold=1	prec=0.1000	rec=0.0833	f1=0.0909
 	incident_type=	material-method-metric-task	material-method-metric-task
 	method=
-		['BiLSTM']	['graph - based', 'Graph - based Parser', 'globally optimized graph - based parser', 'Graph - based parsers', 'beam - based parser', 'Graph - based parsing']
-		['BiRNN']	None
+		['Holistic , Instance - level Human Parsing']	['instance - level segmentations', 'instance module', 'instance - level part segmentation', 'Instance - level segmentation module', 'human instance segmentation', 'instance - level part', 'Instance - level Part Segmentation', 'semantic part segmentation', 'part - level instance segmentation', 'instance - level segmentation', 'instance - level human segmentation']
 	task=
-		['Dependency Parsing']	['parsing', 'dependency parsing', 'Dependency Parsing']
-		['dependency parsing']	None
-	metric=
-		['UAS accuracy']	['UAS', 'parsing accuracies']
-		['accuracy']	None
-		['UAS']	None
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank', 'Treebank data', 'CTB5', 'Penn Treebank dataset']], 'method': [['graph - based', 'Graph - based Parser', 'globally optimized graph - based parser', 'Graph - based parsers', 'beam - based parser', 'Graph - based parsing']], 'metric': [['local score', 'loss']], 'task': [['parsing', 'dependency parsing', 'Dependency Parsing']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank', 'Treebank data', 'CTB5', 'Penn Treebank dataset']], 'method': [['greedy transition based parser', 'transition - based parsing framework', 'transition - based parser', 'transition - based family', 'transition - based parsers', 'Greedy transition - based parsing', 'parer', 'parser', 'transition - based', 'Transition - based parsers', 'greedy transition - based parser', 'transition - based architecture', 'transition systems', 'beam - based transition parser', 'Transition - based Parser', 'Transition systems', 'transition system', 'Shift transition', 'greedy transition - based parsing framework']], 'metric': [['local score', 'loss']], 'task': [['parsing', 'dependency parsing', 'Dependency Parsing']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank', 'Treebank data', 'CTB5', 'Penn Treebank dataset']], 'method': [['graph - based', 'Graph - based Parser', 'globally optimized graph - based parser', 'Graph - based parsers', 'beam - based parser', 'Graph - based parsing']], 'metric': [['POS', 'POS - tags']], 'task': [['parsing', 'dependency parsing', 'Dependency Parsing']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank', 'Treebank data', 'CTB5', 'Penn Treebank dataset']], 'method': [['greedy transition based parser', 'transition - based parsing framework', 'transition - based parser', 'transition - based family', 'transition - based parsers', 'Greedy transition - based parsing', 'parer', 'parser', 'transition - based', 'Transition - based parsers', 'greedy transition - based parser', 'transition - based architecture', 'transition systems', 'beam - based transition parser', 'Transition - based Parser', 'Transition systems', 'transition system', 'Shift transition', 'greedy transition - based parsing framework']], 'metric': [['POS', 'POS - tags']], 'task': [['parsing', 'dependency parsing', 'Dependency Parsing']]}
-
-	Not predicted:
-		{'incident_type': 'material-method-metric-task', 'material': [['Penn Treebank', 'Treebank data', 'CTB5', 'Penn Treebank dataset']], 'method': [['greedy transition based parser', 'transition - based parsing framework', 'transition - based parser', 'transition - based family', 'transition - based parsers', 'Greedy transition - based parsing', 'parer', 'parser', 'transition - based', 'Transition - based parsers', 'greedy transition - based parser', 'transition - based architecture', 'transition systems', 'beam - based transition parser', 'Transition - based Parser', 'Transition systems', 'transition system', 'Shift transition', 'greedy transition - based parsing framework']], 'metric': [['UAS', 'parsing accuracies']], 'task': [['parsing', 'dependency parsing', 'Dependency Parsing']]}
-
-doc_id=3daa086acd367dc971a2dc1382caba2031294233	#pred=1	#gold=1	prec=0.2222	rec=0.5000	f1=0.3077
-	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['part - level instance segmentation']	['human parsing', 'parsing humans', 'Holistic , Instance - level Human Parsing']
-		['instance segmentation']	None
-		['human segmentation']	None
-		['segmentation']	None
+		['segmentation', 'human segmentation', 'instancelevel segmentation', 'instance - level part segmentation', 'human instance segmentation', 'instance segmentation', 'semantic segmentation', 'part - level instance segmentation', 'instance - level segmentation']	['Holistic , Instance - level Human Parsing', 'human parsing', 'parsing humans']
 	material=
-		['Pascal Person - Parts dataset']	['Pascal Person - Parts', 'Pascal dataset', 'Pascal Part training set', 'Pascal Person - Part dataset', 'Person - Part instances', 'Pascal Person - Part training set']
-		['Pascal Person - Part dataset']	None
-	method=
-		['Holistic , Instance - level Human Parsing']	['instance - level segmentation', 'human instance segmentation', 'instance - level part', 'instance - level segmentations', 'Instance - level segmentation module', 'instance module', 'instance - level part segmentation', 'part - level instance segmentation', 'instance - level human segmentation', 'Instance - level Part Segmentation', 'semantic part segmentation']
+		['Pascal Person - Parts Dataset', 'Pascal Person - Parts test set', 'Pascal Person - Parts dataset', 'Pascal Person - Part dataset', 'Pascal Person - Parts training set']	['Pascal dataset', 'Pascal Part training set', 'Pascal Person - Part training set', 'Pascal Person - Part dataset', 'Person - Part instances', 'Pascal Person - Parts']
 	metric=
-		['mean IoU']	['AP r', 'AP r metric', 'AP metric', 'AP']
-		['AP r']	None
+		['AP r', 'AP r vol', 'mean IoU']	['AP metric', 'AP', 'AP r metric', 'AP r']
 
-doc_id=408e8eecc14c5cc60bbdfc486ba7a7fc97031788	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']], 'task': [['visual object recognition'], ['classification'], ['image classification']], 'metric': [['average overall accuracy'], ['accuracy'], ['average accuracy']], 'material': [['STL - 10'], ['STL - 10 test set'], ['Caltech - 101'], ['STL']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['Pascal Person - Part dataset']], 'task': [['segmentation']]}
 
-doc_id=4365eb43a635bc6431dfaf3af1f7bf7bf55522cc	#pred=1	#gold=1	prec=0.2222	rec=1.0000	f1=0.3636
+doc_id=408e8eecc14c5cc60bbdfc486ba7a7fc97031788	#pred=10	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'material': [['STL - 10 test set', 'STL', 'Caltech - 101', 'STL - 10']], 'task': [['image classification', 'visual object recognition', 'classification']], 'metric': [['accuracy', 'average overall accuracy', 'average accuracy']], 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['Exemplar - CNN']]}
+
+doc_id=4365eb43a635bc6431dfaf3af1f7bf7bf55522cc	#pred=2	#gold=1	prec=0.4000	rec=0.5333	f1=0.4571
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['object detection']	['Object Detection', 'detection task', 'object detection', 'sofa detection', 'robust detection', 'detection']
-		['Object Detection']	None
-	material=
-		['PASCAL VOC 07 / 12']	['VOC2007', 'union set of VOC 2007 trainval', 'VOC07', 'PASCAL VOC 07', 'VOC 2007 test set']
-		['VOC 2007 test set']	None
-		['VOC 2012 test set']	None
-		['PASCAL VOC 2007']	None
-		['VOC2012 dataset']	None
-		['PASCAL VOC2007']	None
-		['VOC dataset']	None
-		['VOC2007']	None
-		['MS COCO']	None
-		['VOC07']	None
-		['COCO']	None
 	method=
-		['CoupleNet detector']	['CoupleNet']
-		['CoupleNet']	None
+		['CoupleNet detector', 'CoupleNet']	['CoupleNet']
+	task=
+		['Object Detection', 'object detection']	['sofa detection', 'detection task', 'Object Detection', 'detection', 'robust detection', 'object detection']
+	material=
+		['VOC2007', 'PASCAL VOC2007', 'VOC2012 dataset', 'VOC dataset', 'VOC07', 'MS COCO', 'PASCAL VOC 07 / 12', 'VOC2012', 'COCO', 'VOC 2007 test set', 'PASCAL VOC 2007', 'VOC 2012 test set']	['VOC2007', 'VOC07', 'union set of VOC 2007 trainval', 'PASCAL VOC 07', 'VOC 2007 test set']
 	metric=
-		['mean Average Precision']	['mAP', 'mean Average Precision', 'computational complexity']
-		['mAP']	None
-		['AP']	None
+		['AP', 'mAP', 'mean Average Precision']	['mean Average Precision', 'computational complexity', 'mAP']
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['CoupleNet']]}
 
 doc_id=436b07bebaa1d1f05ef85415e10374048d25334d	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['MoE']], 'metric': [['BLEU score'], ['BLEU']]}
+		{'incident_type': 'material-method-metric-task', 'metric': [['BLEU score', 'BLEU']], 'method': [['MoE']]}
 
-doc_id=44078d0daed8b13114cffb15b368acc467f96351	#pred=1	#gold=1	prec=0.2500	rec=1.0000	f1=0.4000
+doc_id=44078d0daed8b13114cffb15b368acc467f96351	#pred=2	#gold=1	prec=0.6190	rec=0.4815	f1=0.5417
 	incident_type=	material-method-metric-task	material-method-metric-task
-	task=
-		['unconstrained face verification']	['verification and identification protocols', 'face verification', 'Verification', 'identification and verification tasks', 'verification', 'Identification', 'verification protocol', 'Face Verification', 'identification', 'unconstrained face verification problem', 'unconstrained face verification']
-		['face verification']	None
-		['Face Verification']	None
-		['Identification']	None
-		['identification']	None
-		['Verification']	None
-	material=
-		['IJB - A dataset']	['IJB - A', 'IJB - A datasets', 'IJB - A dataset', 'IARPA Janus Benchmark - A', 'IJB - A: -']
-		['CFP dataset']	None
-		['IJB - A']	None
-		['CFP']	None
 	method=
-		['Triplet Probabilistic Embedding']	['triplet probabilistic embedding learning method', 'TPE approach', 'triplet probability embedding learning method', 'Triplet Probabilistic Embedding', 'TPE', 'triplet embedding', 'TPE method', 'Triplet Probability Embedding', 'triplet probability embedding']
-		['TPE']	None
-	metric=
-		['error rate']	['FAR', 'TAR']
-		['EER']	None
-		['TAR']	None
-		['PR']	None
-
-doc_id=45429c281e30f9e87ebcd1ae42e0656d2ead24d1	#pred=1	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
-	incident_type=	material-method-metric-task	material-method-metric-task
+		['TPE', 'Triplet Probabilistic Embedding']	['TPE approach', 'TPE method', 'triplet embedding', 'triplet probability embedding', 'Triplet Probability Embedding', 'triplet probability embedding learning method', 'triplet probabilistic embedding learning method', 'TPE', 'Triplet Probabilistic Embedding']
 	task=
-		['High - Resolution Image Synthesis']	['image - to - image translation', 'Image - to - image translation']
+		['Identification', 'Verification', 'unconstrained face verification', 'identification', 'Face Verification', 'face verification']	['verification protocol', 'identification and verification tasks', 'Verification', 'Identification', 'unconstrained face verification', 'verification and identification protocols', 'identification', 'Face Verification', 'verification', 'unconstrained face verification problem', 'face verification']
 	material=
-		['Cityscapes dataset']	['ADE20 K dataset', 'ADE20']
-		['Cityscapes']	None
+		['IJB - A', 'CASIA - WebFace dataset', 'IJB - A datasets', 'CFP', 'CFP dataset', 'IJB - A dataset']	['IJB - A: -', 'IJB - A', 'IJB - A datasets', 'IARPA Janus Benchmark - A', 'IJB - A dataset']
+	metric=
+		['TPIR', 'error rate', 'TAR', 'F - score', 'FAR', 'PR']	['TAR', 'FAR']
 
-doc_id=455da02e5048dffb51fb6ab5eb8aeca5926c9d9a	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
 	Predicted but not matched:
-		{'incident_type': 'material-method-metric-task', 'method': [['SPP - net'], ['SPP']], 'metric': [['mean Average Precision'], ['error'], ['mAP'], ['top - 5 error'], ['accuracy']], 'task': [['Visual Recognition'], ['classification'], ['Image Classification'], ['image classification']], 'material': [['Caltech101'], ['ImageNet 2012'], ['ImageNet 2012 dataset'], ['Pascal VOC 2007 dataset']]}
+		{'incident_type': 'material-method-metric-task', 'material': [['IJB - A dataset']]}
+
+doc_id=45429c281e30f9e87ebcd1ae42e0656d2ead24d1	#pred=1	#gold=1	prec=0.1667	rec=0.1429	f1=0.1538
+	incident_type=	material-method-metric-task	material-method-metric-task
+	material=
+		['Cityscapes dataset', 'Cityscapes']	['ADE20 K dataset', 'ADE20']
+	task=
+		['image synthesis', 'Image synthesis', 'High - Resolution Image Synthesis', 'image - to - image translation']	['Image - to - image translation', 'image - to - image translation']
+
+doc_id=455da02e5048dffb51fb6ab5eb8aeca5926c9d9a	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['SPP - net', 'SPP', 'Spatial Pyramid Pooling']], 'material': [['Caltech101', 'ImageNet 2012 dataset', 'Pascal VOC 2007 dataset', 'ImageNet 2012']], 'metric': [['top - 5 error', 'accuracy', 'error', 'mean Average Precision', 'mAP']], 'task': [['Visual Recognition', 'Image Classification']]}
+
+	Predicted but not matched:
+		{'incident_type': 'material-method-metric-task', 'method': [['SPP - net']]}
 
