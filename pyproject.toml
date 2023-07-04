@@ -15,8 +15,9 @@ ansicolor = "^0.3.2"
 ansicolors = "^1.1.8"
 overrides = "^7.3.1"
 jsons = "^1.6.3"
+pandas = "^2.0.2"
+typer = "^0.9.0"
 iso-639 = { git = "https://github.com/noumar/iso639.git" }
 cement = { git = "https://github.com/wanmok/cement.git" }
 # We maintain forks of AllenNLP to resolve dependency issues.
 allennlp = { git = "https://github.com/wanmok/allennlp.git" }
-pandas = "^2.0.2"
