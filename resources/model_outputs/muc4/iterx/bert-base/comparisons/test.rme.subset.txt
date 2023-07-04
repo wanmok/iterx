@@ -1,0 +1,2197 @@
+doc_id=TST3-MUC4-0001	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0002	#pred=1	#gold=1	prec=0.5000	rec=0.5000	f1=0.5000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['military']	['armed forces']
+	Weapon=
+	PerpInd=
+		['armed forces members']	['military', 'some military', 'military suspects', 'armed forces members']
+	Victim=
+
+doc_id=TST3-MUC4-0003	#pred=2	#gold=1	prec=0.4286	rec=0.7500	f1=0.5455
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['shining path']	['shining path']
+	Weapon=
+	PerpInd=
+		['gerardo olivos silva']	['members of the maoist terrorist organization shining path', 'criminals']
+		['members']	['gerardo olivos silva']
+	Victim=
+		['enrique lopez albujar trint']	['enrique lopez albujar trint']
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['members']], 'PerpOrg': [['shining path']], 'Target': [], 'Victim': [['enrique lopez albujar trint']], 'Weapon': []}
+
+doc_id=TST3-MUC4-0004	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0005	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['heavily armed men']	['heavily armed men']
+	Victim=
+		['hector oqueli colindres']	['hector oqueli colindres']
+		['gilda flores']	['gilda flores']
+
+doc_id=TST3-MUC4-0006	#pred=2	#gold=2	prec=0.8333	rec=1.0000	f1=0.9091
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['heavily armed men in civilian clothes']	['heavily armed men in civilian clothes', 'heavily armed men']
+	Victim=
+		['hector oqueli']	['hector oqueli']
+		['gilda flores']	['gilda flores']
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['several people']	['several people', 'several people who, through a government radio network, had accused him of being an accomplice of the rebels', 'people', 'people who, through a government radio network, had accused him of being an accomplice of the rebels']
+	Victim=
+		['hector oqueli']	['hector oqueli']
+		['gilda flores']	None
+
+doc_id=TST3-MUC4-0007	#pred=1	#gold=2	prec=0.3333	rec=0.2000	f1=0.2500
+	incident_type=	attack	attack
+	Target=
+		['security rails']	None
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['jose jesus penaalleged']	['one of the residence guards']
+	Victim=
+		['manuel antonio rugama']	['manuel antonio rugama']
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['jose jesus pena', 'jose jesus penaalleged chief of security for the nicaraguan embassy in tegucigalpa']]), ('PerpOrg', [['nicaraguan embassy']]), ('Target', []), ('Victim', [['manuel antonio rugama']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0008	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['at least four unidentified individuals']], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': []}
+
+doc_id=TST3-MUC4-0009	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0010	#pred=1	#gold=2	prec=1.0000	rec=0.4286	f1=0.6000
+	incident_type=	bombing	bombing
+	Target=
+		['committee of mothers of political prisoners and missing in el salvador']	['the committee of mothers of political prisoners and missing in el salvador']
+		['salvadoran workers national union federation']	['salvadoran workers national union federation']
+	PerpOrg=
+	Weapon=
+		['explosives']	['explosives']
+	PerpInd=
+		None	['criminal groups']
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['criminal groups']]), ('PerpOrg', [['fmln']]), ('Target', [['armed forces staff installations']]), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0011	#pred=2	#gold=1	prec=0.2857	rec=0.5000	f1=0.3636
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+		['army of national liberation']	['eln', 'army of national liberation']
+		['procastro']	None
+		['eln']	None
+	Weapon=
+	PerpInd=
+		None	['members of the manuel gustavo chacon sovereignty operation', 'manuel gustavo chacon sovereignty operation']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'kidnapping', 'PerpInd': [], 'PerpOrg': [['procastro'], ['army of national liberation'], ['eln']], 'Target': [], 'Victim': [['manuel perez']], 'Weapon': []}
+
+doc_id=TST3-MUC4-0012	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0013	#pred=2	#gold=3	prec=0.2222	rec=0.1176	f1=0.1538
+	incident_type=	attack	attack
+	Target=
+		['residences of leaders of social christian peoples movement and udn']	['salvadoran workers national union federation', 'fenastras']
+		['salvadoran workers national union federation']	None
+	PerpOrg=
+		['fmln']	['nationalist republican alliance', 'arena', 'government']
+		None	['army', 'armys 1st infantry brigade', 'armed forces']
+	Weapon=
+	PerpInd=
+		['arena assassins']	['morbid death squad of the armys 1st infantry brigade', 'morbid death squad', 'death squad']
+		None	['colonel ponce', 'chief of staff col emilio ponce']
+		None	['colonel elena fuente']
+		None	['cristiani']
+	Victim=
+		None	['salvadoran workers national union federation', 'fenastras']
+
+	incident_type=	attack	attack
+	Target=
+		['residences of leaders of social christian peoples movement and udn']	None
+		['fenastras']	None
+	PerpOrg=
+		['morbid death squad']	['nationalist republican alliance', 'arena']
+		['fmln']	None
+	Weapon=
+	PerpInd=
+		['arena assassins']	['arena assassins', 'assassins']
+	Victim=
+		None	['mason']
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', [['government']]), ('Target', [['salvadoran workers national union federation', 'fenastras'], ['residences of leaders of the social christian peoples movement'], ['udn', 'nationalist democratic union'], ['university'], ['fecmasan', 'msgr oscar arnulfo romero federation of committees of mothers and relatives']]), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0014	#pred=2	#gold=4	prec=0.5000	rec=0.1250	f1=0.2000
+	incident_type=	bombing	bombing
+	Target=
+	PerpOrg=
+		None	['shining path']
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+		None	['shining path members']
+	Victim=
+
+	incident_type=	bombing	attack
+	Target=
+	PerpOrg=
+		None	['shining path']
+	Weapon=
+		['bomb']	None
+	PerpInd=
+		None	['terrorist']
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'forced work stoppage'), ('PerpInd', []), ('PerpOrg', [['shining path']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'kidnapping'), ('PerpInd', [['five unidentified individuals', 'unidentified individuals']]), ('PerpOrg', []), ('Target', []), ('Victim', [['luis morales']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0015	#pred=2	#gold=2	prec=0.6667	rec=0.6667	f1=0.6667
+	incident_type=	attack	attack
+	Target=
+		None	['vehicle', 'vehicle in which the reporters were traveling']
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['mauricio pineda']	['mauricio pineda']
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['mauricio pineda']	['roberto navas']
+		['roberto navas']	None
+
+doc_id=TST3-MUC4-0016	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [['border post']], 'Victim': [], 'Weapon': [['81mm mortar'], ['rpg7 rockets']]}
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['mercenary group']], 'PerpOrg': [], 'Target': [['los esclavos']], 'Victim': [], 'Weapon': [['largecaliber machineguns'], ['81mm mortar'], ['rpg7 rockets']]}
+
+doc_id=TST3-MUC4-0017	#pred=2	#gold=4	prec=0.4545	rec=0.3571	f1=0.4000
+	incident_type=	bombing	bombing
+	Target=
+		['main entrance of merinos home']	['vice presidentelect francisco merinos home']
+	PerpOrg=
+		['fmln']	['farabundo marti national liberation front', 'fmln']
+	Weapon=
+		['three explosive devices']	['three explosive devices', 'explosive devices']
+	PerpInd=
+		['unidentified individuals']	['urban commandos', 'modesto ramirez central front']
+		['urban commandos']	['unidentified individuals']
+		['perpetrators']	None
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['main entrance of merinos home']	['vice presidentelect francisco merinos home']
+		['francisco merinos home']	None
+	PerpOrg=
+		['fmln']	['armed forces']
+	Weapon=
+		['three explosive devices']	['three explosive devices', 'explosive devices']
+	PerpInd=
+		['urban commandos']	['unidentified individuals']
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['urban commandos', 'modesto ramirez central front'], ['unidentified individuals']]), ('PerpOrg', [['farabundo marti national liberation front', 'fmln']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['unidentified individuals']]), ('PerpOrg', [['armed forces']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0018	#pred=2	#gold=2	prec=0.4167	rec=0.4545	f1=0.4348
+	incident_type=	attack	attack
+	Target=
+		['transportation']	['1st infantry brigade', '1st infantry brigade garrison']
+		['transformers']	['power poles on 29th street', 'power poles']
+		['power poles']	['national police station']
+		None	['transformers']
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['rpg18 rocket launchers']	['rpg18 rocket launchers', 'rpg18 rocket', 'rocket']
+		['60mm mortars']	['60mm mortars', '60mm mortar', 'mortars', 'mortar']
+		['shells']	['m79']
+	PerpInd=
+		['terrorists']	['guerrillas', 'fmln guerrillas', 'urban guerrillas', 'terrorists']
+	Victim=
+
+	incident_type=	attack	forced work stoppage
+	Target=
+		['transformers']	['transportation']
+		['power poles']	None
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['rpg18 rocket launchers']	None
+		['60mm mortars']	None
+		['shells']	None
+	PerpInd=
+	Victim=
+
+doc_id=TST3-MUC4-0019	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	bombing	bombing
+	Target=
+		['cano limoncovenas pipeline']	['cano limoncovenas pipeline', 'pipeline']
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+
+doc_id=TST3-MUC4-0020	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['four peruvians suspects', 'four peruvians', 'peruvians suspects', 'peruvians']]), ('PerpOrg', []), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0021	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [['farabundo marti national liberation front'], ['fmln']], 'Target': [], 'Victim': [['jose antonio rodriguez porth']], 'Weapon': []}
+
+doc_id=TST3-MUC4-0022	#pred=2	#gold=1	prec=0.6000	rec=0.7500	f1=0.6667
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['shining path']
+	Weapon=
+	PerpInd=
+		['four hooded individuals']	['alleged commando groups', 'alleged commando groups of the maoist shining path', 'commando groups', 'commando groups of the maoist shining path']
+		['commando groups']	['four hooded individuals', 'hooded individuals']
+	Victim=
+		['dolores hinostroza']	['dolores hinostroza']
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['terrorists']], 'PerpOrg': [], 'Target': [], 'Victim': [['dolores hinostroza']], 'Weapon': []}
+
+doc_id=TST3-MUC4-0023	#pred=2	#gold=1	prec=0.5000	rec=0.5000	f1=0.5000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		None	['narcotics mafia']
+	Victim=
+		['antonio roldan betancur']	['antonio roldan betancur']
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [['antonio roldan betancur']], 'Weapon': []}
+
+doc_id=TST3-MUC4-0024	#pred=2	#gold=4	prec=0.5000	rec=0.4286	f1=0.4615
+	incident_type=	bombing	bombing
+	Target=
+		['vinapuerto salgar oil pipeline']	['oil pipeline', 'pipeline', 'vinapuerto salgar oil pipeline']
+		['cano limoncovenas pipeline']	None
+		['oil pipeline']	None
+	PerpOrg=
+	Weapon=
+		['dynamite']	['dynamite']
+	PerpInd=
+		['unidentified terrorists']	['unidentified terrorists', 'terrorists']
+		['terrorists']	None
+	Victim=
+
+	incident_type=	bombing	attack
+	Target=
+		['vinapuerto salgar oil pipeline']	['oil pipeline', 'pipeline', 'cano limoncovenas oil pipeline']
+	PerpOrg=
+	Weapon=
+		['dynamite']	None
+	PerpInd=
+		['unidentified terrorists']	None
+		['terrorists']	None
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['terrorists']]), ('PerpOrg', []), ('Target', [['oil pipeline', 'pipeline']]), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'bombing'), ('PerpInd', []), ('PerpOrg', []), ('Target', [['oil pipeline', 'pipeline', 'cano limoncovenas oil pipeline']]), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0025	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0026	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0027	#pred=1	#gold=1	prec=1.0000	rec=0.3333	f1=0.5000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+		None	['machinegun']
+	PerpInd=
+		['group of unidentified individuals']	['unidentified individuals', 'group of unidentified individuals']
+		['unidentified individuals']	None
+	Victim=
+		None	['danilo barillas']
+
+doc_id=TST3-MUC4-0028	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0029	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['snipers']], 'PerpOrg': [], 'Target': [['civilian defense post']], 'Victim': [], 'Weapon': [['rocket'], ['rockets']]}
+
+doc_id=TST3-MUC4-0030	#pred=1	#gold=2	prec=0.3333	rec=0.2500	f1=0.2857
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		None	['motorized paid assasins', 'paid assasins']
+	Victim=
+		['alvaro medina moreno']	['maria elena diaz']
+		['maria elena diaz']	None
+		['carlos valencia']	None
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['two people', 'people']]), ('PerpOrg', []), ('Target', []), ('Victim', [['carlos valencia garcia']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0031	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['drug traffickers']	['drug traffickers', 'colombian drug mafia', 'drug mafia']
+	Victim=
+		['carlos valencia']	['carlos valencia']
+
+doc_id=TST3-MUC4-0032	#pred=1	#gold=1	prec=0.5000	rec=0.4000	f1=0.4444
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['drugtrafficking mafias']	['medellin cartel']
+	Weapon=
+	PerpInd=
+		['israeli mercenary']	['paramilitary groups', 'ultrarightwing paramilitary groups']
+		['jubiz hazvumb']	['drugtrafficking mafias']
+		None	['jubiz hazvumb']
+	Victim=
+		['luis carlos galan']	['luis carlos galan']
+
+doc_id=TST3-MUC4-0033	#pred=3	#gold=1	prec=0.1538	rec=0.6667	f1=0.2500
+	incident_type=	attack	attack
+	Target=
+		['power lines']	['power lines']
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['m16 rifle']	None
+		['grenades']	None
+		['mortar']	None
+	PerpInd=
+		['fmln guerrillas']	['fmln militias', 'militias']
+		['urban commandos']	None
+		['fmln militias']	None
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [['power lines']], 'Victim': [], 'Weapon': [['m16 rifle'], ['grenades'], ['mortar']]}
+
+	Predicted but not matched:
+		{'incident_type': 'arson', 'PerpInd': [['urban commandos'], ['fmln militias']], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': []}
+
+doc_id=TST3-MUC4-0034	#pred=1	#gold=1	prec=0.5000	rec=0.5000	f1=0.5000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['person']	['person of arab origin']
+	Victim=
+		['luis carlos galan']	['luis carlos galan']
+
+doc_id=TST3-MUC4-0035	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0036	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	attack	attack
+	Target=
+		['installations of jose maria cordoba airport']	['installations of the jose maria cordoba airport', 'airport installations']
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+
+doc_id=TST3-MUC4-0037	#pred=2	#gold=2	prec=0.6154	rec=0.7000	f1=0.6550
+	incident_type=	bombing	bombing
+	Target=
+		['stateowned agrarian board']	['stateowned agrarian board', 'agrarian board', 'bank building']
+		['agrarian board branch']	['stores']
+		['bank branches']	['bus']
+		['bank building']	None
+		['police post']	None
+		['stores']	None
+		['bus']	None
+	PerpOrg=
+	Weapon=
+		['dynamite']	['dynamite']
+		['bomb']	['bomb']
+	PerpInd=
+		None	['drug traffickers']
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['stateowned agrarian board']	['agrarian board', 'agrarian board branch']
+		['stores']	None
+	PerpOrg=
+	Weapon=
+		['dynamite']	['dynamite']
+		['bomb']	['bomb']
+	PerpInd=
+		None	['drug traffickers']
+	Victim=
+
+doc_id=TST3-MUC4-0038	#pred=1	#gold=3	prec=1.0000	rec=0.3333	f1=0.5000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['alvaro gonzalez santana']	['alvaro gonzalez santana']
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['marta lucia gonzalez']]), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['luis carlos galan']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0039	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0040	#pred=3	#gold=2	prec=0.4118	rec=0.5455	f1=0.4693
+	incident_type=	bombing	bombing
+	Target=
+		['banco de occidente branch']	['banco de occidente branch', 'banco de occidente']
+		['banco popular branch']	['banco popular branch', 'banco popular']
+		['political offices']	['other nearby banks', 'nearby banks', 'banks']
+		['bank offices']	['banks', 'other banks']
+		['banks']	['shops']
+	PerpOrg=
+	Weapon=
+		['two bombs']	['two bombs', 'bombs', 'bomb', 'explosive devices']
+		['bomb']	None
+	PerpInd=
+		None	['drug trafficking cartels']
+		None	['two men', 'men']
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['banco de occidente branch']	['political offices of the liberal and social conservative parties', 'political offices']
+		['banco popular branch']	['bank office']
+		['political offices']	None
+		['bank offices']	None
+		['bank office']	None
+		['shops']	None
+	PerpOrg=
+		['drug trafficking cartels']	None
+	Weapon=
+		['two bombs']	['bombs', '10 bombs']
+		['bomb']	None
+	PerpInd=
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['two bombs']]}
+
+doc_id=TST3-MUC4-0041	#pred=1	#gold=1	prec=0.6667	rec=0.7500	f1=0.7059
+	incident_type=	bombing	bombing
+	Target=
+		['old station wagon']	['gas station']
+		['gas station']	None
+	PerpOrg=
+	Weapon=
+		['kilograms of explosives']	['60 kg of dynamite', 'dynamite']
+		['60 kg of dynamite']	['car bomb']
+		['dynamite']	None
+		['car bomb']	None
+	PerpInd=
+		None	['two people', 'two people who were killed', 'people', 'people who were killed']
+	Victim=
+
+doc_id=TST3-MUC4-0042	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0043	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['arnulfo romero']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0044	#pred=1	#gold=1	prec=0.6000	rec=0.7500	f1=0.6667
+	incident_type=	bombing	bombing
+	Target=
+		['buildings']	['offices that former president raul alfonsin has in this city', 'ricardo rojas cultural center, located at 132 ayacucho street, where the former president has offices for his political activities', 'ricardo rojas cultural center']
+		['offices']	['neighboring buildings', 'buildings']
+	PerpOrg=
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+	Victim=
+		['raul alfonsin']	['beatriz iero']
+		['beatriz iero']	None
+
+doc_id=TST3-MUC4-0045	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0046	#pred=5	#gold=3	prec=0.2800	rec=0.4167	f1=0.3349
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['drug trafficking mafia']	['the extraditables', 'medellin cartel']
+		['medellin cartel']	None
+		['extraditables']	None
+	Weapon=
+	PerpInd=
+		['unidentified individuals']	['unidentified individuals']
+		['anonymous']	['gunmen', 'men', 'two men on motorcycles', 'men on motorcycles']
+		None	['the extraditables']
+	Victim=
+		['martha lopez orozco de lopez']	['martha lopez orozco de lopez']
+		['hector giraldo galvez']	['miguel soler rodriguez']
+		['guillermo cano']	['martha luz lopez']
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['medellin cartel']	['the extraditables', 'medellin cartel']
+		['extraditables']	None
+	Weapon=
+	PerpInd=
+		['two men']	['the extraditables']
+	Victim=
+		['martha luz lopez']	None
+
+	incident_type=	bombing	bombing
+	Target=
+		['el espectadors office']	['main offices in bogota of el espectador']
+		['of el espectador']	None
+		['main offices']	None
+	PerpOrg=
+		['medellin cartel']	None
+		['extraditables']	None
+	Weapon=
+		['car bomb']	['car bomb']
+	PerpInd=
+		['anonymous']	['drug trafficking mafia']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['anonymous']], 'PerpOrg': [['medellin cartel'], ['drug trafficking mafia'], ['extraditables']], 'Target': [], 'Victim': [], 'Weapon': []}
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [['of el espectador']], 'Victim': [], 'Weapon': [['car bomb']]}
+
+doc_id=TST3-MUC4-0047	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0048	#pred=1	#gold=3	prec=0.5000	rec=0.3333	f1=0.4000
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['diana mack ortiz']	['diana mack ortiz']
+		['patricia denny']	None
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['patricia denny']]), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['diana mack ortiz']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0049	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0050	#pred=2	#gold=2	prec=0.1429	rec=0.1429	f1=0.1429
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['air force']
+		None	['army']
+	Weapon=
+		None	['machinegun']
+		None	['mortar']
+	PerpInd=
+		['rebels']	None
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['light tank']	['pylons']
+		['pylons']	None
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['bomb']	None
+	PerpInd=
+		['urban commandos']	['unit', 'fmln unit']
+		['guerrillas']	None
+		['rebels']	None
+	Victim=
+
+doc_id=TST3-MUC4-0051	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0052	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0053	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['col ponce'], ['president cristiani']]), ('PerpOrg', []), ('Target', [['fenastras']]), ('Victim', [['fenastras']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0054	#pred=2	#gold=2	prec=1.0000	rec=0.7000	f1=0.8235
+	incident_type=	attack	attack
+	Target=
+		['residence of legislative assembly president']	['residence of the legislative assembly president']
+		['central elections council']	['central elections council']
+		['presidential residence']	['presidential residence']
+		['private residence']	['his private residence', 'private residence']
+	PerpOrg=
+		['farabundo marti national liberation front']	['fmln', 'farabundo marti national liberation front']
+		['fmln']	None
+	Weapon=
+	PerpInd=
+		['terrorists']	['terrorists']
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+		None	['6th infantry brigade']
+	PerpOrg=
+		['farabundo marti national liberation front']	['fmln', 'farabundo marti national liberation front']
+		['fmln']	None
+	Weapon=
+	PerpInd=
+		None	['terrorists']
+	Victim=
+		None	['6th infantry brigade']
+
+doc_id=TST3-MUC4-0055	#pred=1	#gold=3	prec=0.5000	rec=0.0909	f1=0.1538
+	incident_type=	bombing	attack / bombing
+	Target=
+	PerpOrg=
+		['salvadoran']	['fmln', 'farabundo marti national liberation front']
+		['fmln']	['army']
+	Weapon=
+	PerpInd=
+		None	['military']
+		None	['rebels']
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'bombing'), ('PerpInd', [['ultrarightist death squads', 'death squads']]), ('PerpOrg', []), ('Target', []), ('Victim', [['febe elizabeth']]), ('Weapon', [['dynamite']])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['guerrilla fighters']]), ('PerpOrg', [['fmln', 'farabundo marti national liberation front']]), ('Target', [['military helicopters', 'helicopters'], ['airportss main landing strip', 'main landing strip', 'landing strip']]), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0056	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack / bombing'), ('PerpInd', []), ('PerpOrg', [['armed forces']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0057	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['rebels', 'salvadoran rebels']]), ('PerpOrg', [['farabundo marti national liberation front', 'fmln']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0058	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0059	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0060	#pred=1	#gold=1	prec=0.8182	rec=0.7500	f1=0.7826
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['alfredo cristianis administration', 'cristianis government', 'government']
+		None	['armed forces']
+	Weapon=
+		['machinegunners']	None
+	PerpInd=
+		['salvadoran armed forces soldiers']	['top military and political figures in alfredo cristianis administration', 'top military and political figures']
+		['armed soldiers']	['salvadoran armed forces soldiers', 'armed forces soldiers', 'soldiers', 'large number of heavily armed soldiers', 'heavily armed soldiers']
+	Victim=
+		['joaquin lopez y lopez']	['joaquin lopez y lopez']
+		['ignacio martin baro']	['ignacio martin baro']
+		['juan ramon moreno']	['ignacio ellacuria']
+		['ignacio ellacuria']	['juan ramon moreno']
+		['segundo montes']	['segundo montes']
+		['amando lopez']	['amando lopez']
+		['julia ramos']	['julia ramos']
+		['elva ramos']	['elva ramos']
+
+doc_id=TST3-MUC4-0061	#pred=2	#gold=2	prec=0.4000	rec=0.1667	f1=0.2353
+	incident_type=	attack	attack / bombing
+	Target=
+		['alfredo cristianis official and personal residences']	['leftwing trade unions headquarters', 'trade unions headquarters']
+	PerpOrg=
+		['farabundo marti national liberation front']	None
+		['fmln']	None
+	Weapon=
+		None	['artillery']
+	PerpInd=
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+		None	['president alfredo cristianis official and personal residences']
+	PerpOrg=
+		['farabundo marti national liberation front']	['farabundo marti national liberation front', 'fmln']
+		['fmln']	None
+	Weapon=
+	PerpInd=
+		None	['detachments', 'fmln detachments']
+	Victim=
+		None	['alfredo cristiani']
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [['farabundo marti national liberation front'], ['fmln']], 'Target': [], 'Victim': [], 'Weapon': []}
+
+doc_id=TST3-MUC4-0062	#pred=3	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [['air force']], 'Target': [], 'Victim': [], 'Weapon': [['machineguns']]}
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [['air force']], 'Target': [], 'Victim': [], 'Weapon': [['machineguns']]}
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [['salvadoran government'], ['air force']], 'Target': [['national university'], ['soccer']], 'Victim': [], 'Weapon': [['mortars']]}
+
+doc_id=TST3-MUC4-0063	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0064	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0065	#pred=1	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['alfredo cristiani']	None
+
+doc_id=TST3-MUC4-0066	#pred=1	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['extreme right death squads of el salvador']	None
+		['farabundo marti national liberation front']	None
+		['president alfredo cristianis']	None
+		['fmln']	None
+	Weapon=
+	PerpInd=
+		None	['extreme right death squads', 'death squads']
+	Victim=
+
+doc_id=TST3-MUC4-0067	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'bombing'), ('PerpInd', [['high command']]), ('PerpOrg', [['tandona group', 'la tandona']]), ('Target', [['homes']]), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0068	#pred=0	#gold=2	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['rebel commanders'], ['commander amilcar'], ['rebels', 'fmln guerrillas', 'guerrillas'], ['facundo guardado', 'commander esteban']]), ('PerpOrg', [['farabundo marti national liberation front', 'fmln']]), ('Target', [['sheraton hotel', 'hotel']]), ('Victim', [['joao baena soares']]), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'kidnapping'), ('PerpInd', [['rebel commanders'], ['commander amilcar'], ['rebels', 'fmln guerrillas', 'guerrillas'], ['facundo guardado', 'commander esteban']]), ('PerpOrg', [['farabundo marti national liberation front', 'fmln']]), ('Target', []), ('Victim', [['joao baena soares']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0069	#pred=0	#gold=3	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'bombing / attack'), ('PerpInd', [['u.s. pilots']]), ('PerpOrg', [['u.s. government']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', [['army']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', [['u.s. government']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0070	#pred=1	#gold=2	prec=0.7500	rec=0.3333	f1=0.4615
+	incident_type=	attack	attack
+	Target=
+		['salvadoran armed forces joint chiefs of staff']	['presidential house']
+		['presidential house']	None
+	PerpOrg=
+		['farabundo marti national liberation front']	['fmln', 'farabundo marti national liberation front']
+		['fmln']	None
+	Weapon=
+	PerpInd=
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', [['fmln', 'farabundo marti national liberation front']]), ('Target', [['presidential house'], ['armed forces joint chiefs of staff'], ['national guard garrison']]), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0071	#pred=2	#gold=1	prec=0.5000	rec=0.6667	f1=0.5714
+	incident_type=	attack	attack
+	Target=
+		['electricity posts']	['electricity posts']
+	PerpOrg=
+		['farabundo marti national liberation front']	['fmln', 'farabundo marti national liberation front']
+		['fmln']	None
+	Weapon=
+	PerpInd=
+		None	['forces', 'battalions']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [['farabundo marti national liberation front'], ['fmln']], 'Target': [['electricity posts']], 'Victim': [], 'Weapon': []}
+
+doc_id=TST3-MUC4-0072	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0073	#pred=1	#gold=1	prec=0.3333	rec=0.6667	f1=0.4444
+	incident_type=	bombing	bombing
+	Target=
+		['headquarters of colombias secret police wednesday']	['nearby offices of the bogota transportation department', 'offices of the bogota transportation department']
+		['offices of bogota transportation department']	['headquarters of colombias secret police', 'building of the secret police', 'das', 'administrative department of security']
+		['administrative department of']	None
+		['building of secret police']	None
+	PerpOrg=
+	Weapon=
+		['truck']	['powerful bomb hidden in a truck', 'bomb hidden in a truck']
+		['bomb']	None
+	PerpInd=
+	Victim=
+
+doc_id=TST3-MUC4-0074	#pred=3	#gold=1	prec=0.2000	rec=0.7500	f1=0.3158
+	incident_type=	bombing	bombing
+	Target=
+		['salvadoran workers national union federation']	['fenastras', 'salvadoran workers national union federation']
+		['fenastras']	None
+	PerpOrg=
+		['farabundo marti national liberation front']	None
+		['fmln']	None
+	Weapon=
+		['sam7 missiles']	['dynamite']
+		['dynamite']	None
+	PerpInd=
+		['terrorist criminals']	None
+		['terrorist leaders']	None
+		['terrorist']	None
+	Victim=
+		['febe elizabeth velazquez']	['febe elizabeth velazquez']
+		['humberto centeno']	['fenastras']
+		['marco tulio lima']	None
+		['julio cesar']	None
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [['fmln']], 'Target': [], 'Victim': [], 'Weapon': []}
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['terrorist'], ['terrorist leaders']], 'PerpOrg': [['farabundo marti national liberation front'], ['fmln']], 'Target': [], 'Victim': [], 'Weapon': [['sam7 missiles'], ['dynamite']]}
+
+doc_id=TST3-MUC4-0075	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0076	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', [['government']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0077	#pred=1	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	attack	attack
+	Target=
+		None	['das']
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		None	['gonzalo rodriguez gacha']
+		None	['drug traffickers']
+	Victim=
+		['gonzalo rodriguez gacha']	None
+		['freddy']	None
+
+doc_id=TST3-MUC4-0078	#pred=1	#gold=1	prec=0.7500	rec=0.3333	f1=0.4615
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+		['movement of revolutionary left']	['mir', 'movement of the revolutionary left']
+		['mir']	None
+	Weapon=
+	PerpInd=
+		['chileans']	['two argentines']
+		None	['five chileans']
+		None	['two canadians']
+		None	['one brazilian']
+	Victim=
+		['abilio diniz']	['abilio diniz']
+
+doc_id=TST3-MUC4-0079	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0080	#pred=4	#gold=4	prec=0.4167	rec=0.2667	f1=0.3252
+	incident_type=	arson	attack
+	Target=
+		['businesses']	['coffee processing plant']
+	PerpOrg=
+		None	['farabundo marti national liberation front', 'fmln']
+	Weapon=
+	PerpInd=
+		None	['rebel', 'members of the farabundo marti national liberation front (fmln)', 'members of the farabundo marti national liberation front']
+	Victim=
+
+	incident_type=	bombing	attack
+	Target=
+		['businesses']	None
+	PerpOrg=
+		['fmln']	['farabundo marti national liberation front', 'fmln']
+		None	['armed forces']
+	Weapon=
+		['bomb']	None
+	PerpInd=
+		['rebels']	['guerrillas']
+		None	['soldier']
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['coffee processing plant']	['businesses']
+		['businesses']	None
+	PerpOrg=
+		['farabundo marti national liberation front']	['farabundo marti national liberation front', 'fmln']
+		['fmln']	None
+	Weapon=
+		['bomb']	['bomb', 'powerful bomb']
+		None	['dynamite']
+	PerpInd=
+		['rebels']	None
+	Victim=
+		None	['maria luz lopez']
+
+	incident_type=	attack	attack
+	Target=
+		['entire electrical power system']	['entire electrical power system', 'electrical power system']
+	PerpOrg=
+		None	['farabundo marti national liberation front', 'fmln']
+	Weapon=
+	PerpInd=
+		None	['guerrillas']
+	Victim=
+
+doc_id=TST3-MUC4-0081	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'robbery'), ('PerpInd', []), ('PerpOrg', []), ('Target', [['car', 'his car'], ['car', 'car belonging to one of the embassys military attaches']]), ('Victim', [['luis sandiga cabrera']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0082	#pred=1	#gold=1	prec=0.5000	rec=1.0000	f1=0.6667
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['vladimir escobar']	['vladimir escobar']
+		['jaime pardo leal']	None
+
+doc_id=TST3-MUC4-0083	#pred=1	#gold=1	prec=1.0000	rec=0.5000	f1=0.6667
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['government', 'cristianis government']
+	Weapon=
+	PerpInd=
+	Victim=
+		['hector oqueli']	['hector oqueli']
+
+doc_id=TST3-MUC4-0084	#pred=3	#gold=2	prec=0.5000	rec=0.5714	f1=0.5333
+	incident_type=	bombing	bombing
+	Target=
+		['electrical appliance store']	['store', 'electrical appliance store']
+		['store']	None
+	PerpOrg=
+		['farabundo marti national liberation front']	['farabundo marti national liberation front', 'fmln']
+		['fmln']	None
+	Weapon=
+		['powerful bomb']	['powerful bomb', 'bomb']
+	PerpInd=
+		None	['salvadoran rebels', 'rebels']
+	Victim=
+
+	incident_type=	arson	arson
+	Target=
+		['public bus']	['public bus', 'bus']
+	PerpOrg=
+		None	['farabundo marti national liberation front', 'fmln']
+	Weapon=
+	PerpInd=
+		None	['salvadoran rebels', 'rebels']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['armed group']], 'PerpOrg': [['farabundo marti national liberation front'], ['fmln']], 'Target': [['store'], ['electrical appliance store']], 'Victim': [], 'Weapon': [['powerful bomb']]}
+
+doc_id=TST3-MUC4-0085	#pred=1	#gold=1	prec=1.0000	rec=0.5000	f1=0.6667
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['army']
+	Weapon=
+	PerpInd=
+		['soldiers']	['eight soldiers', 'soldiers']
+	Victim=
+
+doc_id=TST3-MUC4-0086	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0087	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0088	#pred=2	#gold=3	prec=0.8333	rec=0.3750	f1=0.5172
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+		['popular liberation army']	['popular liberation army', 'eln']
+		['4th front of farc']	None
+		['eln']	None
+	Weapon=
+	PerpInd=
+		None	['guerrilla', 'guerrillas']
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+		['power system']	['power system']
+	PerpOrg=
+		['popular liberation army']	['popular liberation army', 'eln']
+		['eln']	None
+	Weapon=
+	PerpInd=
+		None	['guerrilla', 'large column of the popular liberation army', 'guerrillas']
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'kidnapping'), ('PerpInd', [['guerrillas']]), ('PerpOrg', [['popular liberation army', 'eln']]), ('Target', []), ('Victim', [['jorge serrano gonzalez']]), ('Weapon', [])])
+
+doc_id=TST3-MUC4-0089	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0090	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0091	#pred=1	#gold=1	prec=0.4286	rec=0.7500	f1=0.5455
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['movement of revolutionary left']	None
+	Weapon=
+		['9 mm semiautomatic pistols']	['9 mm semiautomatic pistols', 'semiautomatic pistols', 'pistols']
+	PerpInd=
+		None	['two 23 to 25yearold individuals', 'individuals', 'two individuals']
+	Victim=
+		['joanna santis retamal']	['gustavo leigh guzman']
+		['gustavo leigh guzman']	['enrique ruiz']
+		['jorge martinez']	None
+		['enrique ruiz']	None
+		['carlos ruig']	None
+
+doc_id=TST3-MUC4-0092	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0093	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['bernardo jaramillo']	['bernardo jaramillo']
+
+doc_id=TST3-MUC4-0094	#pred=6	#gold=6	prec=0.4737	rec=0.3636	f1=0.4114
+	incident_type=	attack	attack
+	Target=
+		None	['vehicle']
+	PerpOrg=
+		None	['fmln', 'fmlnfdr', 'farabundo marti national liberation frontrevolutionary democratic front']
+	Weapon=
+	PerpInd=
+		['fmln terrorists']	['fmln terrorists', 'terrorists']
+		['people']	None
+	Victim=
+		['concepcion herrera']	['concepcion herrera']
+		['mauricio campos']	['mauricio campos']
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['fmln', 'fmlnfdr', 'farabundo marti national liberation frontrevolutionary democratic front']
+	Weapon=
+	PerpInd=
+		['terrorist groups']	['fmln terrorists', 'terrorists', 'people in a moving vehicle', 'people']
+		['people']	None
+	Victim=
+		['jose manuel posada']	['manuel alvaro mendoza']
+
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+		None	['fmln', 'fmlnfdr', 'farabundo marti national liberation frontrevolutionary democratic front']
+	Weapon=
+	PerpInd=
+		['terrorist groups']	['fmlnfdr members']
+	Victim=
+		['jose manuel posada']	['jose manuel posada']
+
+	incident_type=	bombing	bombing
+	Target=
+		None	['paramilitary groups outpost', 'outpost']
+	PerpOrg=
+		None	['fmln', 'fmlnfdr', 'farabundo marti national liberation frontrevolutionary democratic front']
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+		['terrorist groups']	['fmln terrorists', 'terrorists']
+		['fmln terrorists']	None
+		['terrorists']	None
+	Victim=
+		None	['yohalmo antonio ortiz']
+
+	incident_type=	bombing	bombing
+	Target=
+	PerpOrg=
+		None	['fmlnfdr', 'farabundo marti national liberation frontrevolutionary democratic front']
+	Weapon=
+		['car bomb']	['car bomb']
+		['bomb']	None
+	PerpInd=
+		['terrorist groups']	['urban commandos']
+		['fmln terrorists']	None
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['fmlnfdr', 'farabundo marti national liberation frontrevolutionary democratic front']
+	Weapon=
+	PerpInd=
+		['terrorist groups']	['urban commandos']
+		['fmln terrorists']	None
+	Victim=
+		None	['otto milla']
+
+doc_id=TST3-MUC4-0095	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST3-MUC4-0096	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+		['carlos pizarro leongomez']	['carlos pizarro leongomez']
+
+doc_id=TST3-MUC4-0097	#pred=2	#gold=2	prec=0.6667	rec=0.3333	f1=0.4444
+	incident_type=	attack	attack
+	Target=
+		['electrical systems']	['houses']
+		['houses']	None
+	PerpOrg=
+		None	['farabundo marti national liberation front', 'fmln']
+		None	['armed forces', 'army']
+	Weapon=
+	PerpInd=
+		None	['guerrilla groups', 'guerrilla group', 'guerrilla members', 'guerrila forces', 'rebels']
+		None	['government troops']
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+		['electrical systems']	['electrical systems']
+	PerpOrg=
+	Weapon=
+	PerpInd=
+	Victim=
+
+doc_id=TST3-MUC4-0098	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['group of soldiers']	['group of soldiers', 'soldiers']
+	Victim=
+
+doc_id=TST3-MUC4-0099	#pred=2	#gold=2	prec=0.5652	rec=0.9091	f1=0.6971
+	incident_type=	attack	attack
+	Target=
+		['electric power system']	['electric poles']
+		['electric poles']	['power pylons', 'pylons']
+		['power pylons']	['power pylons', 'pylons']
+		['power lines']	None
+		['transformer']	None
+		['pylons']	None
+	PerpOrg=
+		['farabundo marti national liberation front']	['farabundo marti national liberation front', 'fmln']
+		['fmln']	None
+	Weapon=
+		['mortars']	None
+		['rifles']	None
+	PerpInd=
+		['guerrillas']	['guerrillas', 'urban commandos', 'urban commandos of the farabundo marti national liberation front (fmln)', 'urban commandos of the farabundo marti national liberation front']
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+		['electric power system']	['cel substation']
+		['electric poles']	['transformer']
+		['cel substation']	None
+		['power pylons']	None
+		['power lines']	None
+		['transformer']	None
+		['pylons']	None
+	PerpOrg=
+		['farabundo marti national liberation front']	['farabundo marti national liberation front', 'fmln']
+		['fmln']	None
+	Weapon=
+		['mortars']	['mortars']
+		['rifles']	['rifles']
+	PerpInd=
+		['guerrillas']	['guerrillas']
+	Victim=
+
+doc_id=TST3-MUC4-0100	#pred=1	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['government']
+	Weapon=
+	PerpInd=
+		None	['salvadoran president alfredo cristiani', 'president alfredo cristiani']
+	Victim=
+		['maria eugneia ochoa garcia']	None
+
+doc_id=TST4-MUC4-0001	#pred=1	#gold=1	prec=1.0000	rec=0.7500	f1=0.8571
+	incident_type=	bombing	bombing
+	Target=
+		['chapel of church of jesus christ of latterday saints']	['mormon church', 'church', 'chapel of the church of jesus christ of latterday saints located at no 3856 gomez carreno street', 'chapel of the church of jesus christ of latterday saints', 'chapel', 'church of jesus christ of latterday saints']
+		['mormon church']	None
+	PerpOrg=
+	Weapon=
+		['bomb']	['50 grams of anfo', 'anfo', 'ammonium nitratefuel oil blasting agents']
+		None	['bomb']
+	PerpInd=
+		['unidentified individuals']	['unidentified individuals']
+	Victim=
+
+doc_id=TST4-MUC4-0002	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['people'], ['troops']], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0003	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['group of terrorists linked to']], 'PerpOrg': [], 'Target': [['road']], 'Victim': [], 'Weapon': []}
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [['civil guard post']], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0004	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0005	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [['rinaldo golcher'], ['angel menendez']], 'Weapon': []}
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [['rinaldo golcher']], 'Weapon': []}
+
+doc_id=TST4-MUC4-0006	#pred=2	#gold=2	prec=0.8333	rec=0.6250	f1=0.7143
+	incident_type=	bombing	bombing
+	Target=
+		['la noria bridge']	['la noria bridge']
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['mine']	['mine']
+	PerpInd=
+		['insurgents']	['insurgents']
+		['rebels']	None
+	Victim=
+		['alexander molina granados']	['alexander molina granados']
+
+	incident_type=	attack	attack
+	Target=
+		['electric tower']	['electric tower']
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+	PerpInd=
+		None	['insurgents', 'rebels']
+	Victim=
+
+doc_id=TST4-MUC4-0007	#pred=1	#gold=1	prec=0.6667	rec=0.6667	f1=0.6667
+	incident_type=	attack	attack
+	Target=
+		['aeronicas regional offices']	['aeronicas regional offices']
+		['regional offices']	None
+	PerpOrg=
+	Weapon=
+		['fragmentation grenades']	['fragmentation grenades', 'grenades']
+	PerpInd=
+		None	['guatemalan rightist sectors', 'rightist sectors']
+	Victim=
+
+doc_id=TST4-MUC4-0008	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0009	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0010	#pred=1	#gold=1	prec=1.0000	rec=0.5000	f1=0.6667
+	incident_type=	bombing	bombing
+	Target=
+		['national vanguard offices']	['national vanguard offices']
+		None	['neighboring houses', 'houses']
+	PerpOrg=
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+		None	['unidentified individuals']
+	Victim=
+
+doc_id=TST4-MUC4-0011	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0012	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0013	#pred=1	#gold=1	prec=0.3333	rec=0.5000	f1=0.4000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['former captain alvaro sanabria']	['former captain alvaro sanabria', 'captain alvaro sanabria']
+		['amado antonio garay reyesthe']	None
+	Victim=
+		['msgr oscar arnulfo romero']	['oscar arnulfo romero']
+
+doc_id=TST4-MUC4-0014	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0015	#pred=1	#gold=2	prec=0.8571	rec=0.4167	f1=0.5607
+	incident_type=	arson	arson
+	Target=
+		['shacks']	['shacks', 'houses']
+		['houses']	['bus']
+		['bus']	None
+	PerpOrg=
+		['army of national liberation group']	['army of national liberation']
+		['popular liberation army']	['popular liberation army']
+	Weapon=
+	PerpInd=
+		['30 guerrillas dressed in military uniforms']	['gang possibly belonging to the popular liberation army.', 'gang']
+		['gang']	['30 guerrillas dressed in military uniforms', 'guerrillas dressed in military uniforms', 'guerrillas', 'army of national liberation group']
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['gang possibly belonging to the popular liberation army.', 'gang'], ['30 guerrillas dressed in military uniforms', 'guerrillas dressed in military uniforms', 'guerrillas', 'army of national liberation group']]), ('PerpOrg', [['popular liberation army'], ['army of national liberation']]), ('Target', [['houses']]), ('Victim', []), ('Weapon', [['fire']])])
+
+doc_id=TST4-MUC4-0016	#pred=1	#gold=1	prec=1.0000	rec=0.8000	f1=0.8889
+	incident_type=	bombing	bombing
+	Target=
+		['government vehicles']	['government vehicles, license plates 6906 and 6895, used by the rural basic health plan section of the health ministry', 'government vehicles, license plates 6906 and 6895', 'government vehicles', 'vehicles', 'cars']
+		['cars']	None
+	PerpOrg=
+		None	['fmln', 'fmln general command']
+	Weapon=
+		['two powerful bombs']	['two powerful bombs', 'powerful bombs', 'bombs']
+		['powerful bombs']	None
+	PerpInd=
+		['fmln general command']	['fmln urban guerrillas', 'urban guerrillas']
+		['urban guerrillas']	['fmln general command']
+	Victim=
+
+doc_id=TST4-MUC4-0017	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0018	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['noel kempff']]), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0019	#pred=2	#gold=1	prec=0.8750	rec=0.6667	f1=0.7568
+	incident_type=	bombing	bombing
+	Target=
+		['economy and finance ministry building']	['economy ministry', 'economy and finance ministry building']
+		['departmental agrarian unit no 6']	['vehicle belonging to emol entero', 'vehicle']
+		['unidad agraria de lima']	['lima agrarian unit', 'unidad agraria de lima', 'departmental agrarian unit no 6']
+		['lima agrarian unit']	None
+		['economy ministry']	None
+		['vehicle']	None
+	PerpOrg=
+	Weapon=
+		['bomb']	['powerful bomb', 'bomb']
+		None	['bomb']
+	PerpInd=
+		None	['terrorists']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['bomb']]}
+
+doc_id=TST4-MUC4-0020	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0021	#pred=4	#gold=2	prec=0.1818	rec=0.3333	f1=0.2353
+	incident_type=	bombing	bombing
+	Target=
+		['communist party headquarters']	['communist party headquarters']
+		['homes']	None
+	PerpOrg=
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+		['subversives']	['terrorist', 'extremist']
+		['guerrillas']	None
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+		['airport']	['2d army division headquarters']
+		None	['homes']
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['unidentified individuals armed with machineguns']	['terrorist']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['unidentified individuals armed with machineguns']], 'PerpOrg': [], 'Target': [['communist party headquarters']], 'Victim': [], 'Weapon': []}
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['guerrillas']], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['bomb']]}
+
+doc_id=TST4-MUC4-0022	#pred=2	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	kidnapping	bombing
+	Target=
+		None	['machinery belonging to albolones peruanos, inc', 'machinery']
+	PerpOrg=
+	Weapon=
+		None	['molotov cocktails']
+	PerpInd=
+		['group of terrorists']	['group of terrorists', 'terrorists', 'approximately 20 terrorists']
+		['terrorists']	None
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['molotov cocktails'], ['submachineguns']]}
+
+doc_id=TST4-MUC4-0023	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0024	#pred=0	#gold=3	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['unidentified individuals', 'supporters of the yesvote', 'yesvote supporters']]), ('PerpOrg', []), ('Target', [['pdcs premises']]), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['humberto balza']]), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['unidentified individuals', 'individuals']]), ('PerpOrg', []), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0025	#pred=1	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+	PerpInd=
+	Victim=
+		['david diaz cortez']	None
+
+doc_id=TST4-MUC4-0026	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0027	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['juan antonio leon montero']], 'PerpOrg': [], 'Target': [], 'Victim': [['jorge cieza lacho']], 'Weapon': []}
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['juan antonio leon montero'], ['victor polay campos'], ['terrorists']], 'PerpOrg': [['gc']], 'Target': [], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0028	#pred=2	#gold=2	prec=1.0000	rec=0.7500	f1=0.8571
+	incident_type=	bombing	bombing
+	Target=
+		None	['high tension towers', 'towers', 'tower']
+	PerpOrg=
+	Weapon=
+		['czechoslovakmade plastic bombs']	['czechoslovak bombs', 'bombs', 'powerful czechoslovakmade plastic bombs', 'czechoslovakmade plastic bombs', 'plastic bombs']
+		['bombs']	['tnt']
+		['tnt']	None
+	PerpInd=
+		['terrorists']	['terrorists']
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		None	['high tension towers', 'towers', 'tower', 'tower no 430']
+	PerpOrg=
+	Weapon=
+		['bombs']	['czechoslovak bombs', 'bombs', 'powerful czechoslovakmade plastic bombs', 'czechoslovakmade plastic bombs', 'plastic bombs']
+		['tnt']	['tnt']
+	PerpInd=
+		['terrorists']	['terrorists']
+	Victim=
+
+doc_id=TST4-MUC4-0029	#pred=5	#gold=3	prec=0.5000	rec=0.7143	f1=0.5882
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['shining path']	['shining path']
+	Weapon=
+	PerpInd=
+		['two shining path members']	['terrorists of the maoist shining path group', 'terrorists', 'four terrorists who claimed to be his students', 'four terrorists']
+		['four terrorists']	None
+	Victim=
+		None	['herminio parra']
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['shining path']	['shining path']
+	Weapon=
+	PerpInd=
+		['two shining path members']	['terrorists of the maoist shining path group', 'terrorists', 'two shining path members', 'shining path members']
+	Victim=
+		['herminio parra']	None
+
+	incident_type=	attack	attack
+	Target=
+		None	['embassy']
+	PerpOrg=
+		['shining path']	['shining path']
+	Weapon=
+	PerpInd=
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [['police club']], 'Victim': [], 'Weapon': [['car bomb']]}
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['car bomb']]}
+
+doc_id=TST4-MUC4-0030	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0031	#pred=1	#gold=1	prec=0.3333	rec=0.2500	f1=0.2857
+	incident_type=	bombing	bombing
+	Target=
+		['section of multipurpose pipeline']	['section of the multipurpose pipeline running from barrancabermeja to bucaramanga', 'section of the multipurpose pipeline', 'multipurpose pipeline running from barrancabermeja to bucaramanga', 'multipurpose pipeline', 'pipeline', 'bucaramanga  barrancabermeja multipurpose pipeline', '30meter section of pipeline', 'oil pipeline', 'section of the multipurpose pipeline between barrancabermeja and bucaramanga']
+		None	['100meter section of the central highway', 'section of the central highway', 'central highway', 'highway']
+	PerpOrg=
+		None	['eln']
+	Weapon=
+		['dynamite multipurpose pipeline']	None
+		['dynamite']	None
+	PerpInd=
+		None	['terrorist']
+	Victim=
+
+doc_id=TST4-MUC4-0032	#pred=1	#gold=1	prec=0.5000	rec=0.6667	f1=0.5714
+	incident_type=	bombing	bombing
+	Target=
+		['headquarters of shoe industry workers union']	['headquarters of the shoe industry workers union']
+		['building']	None
+	PerpOrg=
+	Weapon=
+		['made with black gunpowder']	['small homemade bomb', 'homemade bomb', 'bomb']
+		['homemade bomb']	['black gunpowder', 'gunpowder']
+	PerpInd=
+	Victim=
+
+doc_id=TST4-MUC4-0033	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0034	#pred=4	#gold=1	prec=0.5000	rec=0.6667	f1=0.5714
+	incident_type=	bombing	bombing
+	Target=
+		['home of general enrique franco']	['home of a peruvian army general', 'home of general enrique franco']
+		['home of peruvian army general']	['neighboring houses', 'houses']
+		['neighboring houses']	['vehicle', 'generals vehicle']
+	PerpOrg=
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+		['group of unidentified individuals']	['group of unidentified individuals', 'unidentified individuals', 'individuals']
+	Victim=
+		None	['enrique franco']
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['weapons']]}
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['weapons']]}
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['group of unidentified individuals']], 'PerpOrg': [], 'Target': [['home of peruvian army general']], 'Victim': [], 'Weapon': [['bomb']]}
+
+doc_id=TST4-MUC4-0035	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['guatemalan gunboat']], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0036	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0037	#pred=2	#gold=3	prec=0.3846	rec=0.6250	f1=0.4762
+	incident_type=	bombing	bombing
+	Target=
+		['la torre de cristal building']	['recently built la torre de cristal building', 'la torre de cristal building', 'building']
+		['administrative offices of']	None
+		['seaside resort']	None
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['bombs']	['two bombs', 'bombs']
+	PerpInd=
+		['urban guerrillas']	['fmln urban guerrillas', 'urban guerrillas']
+		['guerrillas']	None
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['la torre de cristal building']	['power pole']
+		['administrative offices of']	None
+		['seaside resort']	None
+		['power pole']	None
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['bombs']	None
+	PerpInd=
+		['urban guerrillas']	['guerrillas', 'fmln guerrillas']
+		['guerrillas']	None
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'bombing'), ('PerpInd', []), ('PerpOrg', [['fmln']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0038	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'kidnapping'), ('PerpInd', [['eps soldiers', 'soldiers', 'eps troops', 'troops']]), ('PerpOrg', [['eps']]), ('Target', []), ('Victim', [['rosalio mejia rodriguez'], ['guillermo saul mejia herrera'], ['hector rosales mejia rodriguez']]), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0039	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'kidnapping', 'PerpInd': [['rebels']], 'PerpOrg': [['eln'], ['national liberation army']], 'Target': [], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0040	#pred=2	#gold=3	prec=0.4286	rec=0.4286	f1=0.4286
+	incident_type=	attack	attack
+	Target=
+		['commercial building belonging']	['commercial building']
+		['parking lotspecifically']	['businesses']
+		['lancer motel']	None
+		['businesses']	None
+	PerpOrg=
+		['manuel jose arce urban command']	['manuel jose arce urban command']
+	Weapon=
+	PerpInd=
+	Victim=
+
+	incident_type=	attack	attack
+	Target=
+		None	['parking lot']
+	PerpOrg=
+		['manuel jose arce urban command']	['manuel jose arce urban command']
+	Weapon=
+	PerpInd=
+		['urban command']	None
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', [['manuel jose arce urban command']]), ('Target', [['lancer motel']]), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0041	#pred=2	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'kidnapping', 'PerpInd': [['group of terrorists']], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': []}
+
+	Predicted but not matched:
+		{'incident_type': 'arson', 'PerpInd': [['group of terrorists']], 'PerpOrg': [], 'Target': [['bus owned'], ['bus'], ['trucks']], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0042	#pred=3	#gold=3	prec=0.7778	rec=0.6000	f1=0.6774
+	incident_type=	attack	attack
+	Target=
+		['bridges']	['bridges']
+	PerpOrg=
+		['farc']	['epl', 'popular liberation army']
+		None	['farc']
+	Weapon=
+	PerpInd=
+		None	['guerrillas', 'guerrillas of the farc and the popular liberation army (epl)', 'guerrillas of the farc and the popular liberation army']
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['bridges']	['bridge']
+		['bridge']	None
+	PerpOrg=
+		['popular liberation army']	['epl', 'popular liberation army']
+		['farc']	['farc']
+		['epl']	None
+	Weapon=
+	PerpInd=
+		['guerrillas']	['guerrillas', 'guerrillas of the farc and the popular liberation army', 'guerrillas of the farc and the popular liberation army (epl)', 'suspected guerrillas']
+	Victim=
+
+	incident_type=	bombing	forced work stoppage
+	Target=
+	PerpOrg=
+		None	['epl', 'popular liberation army']
+		None	['farc']
+	Weapon=
+	PerpInd=
+		['epl']	None
+	Victim=
+
+doc_id=TST4-MUC4-0043	#pred=1	#gold=1	prec=0.5000	rec=0.5000	f1=0.5000
+	incident_type=	bombing	bombing
+	Target=
+		['shopping mall']	['shopping mall']
+		['jail']	['chain']
+	PerpOrg=
+		['fmln']	['fmln']
+	Weapon=
+		['car']	['car bombs']
+	PerpInd=
+	Victim=
+
+doc_id=TST4-MUC4-0044	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['victor diaz caro'], ['snipers']]), ('PerpOrg', [['manuel rodriguez patriotic front', 'fpmr']]), ('Target', []), ('Victim', [['augusto pinochet']]), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0045	#pred=1	#gold=1	prec=0.6667	rec=0.5000	f1=0.5714
+	incident_type=	bombing	bombing
+	Target=
+		['civil registry office']	['public bus', 'bus']
+		['bridge']	['bridge']
+	PerpOrg=
+		['popular liberation army']	['epl', 'popular liberation army']
+	Weapon=
+	PerpInd=
+		None	['guerrillas']
+	Victim=
+
+doc_id=TST4-MUC4-0046	#pred=1	#gold=1	prec=1.0000	rec=1.0000	f1=1.0000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['armed forces']	['armed forces']
+	Weapon=
+	PerpInd=
+		['several rightwing members']	['some death squad members', 'death squad members', 'several rightwing members', 'rightwing members']
+		['death squad members']	None
+	Victim=
+		['oscar arnulfo romero']	['oscar arnulfo romero']
+
+doc_id=TST4-MUC4-0047	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['contras', 'rebels']]), ('PerpOrg', []), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0048	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['paramilitary death squads', 'death squads']]), ('PerpOrg', [['armed forces']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0049	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0050	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0051	#pred=1	#gold=1	prec=0.6667	rec=1.0000	f1=0.8000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['four masked individuals']	['four masked individuals', 'masked individuals', 'individuals', 'criminals']
+	Victim=
+		['carlos medrano vazquez']	['carlos soto sedice']
+		['carlos soto sedice']	None
+
+doc_id=TST4-MUC4-0052	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['raul pellegrin'], ['cecilia magni']]), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0053	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0054	#pred=2	#gold=2	prec=0.8750	rec=0.7778	f1=0.8235
+	incident_type=	bombing	attack / bombing
+	Target=
+		['administrative offices']	['farms']
+		['farms']	None
+	PerpOrg=
+		['national liberation army']	['national liberation army']
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+		['insurgents']	['insurgents apparently belonging to the national liberation army', 'insurgents']
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		None	['citys administrative offices']
+		None	['farms']
+	PerpOrg=
+		['national liberation army']	['national liberation army']
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+		['insurgents']	['insurgents apparently belonging to the national liberation army', 'insurgents']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['insurgents']], 'PerpOrg': [['national liberation army']], 'Target': [], 'Victim': [], 'Weapon': [['bomb']]}
+
+doc_id=TST4-MUC4-0055	#pred=1	#gold=1	prec=1.0000	rec=0.3333	f1=0.5000
+	incident_type=	bombing	bombing
+	Target=
+		None	['andres avelino caceres park']
+	PerpOrg=
+	Weapon=
+		['bomb']	['bomb', 'powerful bomb']
+	PerpInd=
+	Victim=
+		None	['alan garcia']
+
+doc_id=TST4-MUC4-0056	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['military authorities', 'venezuelan military authorities']]), ('PerpOrg', [['venezuelan army', 'army']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0057	#pred=0	#gold=2	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', [['fmln']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['death squad']]), ('PerpOrg', [['army', 'armed forces']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0058	#pred=2	#gold=1	prec=0.3571	rec=0.8000	f1=0.4938
+	incident_type=	bombing	bombing
+	Target=
+		['dance hall']	['dance hall']
+	PerpOrg=
+		['shining path']	['shining path']
+	Weapon=
+		['homemade bomb']	['bomb', 'homemade bomb called russian cheese.', 'homemade bomb']
+		['explosives']	['powder']
+		['bomb']	None
+	PerpInd=
+		['several unidentified people']	['terrorists']
+		['terrorists']	None
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['several unidentified people'], ['terrorists']], 'PerpOrg': [['shining path']], 'Target': [['dance hall']], 'Victim': [], 'Weapon': [['explosives'], ['homemade bomb'], ['bomb']]}
+
+doc_id=TST4-MUC4-0059	#pred=2	#gold=1	prec=0.5000	rec=0.5000	f1=0.5000
+	incident_type=	bombing	bombing
+	Target=
+		None	['power towers of the national energy network', 'power towers']
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['terrorists']	['terrorists']
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [['power towers of national energy network']], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0060	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0061	#pred=1	#gold=1	prec=0.6667	rec=0.8333	f1=0.7407
+	incident_type=	attack	attack
+	Target=
+		['administrative offices of sugar mill']	['el angel sugar mill', 'administrative offices of the sugar mill']
+		['el angel sugar mill']	['nearby house', 'house']
+		['las canas bridge']	None
+		['nearby house']	None
+		['sugar mill']	None
+		['machinery']	None
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['mortars']	['mortars']
+		['rifles']	['rifles']
+	PerpInd=
+		['guerrillas']	['about 50 guerrillas', '50 guerrillas', 'guerrillas', 'insurgents']
+	Victim=
+
+doc_id=TST4-MUC4-0062	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['guerrillas']], 'PerpOrg': [], 'Target': [['police station']], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0063	#pred=1	#gold=1	prec=0.6667	rec=0.5000	f1=0.5714
+	incident_type=	bombing	bombing
+	Target=
+		['community center of dulce nombre de maria']	['community center']
+		['court offices']	['court offices']
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+	PerpInd=
+		['rebels']	['large group of rebels', 'group of rebels', 'rebels']
+	Victim=
+
+doc_id=TST4-MUC4-0064	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['unts']], 'PerpOrg': [], 'Target': [['service station'], ['general directorate office']], 'Victim': [], 'Weapon': []}
+
+doc_id=TST4-MUC4-0065	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0066	#pred=1	#gold=1	prec=0.5000	rec=0.5000	f1=0.5000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['murderers']	None
+	Victim=
+		['parmenides cuenca']	['parmenides cuenca']
+		None	['luz leon']
+
+doc_id=TST4-MUC4-0067	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [['high tension electric tower no 657']], 'Victim': [], 'Weapon': [['fuses'], ['2 kg'], ['packets containing explosives']]}
+
+doc_id=TST4-MUC4-0068	#pred=1	#gold=1	prec=1.0000	rec=0.7500	f1=0.8571
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+		['national liberation army']	['national liberation army', 'eln']
+		['eln']	None
+	Weapon=
+	PerpInd=
+		['eln commando']	['national liberation army (eln) guerrillas', 'guerrillas', 'eln commando', 'commando']
+		['guerrillas']	None
+	Victim=
+		['guillermo rodriguez velasquez']	['guillermo rodriguez velasquez']
+		None	['miguel antonio avila barreto']
+
+doc_id=TST4-MUC4-0069	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0070	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0071	#pred=1	#gold=1	prec=0.6667	rec=0.5000	f1=0.5714
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['national liberation army']	['venezuelan armed forces', 'venezuelan army']
+	Weapon=
+	PerpInd=
+		None	['subversives', 'two survivors']
+	Victim=
+		['justo pastor ceballos']	['justo pastor ceballos']
+		['jose antonio aregua']	['jose antonio aregua']
+
+doc_id=TST4-MUC4-0072	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [['eln rebels'], ['rebels']], 'PerpOrg': [['eln'], ['national liberation army']], 'Target': [], 'Victim': [], 'Weapon': [['dynamite']]}
+
+doc_id=TST4-MUC4-0073	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0074	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0075	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0076	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0077	#pred=3	#gold=3	prec=0.3846	rec=0.3636	f1=0.3738
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['shining path']	['shining path']
+	Weapon=
+	PerpInd=
+		['maoist extremists']	['presumed shining path maoist extremists', 'shining path maoist extremists', 'maoist extremists', 'extremists']
+	Victim=
+
+	incident_type=	bombing	bombing
+	Target=
+		['inns and hotels']	['hotels']
+		['bus']	['inns']
+	PerpOrg=
+		['tupac amaru revolutionary movement']	['tupac amaru revolutionary movement', 'mrta']
+		['shining path']	['shining path']
+		['mrta']	None
+	Weapon=
+	PerpInd=
+		['maoist extremists']	['terrorist groups', 'presumed terrorists', 'terrorists']
+	Victim=
+
+	incident_type=	bombing	attack
+	Target=
+		['inns and hotels']	['bus']
+	PerpOrg=
+		['tupac amaru revolutionary movement']	['tupac amaru revolutionary movement', 'mrta']
+		['shining path']	['shining path']
+		['mrta']	None
+	Weapon=
+	PerpInd=
+		['maoist extremists']	['terrorist groups', 'presumed terrorists', 'terrorists']
+	Victim=
+
+doc_id=TST4-MUC4-0078	#pred=1	#gold=3	prec=0.4000	rec=0.2222	f1=0.2857
+	incident_type=	bombing	bombing
+	Target=
+		['national administration for telecommunications offices']	['trains belonging to the salvadoran national railroad, fenadesal', 'trains belonging to the salvadoran national railroad', 'trains']
+		['hightension power poles']	['vehicles']
+		['mayorial offices']	['buses']
+		['junction boxes']	None
+		['transformers']	None
+		['vehicles']	None
+		['trains']	None
+		['towers']	None
+		['buses']	None
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		None	['mine']
+	PerpInd=
+		['rebels']	['fmln rebels', 'rebels', 'fmln guerrillas', 'guerrillas']
+	Victim=
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['fmln rebels', 'rebels', 'fmln guerrillas', 'guerrillas']]), ('PerpOrg', [['fmln']]), ('Target', [['mayorial offices'], ['national administration for telecommunications offices'], ['junction boxes'], ['vehicles'], ['buses'], ['towers'], ['hightension power poles', 'power poles'], ['transformers']]), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'kidnapping'), ('PerpInd', [['fmln rebels', 'rebels', 'fmln guerrillas', 'guerrillas']]), ('PerpOrg', [['fmln']]), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0079	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [['carlos perez lopez']], 'Weapon': []}
+
+doc_id=TST4-MUC4-0080	#pred=2	#gold=1	prec=0.6667	rec=1.0000	f1=0.8000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+		['765 caliber pistol']	['7.65 caliber pistol', 'pistol']
+	PerpInd=
+		['attacker']	['man']
+		['man']	None
+	Victim=
+		['gustavo de jesus escobar fernandez']	['gustavo de jesus escobar fernandez']
+		['maria florez gutierrez']	['maria florez gutierrez']
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [['gustavo de jesus escobar fernandez']], 'Weapon': []}
+
+doc_id=TST4-MUC4-0081	#pred=0	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	Not predicted:
+		OrderedDict([('incident_type', 'bombing'), ('PerpInd', [['guerrillas', 'insurgents']]), ('PerpOrg', [['fmln']]), ('Target', [['train']]), ('Victim', []), ('Weapon', [['claymore mine', 'mine']])])
+
+doc_id=TST4-MUC4-0082	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0083	#pred=2	#gold=1	prec=0.4000	rec=1.0000	f1=0.5714
+	incident_type=	bombing	bombing
+	Target=
+		['school']	None
+	PerpOrg=
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+	Victim=
+		['mauricio vera barrios']	['mauricio vera barrios']
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [['school']], 'Victim': [], 'Weapon': [['bomb']]}
+
+doc_id=TST4-MUC4-0084	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0085	#pred=2	#gold=2	prec=0.3750	rec=0.3750	f1=0.3750
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['shining path']
+	Weapon=
+	PerpInd=
+		['members']	['members of the maoist shining path guerrilla movement', 'group of terrorists', 'terrorists']
+	Victim=
+		['augusto vilcahuman']	['augusto vilcahuman']
+		['thomas pellissier']	['adolfo spezua']
+		['adolfo spezua']	None
+		['corine seguin']	None
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['maoist shining path guerrilla movement']	['shining path']
+	Weapon=
+	PerpInd=
+		['terrorists']	['members of the maoist shining path guerrilla movement', 'group of terrorists', 'terrorists']
+		['members']	None
+	Victim=
+		None	['thomas pellissier']
+		None	['corine seguin']
+
+doc_id=TST4-MUC4-0086	#pred=1	#gold=1	prec=1.0000	rec=0.6667	f1=0.8000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+	PerpInd=
+		['salvadoran guerrillas']	['salvadoran guerrillas', 'guerrillas']
+	Victim=
+		['hector arevalo']	['hector arevalo']
+
+doc_id=TST4-MUC4-0087	#pred=1	#gold=2	prec=0.4000	rec=0.3333	f1=0.3636
+	incident_type=	kidnapping	kidnapping
+	Target=
+	PerpOrg=
+		['national liberation armys camilist unity']	['national liberation army']
+		['che guevara front']	None
+	Weapon=
+	PerpInd=
+		['four unidentified civilians']	['ernesto che guevara front of the national liberation armys camilist unity', 'ernesto che guevara front']
+		None	['four unidentified civilians carrying largecaliber firearms', 'four unidentified civilians', 'unidentified civilians']
+		None	['national liberation armys camilist unity', 'camilist unity']
+	Victim=
+		['manuel santos cruz arboleda']	['alberto celis sanchez']
+		['alberto celis sanchez']	None
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', [['manuel santos cruz arboleda']]), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0088	#pred=2	#gold=4	prec=0.8000	rec=0.5714	f1=0.6667
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['terrorists']	['four alleged terrorists, all wearing ski masks', 'four alleged terrorists', 'terrorists']
+	Victim=
+		['juan carlos vega llona']	['alfredo chamorro']
+		['alfredo chamorro']	None
+
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+	Weapon=
+	PerpInd=
+		['terrorists']	['terrorists']
+	Victim=
+		['alfredo chamorro']	['alfredo chamorro']
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', [['alleged terrorists', 'terrorists']]), ('PerpOrg', []), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+	Not predicted:
+		OrderedDict([('incident_type', 'attack'), ('PerpInd', []), ('PerpOrg', []), ('Target', []), ('Victim', []), ('Weapon', [])])
+
+doc_id=TST4-MUC4-0089	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0090	#pred=1	#gold=1	prec=0.3333	rec=0.5000	f1=0.4000
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['fmln']	None
+	Weapon=
+	PerpInd=
+		None	['urban guerrillas', 'urban guerrillas operating in santa ana']
+	Victim=
+		['rosa imelda gonzalez medrano']	['rosa imelda gonzalez medrano']
+		['marianela']	None
+
+doc_id=TST4-MUC4-0091	#pred=2	#gold=1	prec=0.5000	rec=0.6667	f1=0.5714
+	incident_type=	bombing	bombing
+	Target=
+		['bridge']	['private car', 'car']
+		None	['bridge']
+	PerpOrg=
+	Weapon=
+		['bomb']	['bomb']
+	PerpInd=
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [], 'PerpOrg': [], 'Target': [['bridge']], 'Victim': [['rodolfo vargas']], 'Weapon': []}
+
+doc_id=TST4-MUC4-0092	#pred=1	#gold=1	prec=0.0000	rec=0.0000	f1=0.0000
+	incident_type=	bombing	arson
+	Target=
+		None	['local garrison', 'garrison']
+	PerpOrg=
+		None	['fmln']
+	Weapon=
+		['bombs']	None
+	PerpInd=
+		['fmln rebels']	['fmln rebels', 'rebels']
+	Victim=
+
+doc_id=TST4-MUC4-0093	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0094	#pred=1	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+	Predicted but not matched:
+		{'incident_type': 'attack', 'PerpInd': [['youths']], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['handgun butts']]}
+
+doc_id=TST4-MUC4-0095	#pred=1	#gold=1	prec=0.5000	rec=1.0000	f1=0.6667
+	incident_type=	bombing	bombing
+	Target=
+		['san luis substation']	None
+		['control room']	None
+	PerpOrg=
+	Weapon=
+		['explosives']	['explosives']
+	PerpInd=
+		['rebels']	['rebels', 'another group']
+	Victim=
+
+doc_id=TST4-MUC4-0096	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0097	#pred=2	#gold=1	prec=0.6667	rec=1.0000	f1=0.8000
+	incident_type=	bombing	bombing
+	Target=
+		['checkpoint']	['checkpoint']
+	PerpOrg=
+	Weapon=
+		['three bombs']	['three bombs', 'bombs']
+	PerpInd=
+	Victim=
+
+	Predicted but not matched:
+		{'incident_type': 'bombing', 'PerpInd': [], 'PerpOrg': [], 'Target': [], 'Victim': [], 'Weapon': [['three bombs']]}
+
+doc_id=TST4-MUC4-0098	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000
+doc_id=TST4-MUC4-0099	#pred=1	#gold=1	prec=0.7500	rec=1.0000	f1=0.8571
+	incident_type=	attack	attack
+	Target=
+	PerpOrg=
+		['manuel rodriguez patriotic front']	['manuel rodriguez patriotic front', 'fpmr']
+		['fpmr']	None
+	Weapon=
+	PerpInd=
+		['rojas lobos']	None
+	Victim=
+		['fernando torres silva']	['fernando torres silva']
+
+doc_id=TST4-MUC4-0100	#pred=0	#gold=0	prec=0.0000	rec=0.0000	f1=0.0000

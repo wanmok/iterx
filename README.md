@@ -1,7 +1,12 @@
 # Iterative Document-level Information Extraction via Imitation Learning
+
 This repo contains code for the following paper:
 
-- Yunmo Chen, William Gantt, Weiwei Gu, Tongfei Chen, Aaron White, and Benjamin Van Durme. 2023. Iterative Document-level Information Extraction via Imitation Learning. In Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics, pages 1858–1874, Dubrovnik, Croatia. Association for Computational Linguistics.
+- Yunmo Chen, William Gantt, Weiwei Gu, Tongfei Chen, Aaron White, and Benjamin Van Durme.
+    2023. [Iterative Document-level Information Extraction via Imitation Learning](https://arxiv.org/abs/2210.06600). In
+          Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics,
+          pages
+          1858–1874, Dubrovnik, Croatia. Association for Computational Linguistics.
 
 ```
 @inproceedings{chen-etal-2023-iterative,
@@ -23,9 +28,90 @@ This repo contains code for the following paper:
 }
 ```
 
-## Codebase Release
+## Codebase Release Progress
 
 We are gradually releasing materials related to our paper. The release includes the following:
-- [x] [Model outputs for the IterX model](./model_outputs)
-- [ ] Metric implementations
-- [ ] Code for the IterX model
+
+- [x] [Model outputs for the IterX model](resources/model_outputs)
+- [x] [Metric implementations](iterx/metrics/muc/ceaf_rme.py)
+- [x] [Code for the IterX model](iterx/models/iterative_template_extraction.py)
+
+Beyond our initial release, we are also planning to release the following;
+however, they are subject to change (in terms of the release date and the content):
+
+- [ ] Trained checkpoints of IterX models
+- [ ] Trained checkpoints of Span Finder models
+- [ ] Pipeline for running Span Finder and IterX together on new datasets
+- [ ] Migrations of Span Finder and IterX to lightning (if requested by enough users)
+
+# Runbook
+
+## Environment Setup
+
+### Set up Python and Poetry
+
+*If you already have a running Python environment, you can skip this section.
+We tested our codebase on Python 3.11.*
+
+1. Install Python: for Python installation, you can either manage different Python versions
+   through [Conda](https://docs.conda.io/en/latest/miniconda.html) or
+   [pyenv](https://github.com/pyenv/pyenv).
+   If you were using Conda, we recommend creating a new environment for this project;
+2. Install Poetry using command line by
+   following [the Poetry installation](https://python-poetry.org/docs#installation);
+3. Make sure that you have added Poetry bin directory to your `PATH` environment variable.
+
+### Set up the IterX Codebase
+
+1. Clone IterX codebase to your local directory
+2. Create and activate a new virtual environment
+
+   If you were using Conda, you can create a new environment by running the following command:
+
+    ```shell
+    conda create -n <your_env_name> python=3.11
+    conda activate <your_env_name>
+    ```
+
+3. Enter the project root directory and install the dependencies
+
+    ```shell
+    cd <project_root>
+    poetry install
+    ```
+
+## Run IterX
+
+Before running all IterX related commands, please make sure that you have activated the environment by running the
+following command *from the project root*. IterX should be compatible with all AllenNLP commands.
+
+```shell
+poetry shell
+```
+
+### Model Training
+
+You can kick off model training using the same command as ones used in AllenNLP. Here is an example template command:
+
+```shell
+PYTHONPATH=./src allennlp train \
+  --include-package iterx \
+  -s <serialization_dir> \
+  <path_to_config_file>
+```
+
+If you would like to turn on the BETTER supports, you should also add `better` to `--include-package` argument.
+
+## Run Evaluation Script
+
+We provide a script for evaluating the model outputs using CEAF-RME metrics. There are two modes of the script, one is
+to evaluate model outputs and generate corresponding performance scores, the other is to generate prediction
+comparison results. They share the same CLI arguments and options. You can use `--help` to get detailed usages.
+
+```shell
+PYTHONPATH=./src python scripts/ceaf-scorer.py <score_or_compare> \
+  --dataset <dataset_name> \
+  <path_to_pred_file> \
+  <path_to_ref_file>
+```
+

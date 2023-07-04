@@ -1,0 +1,186 @@
+{
+  "@version": "0.6.0",
+  "definitions": {
+    "kidnapping": {
+      "output_str": "kidnapping",
+      "slots": {
+        "perporg": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "victim": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "perpind": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "target": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "weapon": {
+          "filler_types": [
+            "spanset"
+          ]
+        }
+      }
+    },
+    "attack": {
+      "output_str": "attack",
+      "slots": {
+        "perporg": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "victim": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "perpind": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "target": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "weapon": {
+          "filler_types": [
+            "spanset"
+          ]
+        }
+      }
+    },
+    "bombing": {
+      "output_str": "bombing",
+      "slots": {
+        "perporg": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "victim": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "perpind": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "target": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "weapon": {
+          "filler_types": [
+            "spanset"
+          ]
+        }
+      }
+    },
+    "robbery": {
+      "output_str": "robbery",
+      "slots": {
+        "perporg": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "victim": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "perpind": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "target": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "weapon": {
+          "filler_types": [
+            "spanset"
+          ]
+        }
+      }
+    },
+    "arson": {
+      "output_str": "arson",
+      "slots": {
+        "perporg": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "victim": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "perpind": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "target": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "weapon": {
+          "filler_types": [
+            "spanset"
+          ]
+        }
+      }
+    },
+    "forced work stoppage": {
+      "output_str": "forced work stoppage",
+      "slots": {
+        "perporg": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "victim": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "perpind": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "target": {
+          "filler_types": [
+            "spanset"
+          ]
+        },
+        "weapon": {
+          "filler_types": [
+            "spanset"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {}
+}
