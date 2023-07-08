@@ -26,6 +26,7 @@ local span_sampling_rate = 1.0;
 # No special weight on loss for reused spans by default
 local span_reuse_discount_factor = null;
 local graph_encoder = {
+  "type": "pytorch_transformer",
   "input_dim": transformer_dim,
   "num_layers": 3,
   "feedforward_hidden_dim": 2048,
