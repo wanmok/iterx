@@ -108,6 +108,7 @@ class IterativeTemplateExtraction(Model):
         )
         # Graph encoding
         self.graph_encoder = graph_encoder
+
         # Defines embeddings
         self.template_embeddings = Embedding(vocab=vocab,
                                              vocab_namespace='template_labels',

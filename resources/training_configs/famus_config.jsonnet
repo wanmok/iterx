@@ -5,6 +5,10 @@ local transformer_dim = 1024;
 
 local max_length = 1024;
 
+# Whether to use gradient checkpointing (to save
+# memory; applied only to the base encoder)
+local use_gradient_checkpointing = true;
+
 # Data paths
 local definition_path = "resources/data/famus/definitions.json";
 local vocabulary_path = "resources/data/famus/vocabulary";
@@ -117,7 +121,8 @@ local model = {
   "lexical_dropout": lexical_dropout,
   "feature_dropout": feature_dropout,
   "initializer": initializer,
-  "metrics": metrics
+  "metrics": metrics,
+  "use_checkpoint": use_gradient_checkpointing
 };
 
 {
@@ -146,7 +151,7 @@ local model = {
   "trainer": {
     "num_epochs": 150, # originally 500
     "patience" : 30, # originally 50
-    "validation_metric": "+jhu_muc_slot_f1",
+    "validation_metric": "+iterx_muc_slot_f1",
     "grad_norm": 1.0,
     "learning_rate_scheduler": {
       "type": "polynomial_decay",
@@ -159,7 +164,8 @@ local model = {
       "lr": 3e-5,
       "weight_decay": 1e-2,
       "parameter_groups": [
-        [[".*transformer.*"], {"lr": 1e-5}]
+        [[".*transformer.*"], {"lr": 1e-5}],
+        [[".*text_field_embedder.*"], {"requires_grad": false}]
       ]
     },
     # Uncomment if logging to Tensorboard
