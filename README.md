@@ -16,7 +16,7 @@ This repo contains code for the following paper:
       Gu, Weiwei  and
       Chen, Tongfei  and
       White, Aaron  and
-      Van Durme, Benjamin",
+      {Van Durme}, Benjamin",
     booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
     month = may,
     year = "2023",
