@@ -26,6 +26,7 @@ local span_sampling_rate = 1.0;
 # No special weight on loss for reused spans by default
 local span_reuse_discount_factor = null;
 local graph_encoder = {
+  "type": "pytorch_transformer",
   "input_dim": transformer_dim,
   "num_layers": 3,
   "feedforward_hidden_dim": 2048,
@@ -63,7 +64,7 @@ local initializer = {
 
 local metrics = {
   muc: {
-    type: "jhu_muc",
+    type: "iterx_muc",
     ignore_no_template_doc: true,
     sanitize_special_chars: true,
     doc_path: {
@@ -111,8 +112,6 @@ local model = {
   "pairwise_scoring": true,
   "span_sampling_rate": span_sampling_rate,
   "expert_roll_out": 0.6,
-  "edge_feature_dim": 256,
-  "use_gnn": false,
   "graph_encoder": graph_encoder,
   "iteration_cutoff": iteration_cutoff,
   "lexical_dropout": lexical_dropout,
@@ -147,7 +146,7 @@ local model = {
   "trainer": {
     "num_epochs": 150, # originally 500
     "patience" : 30, # originally 50
-    "validation_metric": "+jhu_muc_slot_f1",
+    "validation_metric": "+iterx_muc_slot_f1",
     "grad_norm": 1.0,
     "learning_rate_scheduler": {
       "type": "polynomial_decay",

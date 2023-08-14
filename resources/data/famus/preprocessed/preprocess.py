@@ -353,10 +353,10 @@ def parse_arguments():
                         default = "/data/sid/rams2/pilots/role_annotation_task/data/role_filler_bulk_task_cumulative_annotations.jsonl",
                         help='Path to the role annotation jsonl file')
     
-    parser.add_argument('--output_path', type=str, 
+    parser.add_argument('--base_output_path', type=str, 
                         required=True,
-                        default = "/data/sid/iterx/resources/data/famus/preprocessed/tokenized/",
-                        help='Dir Path to the output files')
+                        default = "/data/sid/iterx/resources/data/famus/",
+                        help='Base directory path to the output files')
     
     return parser.parse_args()
 
@@ -381,12 +381,13 @@ def main():
         famus_definition_dict['definitions'][frame] = frame_to_definition_format(frame)
 
     # save the dictionary as a json file
-    with open('/data/sid/iterx/resources/data/famus/definitions.json', 'w') as f:
+    with open(os.path.join(args.base_output_path, 'definitions.json'), 'w') as f:
         json.dump(famus_definition_dict, f, indent=4)
 
 
     # create template_labels.txt
-    with open("/data/sid/iterx/resources/data/famus/vocabulary/template_labels.txt", 'w') as f:
+    
+    with open(os.path.join(args.base_output_path, 'vocabulary', 'template_labels.txt'), 'w') as f:
         for frame in v1_frames:
             f.write(frame + '\n')
 
@@ -397,7 +398,7 @@ def main():
         for role in frame_to_core_roles(frame):
             slot_types_set.add(role)
     slot_types_list = initial_slots + sorted(list(slot_types_set))
-    with open("/data/sid/iterx/resources/data/famus/vocabulary/slot_types.txt", 'w') as f:
+    with open(os.path.join(args.base_output_path, 'vocabulary', 'slot_types.txt'), 'w') as f:
         for slot_type in slot_types_list:
             f.write(slot_type + '\n')
     ################################################################################################
@@ -434,9 +435,14 @@ def main():
     ################################################################################################
     ####### Export to jsonl
     ################################################################################################
-    export_to_jsonl(train_iterx_instances, os.path.join(args.output_path, "train.jsonl"))
-    export_to_jsonl(dev_iterx_instances, os.path.join(args.output_path, "dev.jsonl"))
-    export_to_jsonl(test_iterx_instances, os.path.join(args.output_path, "test.jsonl"))
+    # make export directory
+    export_dir = os.path.join(args.base_output_path, 'preprocessed', 'tokenized')
+    
+    os.makedirs(export_dir, exist_ok=True)
+
+    export_to_jsonl(train_iterx_instances, os.path.join(export_dir, "train.jsonl"))
+    export_to_jsonl(dev_iterx_instances, os.path.join(export_dir, "dev.jsonl"))
+    export_to_jsonl(test_iterx_instances, os.path.join(export_dir, "test.jsonl"))
 
 
 if __name__ == "__main__":
