@@ -2,7 +2,7 @@
 # Running instructions
 # python preprocess.py --frames_list_path /data/sid/rams2/pilots/event_state_process_Spanfinder.txt \
 #                         --role_annotation_path /data/sid/rams2/pilots/role_annotation_task/data/role_filler_bulk_task_cumulative_annotations.jsonl \
-#                         --output_path /data/sid/iterx/resources/data/famus/preprocessed/tokenized/
+#                         --base_output_path "/data/sid/iterx/resources/data/famus/" 
 
 
 from typing import List, Dict, Tuple
@@ -14,6 +14,8 @@ from nltk.corpus import framenet as fn
 from tqdm import tqdm
 import os
 import numpy as np
+from fastcoref import FCoref
+
 
 def frame_to_core_roles(frame: str):
     """
@@ -360,7 +362,129 @@ def parse_arguments():
     
     return parser.parse_args()
 
+
+def convertCorefClusterSpans2AllSpanClusterDict(cluster_spans):
+    """
+    Given a cluster span dict from FCoref model, convert it to
+     All_span clster dict format.
+      
+    Input eg:
+    [[(100, 167), (214, 225)],
+    [(301, 311), (319, 321), (2051, 2069)],
+    [(61, 87),
+    (484, 492),
+    (503, 506),
+    (1004, 1012),
+    (1440, 1443),
+    (1479, 1487),
+    (1497, 1498),
+    (1921, 1929),
+    (1962, 1964)],
+    ...
+
+    Output eg:
+    {(100, 166): 1,
+    (214, 224): 1,
+    (301, 310): 2,
+    (319, 320): 2,
+    (2051, 2068): 2,
+    (61, 86): 3,
+    (484, 491): 3,
+    (503, 505): 3,
+    (1004, 1011): 3,
+    (1440, 1442): 3,
+    (1479, 1486): 3,
+    (1497, 1497): 3,
+    (1921, 1928): 3,
+    (1962, 1963): 3, ...
+    
+
+    Note that the end_idx is inclusive in all-spans but exclusive in coref clusters.
+    """
+    from collections import defaultdict
+    char_spans_to_coref_cluster_id = defaultdict(int)
+
+    for cluster_id, (cluster_spans) in enumerate(cluster_spans):
+        for char_start, char_end in cluster_spans:
+            # we subtract 1 from char_end because the end_idx is inclusive in all-spans
+            char_spans_to_coref_cluster_id[(char_start, char_end-1)] = cluster_id+1
+
+    return char_spans_to_coref_cluster_id
+
+def filter_spans_by_coref_clusters(all_spans, 
+                                   char_spans_to_coref_cluster_id,
+                                   filter_type = "first"):
+    """
+    Given 'all-spans' of a iterx format instance and the char_spans_to_coref_cluster_id dict,
+    filter spans such that we have at most one span from each coref cluster.
+
+    Parameters
+    ----------
+    all_spans : list
+        List of all spans in the iterx format instance.
+        eg: [['Sex education', 8, 20, 4, 5, ''],
+             ['Sex', 8, 10, 4, 4, '']] ...
+    char_spans_to_coref_cluster_id : dict
+        Eg: {(100, 166): 1,
+            (214, 224): 1,
+            (301, 310): 2,
+            (319, 320): 2, ...
+    
+    filter_type : str
+        'first' or 'longest' or 'dense'
+    """
+    filtered_spans = []
+    finished_clusters = set()
+    finished_strings = set()
+
+    for (string, start_char, end_char, start_tok, end_tok, type_str) in all_spans:
+        # If the exact string is present multiple times, only extract the first one
+        if string in finished_strings:
+            continue
+
+        cluster_num = char_spans_to_coref_cluster_id[(start_char, end_char)]
+        # cluster is matched
+        if cluster_num != 0 and cluster_num not in finished_clusters:
+            finished_clusters.add(cluster_num)
+            filtered_spans.append((string, start_char, end_char, start_tok, end_tok, type_str))
+            finished_strings.add(string)
+
+        elif cluster_num !=0 and cluster_num in finished_clusters:
+            continue
+
+        # cluster is not matched
+        else:
+            filtered_spans.append((string, start_char, end_char, start_tok, end_tok, type_str))
+            finished_strings.add(string)
+
+    return filtered_spans
+
+def iterx_instances_to_instances_with_filtered_spans(instances, coref_model):
+    """
+    Given a list of iterx instances, return a list of instances with filtered spans
+    based on coref clusters.
+    """
+    # Get the coref chains
+    coref_preds = coref_model.predict(
+                texts=[inst['doctext'] for inst in instances]
+                    )
+    
+    docid_to_source_coref_clusters_as_spans = {}
+    for docid, coref_pred in zip([inst['docid'] for inst in instances], coref_preds):
+        docid_to_source_coref_clusters_as_spans[docid] = coref_pred.get_clusters(as_strings=False)
+
+
+    for instance in instances:
+        docid = instance['docid']
+        char_spans_to_coref_cluster_id = convertCorefClusterSpans2AllSpanClusterDict(docid_to_source_coref_clusters_as_spans[docid])
+        filtered_spans = filter_spans_by_coref_clusters(instance['all-spans'], char_spans_to_coref_cluster_id)
+        instance['all-spans'] = filtered_spans
+
+    return instances
+        
+
 def main():
+    coref_model = FCoref(device='cuda:0')
 
     args = parse_arguments()
 
@@ -443,6 +567,12 @@ def main():
     export_to_jsonl(train_iterx_instances, os.path.join(export_dir, "train.jsonl"))
     export_to_jsonl(dev_iterx_instances, os.path.join(export_dir, "dev.jsonl"))
     export_to_jsonl(test_iterx_instances, os.path.join(export_dir, "test.jsonl"))
+
+
+    #################################################################################################
+    ####### Export to jsonl Filtered spans
+    #################################################################################################
+    
 
 
 if __name__ == "__main__":
