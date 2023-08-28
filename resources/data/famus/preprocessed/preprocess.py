@@ -165,7 +165,7 @@ def annotated_spans_to_iterx_template_format(frame: str,
     template_dict['incident_type'] = frame
     
     # sort the spans based on sentence index and start token index
-    for span in  sorted(annotated_spans, key= lambda x: str(x['sentenceIndex']) + '_' + str(x['startToken'])):
+    for span in  sorted(annotated_spans, key= lambda x: x['sentenceIndex'] + x['startToken']/1000):
         if span['sentenceIndex'] == -1:
             template_dict[span['role']] = []
         # this is to take care of a bug that was present in the annotation tool
@@ -242,7 +242,7 @@ def role_df_row_to_iterx_instance(input_json: Dict,
             instance['all-spans'].add(tuple(current_iterx_span))
 
     # Convert the set to a list and sort it based on the start_char_idx
-    instance['all-spans'] = sorted(list(instance['all-spans']), key=lambda x: x[1])
+    instance['all-spans'] = sorted(list(instance['all-spans']), key=lambda x: x[1] +  x[2]/1000)
 
     # add spans_to_idx_map which maps a span to its index in all-spans
     # this is used to fill template-spans field inside the templates field of each instance
@@ -342,26 +342,6 @@ def export_to_jsonl(instances, output_path):
         for instance in instances:
             f.write(json.dumps(instance) + '\n')
 
-def parse_arguments():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--frames_list_path', 
-                        type=str, 
-                        required=True,
-                        default = "/data/sid/rams2/pilots/event_state_process_Spanfinder.txt",
-                        help='Path to frames list to be used')
-    
-    parser.add_argument('--role_annotation_path', type=str, 
-                        required=True,
-                        default = "/data/sid/rams2/pilots/role_annotation_task/data/role_filler_bulk_task_cumulative_annotations.jsonl",
-                        help='Path to the role annotation jsonl file')
-    
-    parser.add_argument('--base_output_path', type=str, 
-                        required=True,
-                        default = "/data/sid/iterx/resources/data/famus/",
-                        help='Base directory path to the output files')
-    
-    return parser.parse_args()
-
 
 def convertCorefClusterSpans2AllSpanClusterDict(cluster_spans):
     """
@@ -371,45 +351,32 @@ def convertCorefClusterSpans2AllSpanClusterDict(cluster_spans):
     Input eg:
     [[(100, 167), (214, 225)],
     [(301, 311), (319, 321), (2051, 2069)],
-    [(61, 87),
-    (484, 492),
-    (503, 506),
-    (1004, 1012),
-    (1440, 1443),
-    (1479, 1487),
-    (1497, 1498),
-    (1921, 1929),
-    (1962, 1964)],
+    [(61, 87), (484, 492), (503, 506),(1004, 1012),...],
     ...
-
     Output eg:
-    {(100, 166): 1,
-    (214, 224): 1,
-    (301, 310): 2,
-    (319, 320): 2,
-    (2051, 2068): 2,
-    (61, 86): 3,
-    (484, 491): 3,
-    (503, 505): 3,
-    (1004, 1011): 3,
-    (1440, 1442): 3,
-    (1479, 1486): 3,
-    (1497, 1497): 3,
-    (1921, 1928): 3,
-    (1962, 1963): 3, ...
+    charTupl2cluster = {(100, 166): 1, (214, 224): 1,
+                    (301, 310): 2, (319, 320): 2, (2051, 2068): 2,
+                    (61, 86): 3, (484, 491): 3, (503, 505): 3, (1004, 1011): 3,...}
+
+    cluster2charTupl = {1: [(100, 166), (214, 224)],
+                    2: [(301, 310), (319, 320), (2051, 2068)],
+                    3: [(61, 86), (484, 491), (503, 505), (1004, 1011),...],}
     
 
     Note that the end_idx is inclusive in all-spans but exclusive in coref clusters.
     """
     from collections import defaultdict
-    char_spans_to_coref_cluster_id = defaultdict(int)
-
+    charTupl2cluster = defaultdict(int)
+    cluster2charTupl = defaultdict(list)
+    # Create both charTupl2cluster and cluster2charTupl
     for cluster_id, (cluster_spans) in enumerate(cluster_spans):
         for char_start, char_end in cluster_spans:
             # we subtract 1 from char_end because the end_idx is inclusive in all-spans
-            char_spans_to_coref_cluster_id[(char_start, char_end-1)] = cluster_id+1
+            current_cluster_id = cluster_id+1
+            charTupl2cluster[(char_start, char_end-1)] = current_cluster_id
+            cluster2charTupl[current_cluster_id].append((char_start, char_end-1))
 
-    return char_spans_to_coref_cluster_id
+    return charTupl2cluster, cluster2charTupl
 
 def filter_spans_by_coref_clusters(all_spans, 
                                    char_spans_to_coref_cluster_id,
@@ -435,19 +402,19 @@ def filter_spans_by_coref_clusters(all_spans,
     """
     filtered_spans = []
     finished_clusters = set()
-    finished_strings = set()
+    # finished_strings = set()
 
     for (string, start_char, end_char, start_tok, end_tok, type_str) in all_spans:
         # If the exact string is present multiple times, only extract the first one
-        if string in finished_strings:
-            continue
+        # if string in finished_strings:
+        #     continue
 
         cluster_num = char_spans_to_coref_cluster_id[(start_char, end_char)]
         # cluster is matched
         if cluster_num != 0 and cluster_num not in finished_clusters:
             finished_clusters.add(cluster_num)
             filtered_spans.append((string, start_char, end_char, start_tok, end_tok, type_str))
-            finished_strings.add(string)
+            # finished_strings.add(string)
 
         elif cluster_num !=0 and cluster_num in finished_clusters:
             continue
@@ -455,33 +422,115 @@ def filter_spans_by_coref_clusters(all_spans,
         # cluster is not matched
         else:
             filtered_spans.append((string, start_char, end_char, start_tok, end_tok, type_str))
-            finished_strings.add(string)
+            # finished_strings.add(string)
 
+    filtered_spans = sorted(filtered_spans, key=lambda x: x[1] + x[2]/1000)
+    
     return filtered_spans
 
-def iterx_instances_to_instances_with_filtered_spans(instances, coref_model):
+
+def convertInstanceBasedonCorefClusters(instance,
+                                        docid_to_source_coref_clusters_as_spans,
+                                        filter_approach = 'first'):
     """
-    Given a list of iterx instances, return a list of instances with filtered spans
-    based on coref clusters.
-    """
-    # Get the coref chains
-    coref_preds = coref_model.predict(
-                texts=[inst['doctext'] for inst in instances]
-                    )
+    Given a instance, convert the spans in each template based on the coref clusters.
+    This function changes to keys in of the instance -- 'templates' and 'all-spans'
     
-    docid_to_source_coref_clusters_as_spans = {}
-    for docid, coref_pred in zip([inst['docid'] for inst in instances], coref_preds):
-        docid_to_source_coref_clusters_as_spans[docid] = coref_pred.get_clusters(as_strings=False)
+    Args:
+        instance: an iterx instance 
+        docid_to_source_coref_clusters_as_spans: dict mapping docid to coref clusters
+        filter_approach: 'first', 'longest', 'dense'
 
+    Returns:
+        instance: an iterx instance with the 'templates' and 'all-spans' keys changed
+    """
+    # deep copy of the instance
+    import copy
+    instance = copy.deepcopy(instance)
 
-    for instance in instances:
-        docid = instance['docid']
-        char_spans_to_coref_cluster_id = convertCorefClusterSpans2AllSpanClusterDict(docid_to_source_coref_clusters_as_spans[docid])
-        filtered_spans = filter_spans_by_coref_clusters(instance['all-spans'], char_spans_to_coref_cluster_id)
-        instance['all-spans'] = filtered_spans
+    docid = instance['docid']
 
-    return instances
+    charTupl2clusterid, clusterid2charTupl = convertCorefClusterSpans2AllSpanClusterDict(docid_to_source_coref_clusters_as_spans[docid])
+    filtered_spans = filter_spans_by_coref_clusters(instance['all-spans'], charTupl2clusterid)    
+
+    # add spans_to_idx_map which maps a span to its index in all-spans
+    # this is used to fill template-spans field inside the templates field of each instance
+    char_spans_to_all_span_idx_map = {}
+    for span_idx, span in enumerate(filtered_spans):
+        # the key is a tuple of the start char index, end char index
+        char_spans_to_all_span_idx_map[tuple((span[1:3]))] = span_idx
+
+    span_index_list = []
+    # there's only one template in each instance
+    template = instance['templates'][0]
+    modified_template = {}
+    for role, role_spans in template.items():
+        if role == 'incident_type':
+            modified_template[role] = role_spans
+
+        elif role == "template-spans":
+            continue
+
+        # any other role than incident_type and template-spans with empty spans
+        elif role_spans == []:
+            modified_template[role] = []
+
+        # any other role than incident_type and template-spans with non-empty spans
+        else:
+            span_str, char_start, char_end, token_start, token_end, span_frame_type, role_name = role_spans[0][0]
+            cluster_id = charTupl2clusterid[(char_start, char_end)]
+            # if the span tuple falls in a valid coref cluster, then edit the span
+            # based on the filter approach
+            if cluster_id:
+                # get the correct char span based on approach
+                if filter_approach == 'first':
+                    cluster_item_idx = 0
+                    char_start, char_end = clusterid2charTupl[cluster_id][cluster_item_idx]
+                    # it is possible that the first span in the cluster is not in the filtered_spans list
+                    # (possibly due to the fact that coref identifies this as an entity but the all-spans didn't)
+                    # in such cases, we need to find the next span in the cluster that is in the filtered_spans list
+                    while (char_start, char_end) not in char_spans_to_all_span_idx_map:
+                        cluster_item_idx += 1
+                        char_start, char_end = clusterid2charTupl[cluster_id][cluster_item_idx]
+
+            # fetch the full span from the filtered_spans list
+            span_idx = char_spans_to_all_span_idx_map[(char_start, char_end)]
+            span_index_list.append(span_idx)
+            
+            char_token_idxs = list(filtered_spans[span_idx])
+            char_token_idxs.append(role)
+            modified_template[role] = [[char_token_idxs]]   
+
+    # find the indices of the spans in the all-spans list
+    span_index_list_unique = sorted(list(set(span_index_list)))
+    modified_template['template-spans'] = span_index_list_unique  
+
+    instance['all-spans'] = filtered_spans
+    instance['templates'] = [modified_template]
+
+    return instance
         
+
+def parse_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--frames_list_path', 
+                        type=str, 
+                        required=True,
+                        default = "/data/sid/rams2/pilots/event_state_process_Spanfinder.txt",
+                        help='Path to frames list to be used')
+    
+    parser.add_argument('--role_annotation_path', type=str, 
+                        required=True,
+                        default = "/data/sid/rams2/pilots/role_annotation_task/data/role_filler_bulk_task_cumulative_annotations.jsonl",
+                        help='Path to the role annotation jsonl file')
+    
+    parser.add_argument('--base_output_path', type=str, 
+                        required=True,
+                        default = "/data/sid/iterx/resources/data/famus/",
+                        help='Base directory path to the output files')
+    
+    return parser.parse_args()
+
 
 def main():
     coref_model = FCoref(device='cuda:0')
