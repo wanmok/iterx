@@ -14,7 +14,6 @@ from nltk.corpus import framenet as fn
 from tqdm import tqdm
 import os
 import numpy as np
-from fastcoref import FCoref
 
 
 def frame_to_core_roles(frame: str):
@@ -131,7 +130,8 @@ def sentence_token_span_to_doc_spans(sentence_token_spans,
 def annotated_spans_to_iterx_template_format(frame: str,
                                              annotated_spans: List[Dict],
                                              document_sentences: List[List[str]],
-                                             iterx_span_to_idx_map: Dict):
+                                             iterx_span_to_idx_map: Dict,
+                                             skip_extra_roles = True):
     """
     Convert the annotated spans to the iterx template format.
 
@@ -166,8 +166,18 @@ def annotated_spans_to_iterx_template_format(frame: str,
     
     # sort the spans based on sentence index and start token index
     for span in  sorted(annotated_spans, key= lambda x: x['sentenceIndex'] + x['startToken']/1000):
+         # "__" in the role name indicates it is an extra role
+        # we skip extra roles if the flag is set to True
+        if "__" in span['role'] and skip_extra_roles:
+            continue
+
         if span['sentenceIndex'] == -1:
-            template_dict[span['role']] = []
+            # "__" in the role name indicates it is an extra role
+            # we skip extra roles if there were no annotations for them
+            if "__" in span['role']:
+                continue
+            else:
+                template_dict[span['role']] = []
         # this is to take care of a bug that was present in the annotation tool
         # where the startToken was greater than the endToken
         # We ignore such spans
@@ -191,7 +201,8 @@ def annotated_spans_to_iterx_template_format(frame: str,
 
 def role_df_row_to_iterx_instance(input_json: Dict,
                                   annotated_frame: str,
-                                  annotated_sourceSpans: List[Dict]):
+                                  annotated_sourceSpans: List[Dict],
+                                  skip_extra_roles = True):
     """
     Convert a row of the role annotation dataframe to an iterx instance.
 
@@ -255,7 +266,8 @@ def role_df_row_to_iterx_instance(input_json: Dict,
     instance['templates'] = annotated_spans_to_iterx_template_format(annotated_frame,
                                          annotated_sourceSpans,
                                          input_json['sourceSentences'],
-                                         spans_to_idx_map)
+                                         spans_to_idx_map,
+                                         skip_extra_roles = skip_extra_roles)
     
     instance['doctext-tok'] = [token for sent in input_json['sourceSentences']
                                 for token in sent]
@@ -533,8 +545,6 @@ def parse_arguments():
 
 
 def main():
-    coref_model = FCoref(device='cuda:0')
-
     args = parse_arguments()
 
     # Select rows with relevant frames
@@ -616,12 +626,6 @@ def main():
     export_to_jsonl(train_iterx_instances, os.path.join(export_dir, "train.jsonl"))
     export_to_jsonl(dev_iterx_instances, os.path.join(export_dir, "dev.jsonl"))
     export_to_jsonl(test_iterx_instances, os.path.join(export_dir, "test.jsonl"))
-
-
-    #################################################################################################
-    ####### Export to jsonl Filtered spans
-    #################################################################################################
-    
 
 
 if __name__ == "__main__":
