@@ -277,8 +277,10 @@ def role_df_row_to_iterx_instance(input_json: Dict,
     
     instance['tok2char'] = tok2char
     instance['char2tok'] = char2tok
-    instance['spans-to-spanset'] = []
-    
+
+    # 'all-span-sets' are coref clusters: for now we just assume each span is its own cluster
+    instance['all-span-sets'] = [[span] for span in instance['all-spans']]
+    instance['spans-to-spanset'] = [i for i in range(len(instance['all-spans']))]
 
     return instance
 
@@ -330,7 +332,8 @@ def split_df_to_train_dev_test_by_frame(df,
     return train_df, dev_df, test_df
 
     
-def convert_df_to_iterx_instances(df):
+def convert_df_to_iterx_instances(df,
+                                  skip_extra_roles = True):
     """
     Convert the role_df to iterx instances
 
@@ -345,7 +348,9 @@ def convert_df_to_iterx_instances(df):
         input_json = json.loads(row['Input.json'])
         iterx_instances.append(role_df_row_to_iterx_instance(input_json,
                                                          row['full_role_dict']['frame'],
-                                                         row['full_sourceSpans']))
+                                                         row['full_sourceSpans'],
+                                                         skip_extra_roles = skip_extra_roles),
+                                                         )
     return iterx_instances
 
 
@@ -519,6 +524,10 @@ def convertInstanceBasedonCorefClusters(instance,
 
     instance['all-spans'] = filtered_spans
     instance['templates'] = [modified_template]
+    
+    # 'all-span-sets' are coref clusters: for now we just assume each span is its own cluster
+    instance['all-span-sets'] = [[span] for span in instance['all-spans']]
+    instance['spans-to-spanset'] = [i for i in range(len(instance['all-spans']))]
 
     return instance
         
@@ -607,9 +616,9 @@ def main():
     print(f"Total frames in dev: {len(dev['final_frame'].unique())}")
     print(f"Total frames in test: {len(test['final_frame'].unique())}")
 
-    train_iterx_instances = convert_df_to_iterx_instances(train)
-    dev_iterx_instances = convert_df_to_iterx_instances(dev)
-    test_iterx_instances = convert_df_to_iterx_instances(test)
+    train_iterx_instances = convert_df_to_iterx_instances(train, skip_extra_roles = True)
+    dev_iterx_instances = convert_df_to_iterx_instances(dev, skip_extra_roles = True)
+    test_iterx_instances = convert_df_to_iterx_instances(test, skip_extra_roles = True)
 
     print(f"Total train instances: {len(train_iterx_instances)}")
     print(f"Total dev instances: {len(dev_iterx_instances)}")
