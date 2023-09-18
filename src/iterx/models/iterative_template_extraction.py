@@ -110,6 +110,8 @@ class IterativeTemplateExtraction(Model):
         self.graph_encoder = graph_encoder
 
         # Defines embeddings
+        # Add an embedding 
+        # save the embeddings of the trigger as a caching step???
         self.template_embeddings = Embedding(vocab=vocab,
                                              vocab_namespace='template_labels',
                                              # num_embeddings=vocab.get_vocab_size(namespace='template_labels'),
@@ -340,7 +342,7 @@ class IterativeTemplateExtraction(Model):
                 'predicted_non_span_slot_sets': [[]],
                 'predicted_cluster_span_slot_sets': [[]],
                 # Assumes we're working with MUC; not an issue on Granular
-                'predicted_muc_template_dict': [{doc_key: []}]
+                'predicted_famus_template_dict': [{doc_key: []}]
             }
 
         assert not (
@@ -777,7 +779,22 @@ class IterativeTemplateExtraction(Model):
                 )
                 output_dict['predicted_muc_template_dict'] = [predicted_muc_template_dict]
                 self.metrics['muc'](predictions=predicted_muc_template_dict,
-                                    pred_src_file=metadata[0]['data_path'])
+                                    pred_src_file=metadata[0]['data_path'],
+                                    normalize_role=False)
+
+            if 'famus' in self.metrics:
+                # This function also assumes that the batch_size is 1
+                predicted_famus_template_dict = self.convert_template_sets_to_famus_templates(
+                    template_type=template_type_str,
+                    slot_sets=predicted_span_slot_sets,
+                    spans=spans[0].detach().tolist(),
+                    metadata=metadata[0]
+                )
+                output_dict['predicted_famus_template_dict'] = [predicted_famus_template_dict]
+                self.metrics['famus'](predictions=predicted_famus_template_dict,
+                                    pred_src_file=metadata[0]['data_path'],
+                                    normalize_role=False)
+
 
             if 'iterx_scirex' in self.metrics:
                 # This function again assumes that the batch_size is 1
@@ -969,7 +986,39 @@ class IterativeTemplateExtraction(Model):
                 # currently assuming singleton entities
                 span = normalize_string(span_text)
                 template[slot_type].add(span)
-            template = {role2uppercase[role]: [[mention] for mention in cluster] for role, cluster in template.items()
+            template = {role: [[mention] for mention in cluster] for role, cluster in template.items()
+                        if role != 'incident_type'}
+            template['incident_type'] = template_type
+            templates.append(template)
+        return {doc_key: templates}
+
+    @staticmethod
+    def convert_template_sets_to_famus_templates(
+            template_type: str,
+            slot_sets: List[Set[IntSlot]],
+            spans: List[Tuple[int, int]],
+            metadata: Dict[str, Any],
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        doc_key, _ = metadata['instance_id'].split(':')
+        templates: List[Dict[str, Any]] = []
+        for span_slot_set in slot_sets:
+            template = {
+                'incident_type': template_type,
+            }
+            for span_idx, slot_type in span_slot_set:
+                span_idx -= 1
+                if slot_type not in template:
+                    template[slot_type] = set()
+                span_start_tok = spans[span_idx][0]
+                span_end_tok = spans[span_idx][1]
+                span_start_char = metadata['raw_doc_ref']['tok2char'][span_start_tok][0]
+                span_end_char = metadata['raw_doc_ref']['tok2char'][span_end_tok][-1]
+                span_text = metadata['raw_doc_ref']['doctext'][span_start_char:span_end_char + 1]
+                # span = [span_text, span_start_char, span_end_char, span_start_tok, span_end_tok, slot_type]
+                # currently assuming singleton entities
+                span = normalize_string(span_text)
+                template[slot_type].add(span)
+            template = {role: [[mention] for mention in cluster] for role, cluster in template.items()
                         if role != 'incident_type'}
             template['incident_type'] = template_type
             templates.append(template)

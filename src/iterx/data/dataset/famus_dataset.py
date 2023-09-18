@@ -88,8 +88,14 @@ class FAMUSDataset(DatasetReader):
                         key=lambda x: x["incident_type"]
                     )
                 }
-                for template_type in self.definitions["definitions"].keys():
-                    yield self.text_to_instance(entry, template_type, file_path, templates_by_type)
+                # Uncomment the below for loop if you want to iterate for all templates for each entry
+                # for template_type in self.definitions["definitions"].keys():
+                #     yield self.text_to_instance(entry, template_type, file_path, templates_by_type)
+                
+                # For cross-doc famus, we have exactly one template for each entry
+                gold_template_type = entry["templates"][0]['incident_type']
+                yield self.text_to_instance(entry, gold_template_type, file_path, templates_by_type)
+                
         warn_msg = f"Read {total_entries} documents. " \
                    f"Of these, {docs_with_spans_and_templates} had both templates and spans. " \
                    f"{docs_without_templates} had no templates and {docs_without_spans} had no spans."
