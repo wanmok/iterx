@@ -14,12 +14,12 @@ local definition_path = "resources/data/famus/definitions.json";
 local vocabulary_path = "resources/data/famus/vocabulary";
 
 # Gold data for training and evaluation
-local train_data_path = "resources/data/famus/preprocessed/tokenized/train_filtered_spans_sample.jsonl";
-local dev_data_path = "resources/data/famus/preprocessed/tokenized/dev_filtered_spans_sample.jsonl";
-local test_data_path = "resources/data/famus/preprocessed/tokenized/test_filtered_spans_sample.jsonl";
+local train_data_path = "resources/data/famus/preprocessed/tokenized/train_filtered_spans.jsonl";
+local dev_data_path = "resources/data/famus/preprocessed/tokenized/dev_filtered_spans.jsonl";
+local test_data_path = "resources/data/famus/preprocessed/tokenized/test_filtered_spans.jsonl";
 
-local dev_gold_path = "resources/data/famus/preprocessed/tokenized/dev_filtered_spans_sample.jsonl";
-local test_gold_path = "resources/data/famus/preprocessed/tokenized/test_filtered_spans_sample.jsonl";
+local dev_gold_path = "resources/data/famus/preprocessed/tokenized/dev_filtered_spans.jsonl";
+local test_gold_path = "resources/data/famus/preprocessed/tokenized/test_filtered_spans.jsonl";
 
 # Model configs
 local lexical_dropout = 0.2;
@@ -164,8 +164,7 @@ local model = {
       "lr": 3e-5,
       "weight_decay": 1e-2,
       "parameter_groups": [
-        [[".*graph_encoder.*"], {"lr": 1e-5}],
-        [[".*text_field_embedder.*"], {"requires_grad": false}]
+         [[".*transformer.*"], {"lr": 1e-5}]
       ]
     },
     # Uncomment if logging to Tensorboard
