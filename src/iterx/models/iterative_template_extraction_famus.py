@@ -28,7 +28,7 @@ rng = np.random.default_rng()
 
 
 @Model.register("iterative_template_extraction_famus")
-class IterativeTemplateExtraction(Model):
+class IterativeTemplateExtractionFAMuS(Model):
     def __init__(self,
                  vocab: Vocabulary,
                  definition_file: str,
