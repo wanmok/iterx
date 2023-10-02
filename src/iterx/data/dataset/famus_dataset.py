@@ -101,6 +101,33 @@ class FAMUSDataset(DatasetReader):
                    f"{docs_without_templates} had no templates and {docs_without_spans} had no spans."
         logger.warn(warn_msg)
 
+    def fetch_gold_slot_label_from_span_tuple(self,
+                                              input_span_tuple,
+                                              gold_template):
+        """
+        Given a span 5-tuple: (span_string, char_start_idx, char_end_idx, token_start_idx, token_end_idx)
+            and the gold template, fetch the gold slot label for the given tuple
+       
+        """
+        match_found = False
+        for role_name, role_values in gold_template.items():
+            # we skip the names that are not roles
+            if role_name == 'incident_type' or role_name == 'template-spans':
+                continue
+            # for all roles, we loop over each span for each role
+            for current_span in role_values:
+                # assuming each there is exactly one coref for each span
+                current_single_coref_mention = current_span[0]
+                if current_single_coref_mention[:5] == input_span_tuple:
+                    match_found = True
+                    return current_single_coref_mention[-1]
+        
+        # return error if match wasn't found because we use this function only for tuples inside the gold template
+        if match_found == False:
+            raise ValueError("This span was not found in the gold template spans")
+        
+
+
     def text_to_instance(self,
                          entry: Dict[str, Any],
                          template_type: str,
@@ -172,15 +199,24 @@ class FAMUSDataset(DatasetReader):
                 gold_span_slot_set: Set[Tuple[int, str]] = set()
                 gold_template_span_labels: List[str] = ["none"] * len(entry['all-spans'])
                 for span_idx in template["template-spans"]:
-                    span_label = entry["all-spans"][span_idx][5].lower()
+                    # the 5th entry in all-spans is empty in FAMuS (it is only in templates field that it has values)
+                    # the first five fields: span_string, char_start_idx, char_end_idx, token_start_idx, token_end_idx
+                    string_char_token_idxs = entry["all-spans"][span_idx][:5]
+                    span_label = self.fetch_gold_slot_label_from_span_tuple(string_char_token_idxs,
+                                                               template)
+                    
+                    # span_label = entry["all-spans"][span_idx][5]
+
                     gold_span_slot_set.add((span_idx + 1, span_label))
                     gold_template_span_labels[span_idx] = span_label
                 all_gold_template_span_labels.append(gold_template_span_labels)
                 all_gold_span_slot_sets.append(gold_span_slot_set)
+                # DEBUGG line:
+                # print(f"gold_template_span_labels for this example in reader: {gold_template_span_labels}")
 
             gold_slot_spans: List[Dict[str, List[int]]] = [
                 {
-                    slot.lower(): [i - 1 for i, _ in spans]
+                    slot: [i - 1 for i, _ in spans]
                     for slot, spans in groupby(sorted(list(template), key=lambda x: x[1]), key=lambda x: x[1])
                 }
                 for template in all_gold_span_slot_sets
@@ -200,6 +236,8 @@ class FAMUSDataset(DatasetReader):
             metadata['gold_non_span_slot_sets'] = [set()] * len(all_gold_span_slot_sets)  # No non-span slots for MUC
             metadata['gold_templates'] = gold_templates
             metadata['gold_slot_spans'] = gold_slot_spans
+            # DEBUGG line:
+            # print(f"metadata['gold_templates'] for this example in reader: {gold_template_span_labels}")
         return Instance(fields)
 
 
