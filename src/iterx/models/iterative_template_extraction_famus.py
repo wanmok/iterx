@@ -15,7 +15,7 @@ from allennlp.training.metrics import Metric
 from overrides import overrides
 from torch.utils.checkpoint import checkpoint
 
-from iterx.metrics.muc.gtt_eval_utils import normalize_string, role2uppercase
+from iterx.metrics.famus.gtt_eval_utils import normalize_string, role2uppercase
 from iterx.modules.positional_embeddings import generate_sinusoidal_features
 from iterx.postprocessing.template_set_decoder import TemplateSetDecoder
 from iterx.postprocessing.template_teacher import TemplateTeacher
@@ -298,7 +298,8 @@ class IterativeTemplateExtractionFAMuS(Model):
                 **kwargs) -> Dict[str, Any]:
         assert len(metadata) == 1, "Batch size must be 1 for this model."
         # DEBUG LINES BELOW
-        print(f"Print gold_template_span_labels for this example: {gold_template_span_labels}")
+        # print(f"gold_template_span_labels for this example: {gold_template_span_labels}")
+        print(f"Gold Template inside Forward: {metadata[0]['gold_templates'][0]}")
         # Constants
         template_type_str = self.vocab.get_token_from_index(index=template_type.item(), namespace='template_labels')
         none_slot_type_index = self.vocab.get_token_index('none', namespace='slot_types')
@@ -339,8 +340,8 @@ class IterativeTemplateExtractionFAMuS(Model):
                 'predicted_span_slot_sets': [[]],
                 'predicted_non_span_slot_sets': [[]],
                 'predicted_cluster_span_slot_sets': [[]],
-                # Assumes we're working with MUC; not an issue on Granular
-                'predicted_muc_template_dict': [{doc_key: []}]
+                # Assumes we're working with FAMuS; not an issue on Granular
+                'predicted_famus_template_dict': [{doc_key: []}]
             }
 
         assert not (
@@ -780,7 +781,22 @@ class IterativeTemplateExtractionFAMuS(Model):
                                     pred_src_file=metadata[0]['data_path'],
                                     normalize_role=False)
                 # DEBUG line for prediction template dict
-                print(f"predicted_muc_template_dict: {predicted_muc_template_dict}")
+                print(f"predicted_muc_template_dict (at the end of Forward): {predicted_muc_template_dict}\n")
+
+            if 'famus' in self.metrics:
+                # This function also assumes that the batch_size is 1
+                predicted_famus_template_dict = self.convert_template_sets_to_famus_templates(
+                    template_type=template_type_str,
+                    slot_sets=predicted_span_slot_sets,
+                    spans=spans[0].detach().tolist(),
+                    metadata=metadata[0]
+                )
+                output_dict['predicted_famus_template_dict'] = [predicted_famus_template_dict]
+                self.metrics['famus'](predictions=predicted_famus_template_dict,
+                                    pred_src_file=metadata[0]['data_path'],
+                                    normalize_role=False)
+                # DEBUG line for prediction template dict
+                print(f"predicted_famus_template_dict (at the end of Forward): {predicted_famus_template_dict}\n")
                 
             if 'iterx_scirex' in self.metrics:
                 # This function again assumes that the batch_size is 1
@@ -806,6 +822,7 @@ class IterativeTemplateExtractionFAMuS(Model):
     def get_metrics(self, reset: bool = False) -> Dict[str, float]:
         better_metrics = self.metrics['better'].get_metric(reset=reset) if 'better' in self.metrics else None
         muc_metrics = self.metrics['muc'].get_metric(reset=reset) if 'muc' in self.metrics else None
+        famus_metrics = self.metrics['famus'].get_metric(reset=reset) if 'famus' in self.metrics else None
         iterx_scirex_metrics = (
             self.metrics['iterx_scirex'].get_metric(reset=reset) if 'iterx_scirex' in self.metrics else None
         )
@@ -858,6 +875,10 @@ class IterativeTemplateExtractionFAMuS(Model):
 
         if muc_metrics is not None and reset:
             for k, v in muc_metrics.items():
+                output[k] = v
+
+        if famus_metrics is not None and reset:
+            for k, v in famus_metrics.items():
                 output[k] = v
 
         if iterx_scirex_metrics is not None and reset:
@@ -947,7 +968,7 @@ class IterativeTemplateExtractionFAMuS(Model):
         return {doc_key: templates}
 
     @staticmethod
-    def convert_template_sets_to_muc_templates(
+    def convert_template_sets_to_famus_templates(
             template_type: str,
             slot_sets: List[Set[IntSlot]],
             spans: List[Tuple[int, int]],

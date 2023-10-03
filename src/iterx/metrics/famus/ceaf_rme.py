@@ -9,7 +9,7 @@ from scipy.optimize import linear_sum_assignment
 
 # GTT
 from iterx.metrics.conll_coref_scores_mod import CountSingletonsScorer
-from iterx.metrics.muc.gtt_eval_utils import normalize_string
+from iterx.metrics.famus.gtt_eval_utils import normalize_string
 
 GTTEntity = List[str]
 GTTSlot = List[GTTEntity]

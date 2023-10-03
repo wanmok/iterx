@@ -6,19 +6,19 @@ from typing import Any, Dict, List
 from allennlp.training.metrics import Metric
 from overrides import overrides
 
-from iterx.metrics.muc.gtt_eval_utils import add_normalized_templates, convert_docid, eval_tf, read_gold_templates
+from iterx.metrics.famus.gtt_eval_utils import add_normalized_templates, convert_docid, eval_tf, read_gold_templates
 
-logger = logging.getLogger('MUC')
+logger = logging.getLogger('FAMuS')
 
 
-@Metric.register('muc')
-class MUCMetric(Metric):
+@Metric.register('famus')
+class FAMuSMetric(Metric):
     def __init__(self, doc_path: Dict[str, str]):
         self.predicted_templates = defaultdict(OrderedDict)
         self.gold_templates = defaultdict(OrderedDict)
         for pred_path, ref_path in doc_path.items():
             if not os.path.exists(ref_path):
-                logger.error(f"MUC reference file {ref_path} doesn't exist")
+                logger.error(f"FAMuS reference file {ref_path} doesn't exist")
                 exit(1)
             else:
                 self.gold_templates[pred_path] = read_gold_templates(ref_path)
@@ -50,18 +50,18 @@ class MUCMetric(Metric):
         if len(all_scores) == 0:
             return dict()
         elif len(all_scores) == 1:
-            muc_score = list(all_scores.values())[0]
+            famus_score = list(all_scores.values())[0]
             output_score = {
-                'muc_template_type_p': muc_score['incident_type']['p'],
-                'muc_template_type_r': muc_score['incident_type']['r'],
-                'muc_template_type_f1': muc_score['incident_type']['f1'],
-                'muc_slot_micro_p': muc_score['micro_avg']['p'],
-                'muc_slot_micro_r': muc_score['micro_avg']['r'],
-                'muc_slot_micro_f1': muc_score['micro_avg']['f1']
+                'famus_template_type_p': famus_score['incident_type']['p'],
+                'famus_template_type_r': famus_score['incident_type']['r'],
+                'famus_template_type_f1': famus_score['incident_type']['f1'],
+                'famus_slot_micro_p': famus_score['micro_avg']['p'],
+                'famus_slot_micro_r': famus_score['micro_avg']['r'],
+                'famus_slot_micro_f1': famus_score['micro_avg']['f1']
             }
             return output_score
         else:
             # TODO(@Will): may implement this if we ever actually need to
             # validate against something other than the dev split.
-            raise NotImplementedError("More than one file detected for MUC validation"
+            raise NotImplementedError("More than one file detected for FAMuS validation"
                                       "This is currently unsupported.")

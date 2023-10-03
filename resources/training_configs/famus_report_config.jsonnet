@@ -67,8 +67,8 @@ local initializer = {
 };
 
 local metrics = {
-  muc: {
-    type: "iterx_muc",
+  famus: {
+    type: "iterx_famus",
     ignore_no_template_doc: true,
     sanitize_special_chars: true,
     doc_path: {
@@ -151,7 +151,7 @@ local model = {
   "trainer": {
     "num_epochs": 150, # originally 500
     "patience" : 30, # originally 50
-    "validation_metric": "+iterx_muc_slot_f1",
+    "validation_metric": "+iterx_famus_slot_f1",
     "grad_norm": 1.0,
     "learning_rate_scheduler": {
       "type": "polynomial_decay",
