@@ -979,6 +979,6 @@ class IterativeTemplateExtractionFAMuS(Model):
         return {doc_key: templates}
 
     def _to_params(self) -> Dict[str, Any]:
-        return super(IterativeTemplateExtraction, self)._to_params()
+        return super(IterativeTemplateExtractionFAMuS, self)._to_params()
 
-    default_predictor = 'iterative_template_extraction'
+    default_predictor = 'iterative_template_extraction_famus'
