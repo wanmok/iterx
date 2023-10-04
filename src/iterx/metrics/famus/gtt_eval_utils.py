@@ -67,7 +67,7 @@ def add_normalized_templates(curr_pred_templates: List[Dict[str, Any]],
         if normalize_role:
             to_iterate = role2uppercase.items()
         else:
-            to_iterate = pred_template.keys()
+            to_iterate = pred_template.keys() - {'incident_type'}
 
         for iter_key in to_iterate:
             if normalize_role:
@@ -304,9 +304,6 @@ def eval_tf(preds, golds, docids=[]):
     for docid in docids:
         pred = preds[docid]
         gold = golds[docid]
-        # DEBUG line
-        print(f"Logging inside eval_tf: Prediction: {pred}")
-        print(f"Logging inside eval_tf: Gold: {gold}\n")
         K, V = list(range(len(pred))), list(range(len(gold)))
         V = V + [-1]
         init_maps = [dict(zip(K, p)) for p in itertools.product(V, repeat=len(K))]

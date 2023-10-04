@@ -32,8 +32,6 @@ class TemplateSetDecoder(object):
         }
 
         # Ading this for debugging slot names (to check if they are lowercase)
-        print("Printing the vocab token2index for namespace: slot_types")
-        print(self.vocab.get_token_to_index_vocabulary(namespace='slot_types'))
 
         self.output_filtered_non_span_slot_idx: Set[int] = {
             self.vocab.get_token_index(token='none', namespace='non_span_slot_labels')

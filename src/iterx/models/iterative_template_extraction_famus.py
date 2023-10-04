@@ -297,9 +297,6 @@ class IterativeTemplateExtractionFAMuS(Model):
                 is_training: bool = True,
                 **kwargs) -> Dict[str, Any]:
         assert len(metadata) == 1, "Batch size must be 1 for this model."
-        # DEBUG LINES BELOW
-        # print(f"gold_template_span_labels for this example: {gold_template_span_labels}")
-        print(f"Gold Template inside Forward: {metadata[0]['gold_templates'][0]}")
         # Constants
         template_type_str = self.vocab.get_token_from_index(index=template_type.item(), namespace='template_labels')
         none_slot_type_index = self.vocab.get_token_index('none', namespace='slot_types')
@@ -780,8 +777,6 @@ class IterativeTemplateExtractionFAMuS(Model):
                 self.metrics['muc'](predictions=predicted_muc_template_dict,
                                     pred_src_file=metadata[0]['data_path'],
                                     normalize_role=False)
-                # DEBUG line for prediction template dict
-                print(f"predicted_muc_template_dict (at the end of Forward): {predicted_muc_template_dict}\n")
 
             if 'famus' in self.metrics:
                 # This function also assumes that the batch_size is 1
@@ -795,8 +790,6 @@ class IterativeTemplateExtractionFAMuS(Model):
                 self.metrics['famus'](predictions=predicted_famus_template_dict,
                                     pred_src_file=metadata[0]['data_path'],
                                     normalize_role=False)
-                # DEBUG line for prediction template dict
-                print(f"predicted_famus_template_dict (at the end of Forward): {predicted_famus_template_dict}\n")
                 
             if 'iterx_scirex' in self.metrics:
                 # This function again assumes that the batch_size is 1
