@@ -40,11 +40,6 @@ def arg_parse():
 
     # input_dir
     parser = argparse.ArgumentParser()
-
-    parser.add_argument("--input_dir",
-                        type=str,
-                        default="/brtx/601-nvme1/svashis3/FAMuS/data/cross_doc_role_extraction"
-                        )
     
     parser.add_argument("--output_dir",
                         type=str,
@@ -57,11 +52,12 @@ def arg_parse():
 
 def main():
     args = arg_parse()
-    with open(os.path.join(args.input_dir, "train.jsonl")) as f:
+    print(f"Loading train files for fetching all the frames...")
+    with open(os.path.join(args.output_dir, "report_data", "train.jsonl")) as f:
         train_instances = [json.loads(line) for line in f.readlines()]
     
-    frames = sorted(list(set([instance['frame'] for instance in train_instances])))
-
+    frames = sorted(list(set([instance['templates'][0]['incident_type'] for instance in train_instances])))
+    print(f"Total number of frames: {len(frames)}")
     ########################################
     # Definitions
     ########################################

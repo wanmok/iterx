@@ -1,1 +1,0 @@
-# Creates famus dir in resources and populate relevant files 
