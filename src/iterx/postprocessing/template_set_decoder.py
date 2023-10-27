@@ -31,8 +31,6 @@ class TemplateSetDecoder(object):
             self.vocab.get_token_index(token='@@UNKNOWN@@', namespace='slot_types'),
         }
 
-        # Ading this for debugging slot names (to check if they are lowercase)
-
         self.output_filtered_non_span_slot_idx: Set[int] = {
             self.vocab.get_token_index(token='none', namespace='non_span_slot_labels')
         }

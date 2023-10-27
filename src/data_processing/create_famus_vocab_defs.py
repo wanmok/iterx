@@ -85,33 +85,33 @@ def main():
         slot_set.update(slots)
     vocab_path = os.path.join(args.output_dir, 'vocabulary')
     os.makedirs(vocab_path, exist_ok=True)
-    with open(os.path.join(vocab_path, 'slots_types.txt'), 'w') as f:
+    with open(os.path.join(vocab_path, 'slot_types.txt'), 'w') as f:
         # the first two lines should contain
         #@@UNKNOWN@@
         #none
         f.write('@@UNKNOWN@@\n')
         f.write('none\n')
-        for slot in slot_set:
+        for slot in sorted(list(slot_set)):
             f.write(slot + '\n')
 
     ##########################
     #### template_labels.txt ####
     ##########################
-    for frame in frames:
-        with open(os.path.join(vocab_path, 'template_labels.txt'), 'a') as f:
+    with open(os.path.join(vocab_path, 'template_labels.txt'), 'w') as f:
+        for frame in frames:
             f.write(frame + '\n')
 
     ##################################
     #### non_span_slot_labels.txt ####
     ##################################
     # Only one line with 'none'
-    with open(os.path.join(vocab_path, 'non_span_slot_labels.txt'), 'a') as f:
+    with open(os.path.join(vocab_path, 'non_span_slot_labels.txt'), 'w') as f:
             f.write('none\n')
     
     ##################################
     #### non_padded_namespaces.txt ####
     ##################################
-    with open(os.path.join(vocab_path, 'non_padded_namespaces.txt'), 'a') as f:
+    with open(os.path.join(vocab_path, 'non_padded_namespaces.txt'), 'w') as f:
         f.write('*labels\n')
         f.write('*tags\n')
 
@@ -119,14 +119,14 @@ def main():
     #### event_arg_labels.txt ####
     ##################################
     # Only one line with 'none'
-    with open(os.path.join(vocab_path, 'event_arg_labels.txt'), 'a') as f:
+    with open(os.path.join(vocab_path, 'event_arg_labels.txt'), 'w') as f:
             f.write('none\n')
 
     ##################################
     #### .lock file ####
     ##################################
     # Create a file with an empty line
-    with open(os.path.join(vocab_path, '.lock'), 'a') as f:
+    with open(os.path.join(vocab_path, '.lock'), 'w') as f:
         f.write('\n')
          
          
