@@ -11,4 +11,4 @@ cd /brtx/601-nvme1/svashis3/iterx
 PYTHONPATH=./src allennlp train \
   --include-package iterx \
   -s famus_model_report_data_gold_spans \
-  /brtx/601-nvme1/svashis3/iterx/resources/training_configs/famus_report_config.jsonnet
+  /brtx/601-nvme1/svashis3/iterx/resources/training_configs/famus_report_config_gold_spans.jsonnet

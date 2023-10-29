@@ -14,12 +14,12 @@ local definition_path = "resources/data/famus/definitions.json";
 local vocabulary_path = "resources/data/famus/vocabulary";
 
 # Gold data for training and evaluation
-local train_data_path = "resources/data/famus/report_data/train.jsonl";
-local dev_data_path = "resources/data/famus/report_data/dev.jsonl";
-local test_data_path = "resources/data/famus/report_data/test.jsonl";
+local train_data_path = "resources/data/famus/source_data/gold_spans/train.jsonl";
+local dev_data_path = "resources/data/famus/source_data/gold_spans/dev.jsonl";
+local test_data_path = "resources/data/famus/source_data/gold_spans/test.jsonl";
 
-local dev_gold_path = "resources/data/famus/report_data/dev.jsonl";
-local test_gold_path = "resources/data/famus/report_data/test.jsonl";
+local dev_gold_path = "resources/data/famus/source_data/gold_spans/dev.jsonl";
+local test_gold_path = "resources/data/famus/source_data/gold_spans/test.jsonl";
 
 # Model configs
 local lexical_dropout = 0.2;
