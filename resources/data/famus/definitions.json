@@ -3534,41 +3534,6 @@
                 }
             }
         },
-        "Creating": {
-            "output_str": "Creating",
-            "slots": {
-                "Created_entity": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Cause": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Creator": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Time": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Place": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                }
-            }
-        },
         "Cure": {
             "output_str": "Cure",
             "slots": {
@@ -6577,47 +6542,6 @@
                     ]
                 },
                 "Offense": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Time": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Place": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                }
-            }
-        },
-        "Perception_active": {
-            "output_str": "Perception_active",
-            "slots": {
-                "Perceiver_agentive": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Phenomenon": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Body_part": {
-                    "filler_types": [
-                        "spanset",
-                        "event"
-                    ]
-                },
-                "Direction": {
                     "filler_types": [
                         "spanset",
                         "event"
