@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Define the source directory
-src="/brtx/601-nvme1/svashis3/FAMuS/data/cross_doc_role_extraction/iterx_format"
+src="/brtx/601-nvme1/svashis3/FAMuS/data/cross_doc_role_extraction/iterx_format_with_prefixed_roles"
 
 # Define the root directory of the repository
 repo_root="$(git rev-parse --show-toplevel)"
 
 # Define the destination directory
-dest="${repo_root}/resources/data/famus"
+dest="${repo_root}/resources/data/famus_with_prefixed_roles"
 
 echo "Source directory: $src"
 echo "Destination directory: $dest"
@@ -21,4 +21,4 @@ echo "Copying files..."
 cp -R "$src"/* "$dest"
 
 # Run vocab and definitions script
-python create_famus_vocab_defs.py
+python create_famus_vocab_defs_with_role_prefix.py
