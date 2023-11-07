@@ -53,7 +53,9 @@ def arg_parse():
 def main():
     args = arg_parse()
     print(f"Loading train files for fetching all the frames...")
-    with open(os.path.join(args.output_dir, "report_data", "train.jsonl")) as f:
+    with open(os.path.join(args.output_dir, "report_data", 
+                           "mixed_spans",
+                           "train.jsonl")) as f:
         train_instances = [json.loads(line) for line in f.readlines()]
     
     frames = sorted(list(set([instance['templates'][0]['incident_type'] for instance in train_instances])))

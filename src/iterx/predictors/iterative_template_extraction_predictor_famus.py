@@ -16,6 +16,8 @@ class IterativeTemplateExtractionPredictorFAMuS(Predictor):
             return json.dumps(outputs['predicted_muc_template_dict']) + "\n"
         elif 'predicted_scirex_template_dict' in outputs:
             return json.dumps(outputs['predicted_scirex_template_dict']) + "\n"
+        elif 'predicted_famus_template_dict' in outputs:
+            return json.dumps(outputs['predicted_famus_template_dict']) + "\n"
         else:
             raise ValueError("No templates to write!")
 

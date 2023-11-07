@@ -96,7 +96,6 @@ Corporal_punishment
 Corroding_caused
 Counterattack
 Create_physical_artwork
-Creating
 Cure
 Cutting
 Damaging
@@ -178,7 +177,6 @@ Operate_vehicle
 Operating_a_system
 Others_situation_as_stimulus
 Pardon
-Perception_active
 Piracy
 Placing
 Posing_as
