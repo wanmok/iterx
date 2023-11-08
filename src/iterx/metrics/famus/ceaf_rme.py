@@ -75,8 +75,8 @@ def normalized_levenshtein(gold_span,
     """
     if gold_span=="" and predicted_span=="":
         return 1
-    gold_span_tokens = gold_span.split()
-    predicted_span_tokens = predicted_span.split()
+    gold_span_tokens = [x.lower() for x in gold_span.split()]
+    predicted_span_tokens = [x.lower() for x in predicted_span.split()]
     len_gold = len(gold_span_tokens)
     len_target = len(predicted_span_tokens)
 
