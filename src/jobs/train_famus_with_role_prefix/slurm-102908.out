@@ -1,0 +1,25 @@
+2023-11-07 18:32:40,391 - INFO - torch.distributed.nn.jit.instantiator - Created a temporary directory at /tmp/tmpit03ztij
+2023-11-07 18:32:40,392 - INFO - torch.distributed.nn.jit.instantiator - Writing /tmp/tmpit03ztij/_remote_module_non_scriptable.py
+2023-11-07 18:32:42,097 - INFO - numexpr.utils - Note: NumExpr detected 24 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-11-07 18:32:42,097 - INFO - numexpr.utils - NumExpr defaulting to 8 threads.
+Traceback (most recent call last):
+  File "/home/svashis3/anaconda3/envs/iterx/bin/allennlp", line 8, in <module>
+    sys.exit(run())
+             ^^^^^
+  File "/home/svashis3/anaconda3/envs/iterx/lib/python3.11/site-packages/allennlp/__main__.py", line 39, in run
+    main(prog="allennlp")
+  File "/home/svashis3/anaconda3/envs/iterx/lib/python3.11/site-packages/allennlp/commands/__init__.py", line 120, in main
+    args.func(args)
+  File "/home/svashis3/anaconda3/envs/iterx/lib/python3.11/site-packages/allennlp/commands/train.py", line 111, in train_model_from_args
+    train_model_from_file(
+  File "/home/svashis3/anaconda3/envs/iterx/lib/python3.11/site-packages/allennlp/commands/train.py", line 176, in train_model_from_file
+    params = Params.from_file(parameter_filename, overrides)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/svashis3/anaconda3/envs/iterx/lib/python3.11/site-packages/allennlp/common/params.py", line 459, in from_file
+    params_file = cached_path(params_file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/svashis3/anaconda3/envs/iterx/lib/python3.11/site-packages/allennlp/common/file_utils.py", line 134, in cached_path
+    _cached_path.cached_path(
+  File "/home/svashis3/anaconda3/envs/iterx/lib/python3.11/site-packages/cached_path/_cached_path.py", line 208, in cached_path
+    raise FileNotFoundError(f"file {url_or_filename} not found")
+FileNotFoundError: file /brtx/601-nvme1/svashis3/iterx/resources/training_configs/famus_source_config_gold_spans.jsonnet not found

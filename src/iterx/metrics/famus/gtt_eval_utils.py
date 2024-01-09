@@ -23,7 +23,7 @@ role2uppercase = {
     'weapon': 'Weapon'
 }
 
-DOCIDS_BY_NUMBER_OF_TEMPLATES = "resources/data/muc/docids_event_n.json"
+# DOCIDS_BY_NUMBER_OF_TEMPLATES = "resources/data/muc/docids_event_n.json"
 
 GTTEntity = List[str]
 GTTSlot = List[GTTEntity]
@@ -67,7 +67,7 @@ def add_normalized_templates(curr_pred_templates: List[Dict[str, Any]],
         if normalize_role:
             to_iterate = role2uppercase.items()
         else:
-            to_iterate = pred_template.keys()
+            to_iterate = pred_template.keys() - {'incident_type'}
 
         for iter_key in to_iterate:
             if normalize_role:
@@ -129,22 +129,23 @@ def jsonlines_to_gtt_templates(
 
 def normalize_string(s):
     """Lower text and remove punctuation, articles and extra whitespace."""
+    # this was changed from MUC to not normalize any string
+    return s
+    # def remove_articles(text):
+    #     regex = re.compile(r'\b(a|an|the)\b', re.UNICODE)
+    #     return re.sub(regex, ' ', text)
 
-    def remove_articles(text):
-        regex = re.compile(r'\b(a|an|the)\b', re.UNICODE)
-        return re.sub(regex, ' ', text)
+    # def white_space_fix(text):
+    #     return ' '.join(text.split())
 
-    def white_space_fix(text):
-        return ' '.join(text.split())
+    # def remove_punc(text):
+    #     exclude = set(string.punctuation)
+    #     return ''.join(ch for ch in text if ch not in exclude)
 
-    def remove_punc(text):
-        exclude = set(string.punctuation)
-        return ''.join(ch for ch in text if ch not in exclude)
+    # def lower(text):
+    #     return text.lower()
 
-    def lower(text):
-        return text.lower()
-
-    return white_space_fix(remove_articles(remove_punc(lower(s))))
+    # return white_space_fix(remove_articles(remove_punc(lower(s))))
 
 
 def f1(p_num, p_den, r_num, r_den, beta=1):

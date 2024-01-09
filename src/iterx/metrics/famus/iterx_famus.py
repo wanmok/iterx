@@ -6,14 +6,14 @@ from typing import Any, Dict, List, Optional, Tuple
 from allennlp.training.metrics import Metric
 from overrides import overrides
 
-from iterx.metrics.muc.gtt_eval_utils import read_gold_templates, add_normalized_templates
-from iterx.metrics.muc.ceaf_rme import generate_scoring_structures, IterXTemplate, SCORER_CONSTRUCTOR
+from iterx.metrics.famus.gtt_eval_utils import read_gold_templates, add_normalized_templates
+from iterx.metrics.famus.ceaf_rme import generate_scoring_structures, IterXTemplate, SCORER_CONSTRUCTOR
 
-logger = logging.getLogger('iterx_muc')
+logger = logging.getLogger('iterx_famus')
 
 
-@Metric.register('iterx_muc')
-class IterXMUCMetric(Metric):
+@Metric.register('iterx_famus')
+class IterXFAMuSMetric(Metric):
     def __init__(self,
                  doc_path: Optional[Dict[str, str]] = None,
                  convert_doc_id: bool = False,
@@ -98,7 +98,7 @@ class IterXMUCMetric(Metric):
             self.reset()
 
         return {
-            "iterx_muc_slot_p": precision,
-            "iterx_muc_slot_r": recall,
-            "iterx_muc_slot_f1": f1
+            "iterx_famus_slot_p": precision,
+            "iterx_famus_slot_r": recall,
+            "iterx_famus_slot_f1": f1
         }
